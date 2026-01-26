@@ -15,9 +15,18 @@ The dataset used in this project is a publically available Traffic Violations da
 
 The dataset contains records of traffic violations along with driver, vehicle, location, and violation related attributes.
 
-### Characteristics/Features
+> ### Characteristics/Features
 
-To be updated later.
+* **Source** - [Kaggle](https://www.kaggle.com/)
+* **Link to Dataset** - [Indian Traffic Violations Dataset](https://www.kaggle.com/datasets/khushikyad001/indian-traffic-violation/data) from [Khushi Yadav](https://www.kaggle.com/khushikyad001)
+* **Type** - Multi-class classification dataset
+* **Number of Instances** - More Than 500
+* **Number of Features** - Approximately more than 12 (post preprocessing dataset)
+* **Data Types** - Numerical and Categorical
+
+> **Violation Types (classes):**
+
+* `Drunk Driving`, `Driving without License`,  `No Helmet`, `No Seatbelt`, `Signal Jumping`, `Wrong Parking`, `Overspeeding`, `Overloading`, `Other`
 
 ## Machine Learning Models
 
@@ -108,5 +117,5 @@ This project is for educational purposes as part of BITS Pilani ML Assignment 2.
 
 ## Acknowledgements
 
-* UCI Machine Learning Repository for the Wine Quality dataset
-* BITS Pilani for the assignment framework.
+* Kaggle [Indian Traffic Violations Dataset](https://www.kaggle.com/datasets/khushikyad001/indian-traffic-violation/data) from [Khushi Yadav](https://www.kaggle.com/khushikyad001)
+* BITS Pilani for the assignment framework (S1-25_AIMLCZG565).
