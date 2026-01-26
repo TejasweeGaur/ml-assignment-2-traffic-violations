@@ -90,8 +90,8 @@ def download_dataset():
             print(f'Extracting archive {path}...')
             try:
                 shutil.unpack_archive(path, DOWNLOAD_DATASET_TO)
-            except Exception:
-                print('Archive extraction failed, continuing to scan for CSV files.')
+            except shutil.ReadError as e:
+                print(f'Archive extraction failed ({e}), continuing to scan for CSV files.')
         elif lower.endswith('.csv'):
             print(f'Moving CSV {path} to {dst_csv}...')
             shutil.move(path, dst_csv)
@@ -102,7 +102,8 @@ def download_dataset():
     search_dir = path if os.path.isdir(path) else DOWNLOAD_DATASET_TO
     csv_files = glob.glob(os.path.join(search_dir, '**', '*.csv'), recursive=True)
     if not csv_files:
-        raise Exception('No CSV file found in the downloaded dataset.')
+        extraction_note = ' (archive extraction may have failed)' if lower.endswith(('.zip', '.tar', '.tar.gz', '.tgz')) else ''
+        raise Exception(f'No CSV file found in the downloaded dataset{extraction_note}.')
 
     # Prefer a single dataset CSV; take the first match
     src_csv = csv_files[0]
