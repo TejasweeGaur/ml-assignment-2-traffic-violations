@@ -20,7 +20,7 @@ The dataset contains records of traffic violations along with driver, vehicle, l
 * **Source** - [Kaggle](https://www.kaggle.com/)
 * **Link to Dataset** - [Indian Traffic Violations Dataset](https://www.kaggle.com/datasets/khushikyad001/indian-traffic-violation/data) from [Khushi Yadav](https://www.kaggle.com/khushikyad001)
 * **Type** - Multi-class classification dataset
-* **Number of Instances** - More than 500
+* **Number of Instances** - Approximately 4,000
 * **Number of Features** - More Than 12 (post preprocessing dataset)
 * **Data Types** - Numerical and Categorical
 
