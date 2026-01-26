@@ -90,8 +90,8 @@ def download_dataset():
             print(f'Extracting archive {path}...')
             try:
                 shutil.unpack_archive(path, DOWNLOAD_DATASET_TO)
-            except Exception:
-                print('Archive extraction failed, continuing to scan for CSV files.')
+            except shutil.ReadError as e:
+                print(f'Archive extraction failed ({e}), continuing to scan for CSV files.')
         elif lower.endswith('.csv'):
             print(f'Moving CSV {path} to {dst_csv}...')
             shutil.move(path, dst_csv)
