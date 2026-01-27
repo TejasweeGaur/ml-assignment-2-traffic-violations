@@ -205,3 +205,13 @@ cython_debug/
 marimo/_static/
 marimo/_lsp/
 __marimo__/
+
+# Kaggle Libs
+.kaggle/
+kaggle.json
+.venv/
+__pypackages__/
+.kaggle_scripts/
+.kaggle_data/
+__pycache__/
+.ipynb_checkpoints/
