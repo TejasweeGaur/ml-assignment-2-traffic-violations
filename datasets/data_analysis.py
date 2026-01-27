@@ -1,43 +1,108 @@
 import pandas as pd
-import matplotlib.pyplot as plt
-import seaborn as sns
 
-def analyze_data(df):
-    """
-    Perform basic data analysis on the given DataFrame.
+
+def analyze_and_cleanup_data(df):
+    print("-" * 50, "Data Summary:", "-" * 50)
+    print("\nDescribe Dataset => \n", df.describe())
+    print("\nDataset Shape => \n", df.shape)
+    print("\nDataset Columns/Features => \n", df.columns)
+
+    print("\nMissing Values => \n", df.isnull().sum())
+
+    print("\nUnique Values per Column => \n", df.nunique())
+
+    print("\nUnique Violations => \n", df["Violation_Type"].value_counts())
+    print("\nUnique Locations => \n", df["Location"].value_counts())
+    print("\nUnique Vehicle Types => \n", df["Vehicle_Type"].value_counts())
+    print("\nUnique Vehicle Colors => \n", df["Vehicle_Color"].value_counts())
+    print("\nUnique Registration States => \n", df["Registration_State"].value_counts())
+    print("\nUnique Driver Gender => \n", df["Driver_Gender"].value_counts())
+    print("\nUnique License Type => \n", df["License_Type"].value_counts())
+    print("\nUnique Weather Condition => \n", df["Weather_Condition"].value_counts())
+    print("\nUnique Road Condition => \n", df["Road_Condition"].value_counts())
+    print("\nUnique Traffic Light Status => \n", df["Traffic_Light_Status"].value_counts())
+
+    # Data Analysis based on above insights - type of features and their potential use cases
+    raw_feature_columns = [
+        "Violation_ID",  # Unique identifier for each violation - can be dropped
+        "Violation_Type",  # Categorical feature indicating type of violation - target variable
+        "Fine_Amount",  # Numerical feature indicating fine amount - can be dropped since it tells about severity of violation
+        "Location",  # Categorical feature indicating location of violation - can be used for geospatial analysis - can be encoded into state codes
+        "Date",  # Date feature - can be used to extract day, month, year for analyzing the data around weekends, holidays etc. leading to violations
+        "Time",  # Time feature - can be used to extract hour, minute for analyzing the data around early mornings, late nights etc. leading to violations
+        "Vehicle_Type",  # Categorical feature indicating type of vehicle - can be used for classification analysis - can encode into categories - 2W, 3W, LMV, HCVP (Passengers), and HCVG (Cargo/Goods)
+        "Vehicle_Color",  # Categorical feature indicating color of vehicle - can be used for classification analysis - can be encoded into color categories
+        "Vehicle_Model_Year",  # Numerical feature indicating model year of vehicle - can be used for numerical feature capturing
+        "Registration_State",  # Categorical feature indicating state of registration - can be used for geospatial analysis - can be encoded into state codes
+        "Driver_Age",  # Numerical feature indicating age of driver - can be used for numerical feature capturing
+        "Driver_Gender",  # Categorical feature indicating gender of driver - can be used for classification analysis - can be encoded - Male, Female and Others
+        "License_Type",  # Categorical feature indicating type of license - can be used for classification analysis - can be encoded into categories - Learner, Permanent (2W + 4W), Heavy Vehicles, and Commercial
+        "Penalty_Points",  # Numerical feature indicating penalty points - can be used for numerical feature capturing
+        "Weather_Condition",  # Categorical feature indicating weather condition - can be used for classification analysis - can be encoded into categories - Clear, Rainy, Foggy, Cloudy, and Dust Storm
+        "Road_Condition",  # Categorical feature indicating road condition - can be used for classification analysis - can be encoded into categories - Dry, Wet, Potholes, Slippery, and Under Construction
+        "Officer_ID",  # Categorical feature indicating officer ID - can be dropped as it may not add significant value
+        "Issuing_Agency",  # Categorical feature indicating issuing agency - can be dropped as it may not add significant value
+        "License_Validity",  # Categorical feature indicating license validity - can be used for classification analysis
+        "Number_of_Passengers",  # Numerical feature indicating number of passengers - can be used for numerical feature capturing
+        "Helmet_Worn",  # Categorical feature indicating if helmet was worn - contains missing values so need to handle accordingly
+        "Seatbelt_Worn",  # Categorical feature indicating if seatbelt was worn - contains missing values so need to handle accordingly
+        "Traffic_Light_Status",  # Categorical feature indicating traffic light status - can be used for classification analysis - can be encoded into categories - Red, Yellow, Green
+        "Speed_Limit",  # Numerical feature indicating speed limit - can be used for numerical feature capturing
+        "Recorded_Speed",  # Numerical feature indicating recorded speed - can be used for numerical feature capturing
+        "Alcohol_Level",  # Numerical feature indicating alcohol level - contains missing values so need to handle accordingly
+        "Breathalyzer_Result",  # Categorical feature indicating breathalyzer result - contains missing values so need to handle accordingly
+        "Towed",  # Categorical feature indicating if vehicle was towed - can be used for classification analysis
+        "Fine_Paid",  # Categorical feature indicating if fine was paid - can be dropped as it happens after the violation
+        "Payment_Method",  # Categorical feature indicating payment method - can be dropped as it happens after the violation
+        "Court_Appearance_Required",  # Categorical feature indicating if court appearance is required - can be dropped as it happens after the violation
+        "Previous_Violations",  # Numerical feature indicating number of previous violations - can be used for numerical feature capturing
+        "Comments",  # Text feature containing comments - can be dropped as it may not add significant value
+    ]
+
+    # Dropping columns that may not add significant value or contain too many missing values
+    columns_to_drop = [
+        "Violation_ID",  # Unique identifier for each violation - can be dropped
+        "Fine_Amount",  # Numerical feature indicating fine amount - can be dropped since it tells about severity of violation
+        "Officer_ID",  # Categorical feature indicating officer ID - can be dropped as it may not add significant value
+        "Issuing_Agency",  # Categorical feature indicating issuing agency - can be dropped as it may not add significant value
+        "Fine_Paid",  # Categorical feature indicating if fine was paid - can be dropped as it happens after the violation
+        "Payment_Method",  # Categorical feature indicating payment method - can be dropped as it happens after the violation
+        "Court_Appearance_Required",  # Categorical feature indicating if court appearance is required - can be dropped as it happens after the violation
+        "Comments",  # Text feature containing comments - can be dropped as it may not add significant value
+    ]
     
-    Args:
-        df (pd.DataFrame): The input DataFrame to analyze.
-        
-    Returns:
-        None
-    """
-    print("Data Summary:")
-    print(df.describe())
+    # Target Column
+    target_column = "Violation_Type"
     
-    print("\nMissing Values:")
-    print(df.isnull().sum())
+    # Features to Encode
+    features_to_encode = [
+        "Location",
+        "Vehicle_Type",
+        "Vehicle_Color",
+        "Registration_State",
+        "Driver_Gender",
+        "License_Type",
+        "Weather_Condition",
+        "Road_Condition",
+        "Traffic_Light_Status",
+    ]
     
-    print("\nUnique Values per Column:")
-    print(df.nunique())
+    # Features to Impute Missing Values
+    features_to_impute = [
+        "Helmet_Worn",
+        "Seatbelt_Worn",
+    ]
     
-    print("\nUnique Violations:")
-    unique_violations = df['Violation_Type'].value_counts()
-    print(unique_violations)
-    
-    # Plotting the distribution of Violation Types
-    violation_fines = df.groupby("Violation_Type")["Fine_Amount"].sum().sort_values(ascending=False)
-    
-    plt.figure(figsize=(12, 6))
-    sns.barplot(x=violation_fines.index, y=violation_fines.values)
-    plt.xticks(rotation=90)
-    plt.title("Total Fine Amount by Violation Type")
-    plt.xlabel("Violation Type")
-    plt.ylabel("Total Fine Amount")
-    plt.tight_layout()
-    plt.show()
-        
+    print("\n" + "-" * 50 + " Data Analysis Complete " + "-" * 50)
+    print("\nRaw Feature Columns => \n", raw_feature_columns)
+    print("\nTarget Column => \n", target_column)
+    print("\nDropping Columns => \n", columns_to_drop)
+    print("\nFeatures to Encode => \n", features_to_encode)
+    print("\nFeatures to Impute Missing Values => \n", features_to_impute)
+    return df
+
+
 if __name__ == "__main__":
     data_path = "datasets/dataset.csv"
     df = pd.read_csv(data_path)
-    analyze_data(df)
+    analyze_and_cleanup_data(df)

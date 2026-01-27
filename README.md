@@ -9,7 +9,7 @@ The whole project is then deployed as a Streamlit application for interactive mo
 
 ---
 
-## About the Dataset
+## Dataset Description
 
 The dataset used in this project is a publically available Traffic Violations datasetsource from an open source data repository.
 
@@ -28,7 +28,7 @@ The dataset contains records of traffic violations along with driver, vehicle, l
 
 * `Drunk Driving`, `Driving without License`, `No Helmet`, `No Seatbelt`, `Signal Jumping`, `Wrong Parking`, `Overspeeding`, `Overloading`, `Other`
 
-## Machine Learning Models
+## Models Used
 
 The following classification models are implemented using the same dataset:
 
