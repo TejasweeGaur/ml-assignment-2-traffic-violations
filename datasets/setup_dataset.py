@@ -102,7 +102,13 @@ def download_dataset():
     search_dir = path if os.path.isdir(path) else DOWNLOAD_DATASET_TO
     csv_files = glob.glob(os.path.join(search_dir, '**', '*.csv'), recursive=True)
     if not csv_files:
-        raise Exception('No CSV file found in the downloaded dataset.')
+        # Check if this was an archive file that may have failed extraction
+        extraction_note = ''
+        if os.path.isfile(path):
+            lower = path.lower()
+            if lower.endswith(('.zip', '.tar', '.tar.gz', '.tgz')):
+                extraction_note = ' (archive extraction may have failed)'
+        raise Exception(f'No CSV file found in the downloaded dataset{extraction_note}.')
 
     # Prefer a single dataset CSV; take the first match
     src_csv = csv_files[0]
