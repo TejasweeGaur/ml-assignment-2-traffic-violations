@@ -215,3 +215,7 @@ __pypackages__/
 .kaggle_data/
 __pycache__/
 .ipynb_checkpoints/
+
+
+# Training and Testing CSV
+*.csv

@@ -79,7 +79,7 @@ def analyze_data():
 
     # Categorical features
     categorical_features = [
-        "Location",  # Categorical feature indicating location of violation - can be used for geospatial analysis - can be encoded into state codes
+        "Location",  ## Categorical feature indicating location of violation - can be used for geospatial analysis - can be encoded into state codes
         "Vehicle_Type",  # Categorical feature indicating type of vehicle - will be handled by one-hot encoding in preprocessing pipeline
         "Vehicle_Color",  # Categorical feature indicating color of vehicle - will be handled by one-hot encoding in preprocessing pipeline
         "Registration_State",  # Categorical feature indicating state of registration - can be used for geospatial analysis - will be handled by one-hot encoding in preprocessing pipeline
