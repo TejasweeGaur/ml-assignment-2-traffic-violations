@@ -1,6 +1,6 @@
-# Ruff Linting & Formatting
+# Ruff Linting
 
-This project includes a basic `pyproject.toml` Ruff configuration, a `requirements-dev.txt` with `ruff` and `pre-commit`, and a `.pre-commit-config.yaml` to run `ruff --fix` on commits.
+This project includes a basic `pyproject.toml` Ruff configuration, a `requirements-dev.txt` with `ruff` and `pre-commit`, and a `.pre-commit-config.yaml` to run Ruff linting with `ruff --fix` on commits.
 
 Quick setup:
 

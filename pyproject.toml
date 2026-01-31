@@ -1,5 +1,5 @@
 [tool.ruff]
 line-length = 88
 target-version = "py39"
-exclude = ["build", "dist", ".venv", "__pycache__", "datasets/**"]
+exclude = ["build", "dist", ".venv", "__pycache__"]
 extend-ignore = ["E203", "W503"]
