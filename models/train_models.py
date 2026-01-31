@@ -173,9 +173,6 @@ def create_artifacts_directories():
     Example:
         artifacts_dir, confusion_matrix_dir, classification_report_dir = create_artifacts_directories()
     """
-    """
-    Docstring for create_artifacts_directories
-    """
     print("Creating artifacts directory if it does not exist...")
     artifacts_dir = Path("models/artifacts")
     confusion_matrix_dir = Path("models/artifacts/confusion_matrices")
