@@ -3,7 +3,7 @@
 
 ## Problem Context
 
-Predict the **type of traffic violation** from structured inputs such as time of day, road category, vehicle type, speed, weather, enforcement source (ANPR camera / interceptor / e‑challan), location (city/sector/police station), driver attributes (age band, license class), and contextual signals (holiday/festival period, school zone).
+Predict the **type of traffic violation** from structured inputs such as time of day, road category, vehicle type, speed, weather, location (city/sector/police station), and driver attributes (age band, license class).
 
 **Violation Types (classes):**
 
@@ -17,7 +17,7 @@ Predict the **type of traffic violation** from structured inputs such as time of
 - **AUC** — for multi‑class, use **One‑vs‑Rest (OVR)** or **OVO** with **macro/weighted** averaging.
 - **Precision, Recall, F1** — **weighted** (handles imbalance) and, where needed, **macro** (treats all classes equally).
 - **MCC** (Matthews Correlation Coefficient) — robust single‑number summary even under imbalance.
-- **Confusion Matrix** — vital for understanding *which* violations are confused (e.g., `Wrong Lane` vs `Dangerous Driving`).
+- **Confusion Matrix** — vital for understanding which violations are confused (e.g., `Wrong Lane` vs `Dangerous Driving`).
 
 > **Note:** For enforcement, per‑class **Recall** might matter more for serious offenses (e.g., `Dangerous Driving`), while **Precision** matters to avoid false challans for minor violations.
 
@@ -36,8 +36,8 @@ A linear classifier modeling class probabilities via softmax (multinomial) or a 
 
 **Strengths:**
 
-- **Interpretability**: Inspect coefficients to explain *which* signals tilt predictions toward a class (great for policy memos).
-- **Calibration**: Often provides **well‑calibrated** probabilities after Platt/temperature scaling; useful for thresholding fines severity.
+- **Interpretability**: Inspect coefficients to explain which signals tilt predictions toward a class (great for policy memos).
+- **Calibration**: Often provides **well‑calibrated** probabilities after Platt/temperature scaling; useful for threshold fines severity.
 
 **Limitations:**
 
@@ -86,7 +86,7 @@ A non‑parametric method that predicts the class based on the majority vote of 
 
 - **Slow** at inference for large datasets (needs efficient indexing).
 - Sensitive to **feature scaling** and to **curse of dimensionality**; requires careful selection/weighting of features.
-- Struggles with high **cardinality** categoricals unless encoded thoughtfully.
+- Struggles with high **cardinality** categories unless encoded thoughtfully.
 
 ---
 
@@ -153,3 +153,56 @@ A powerful gradient boosting algorithm that builds trees sequentially, each one 
 
 - More **complex** to tune; risk of overfitting without validation discipline.
 - Slightly less interpretable; rely on **global** (importance/PDP) and **local** (SHAP) explainers.
+
+---
+
+## Processing Workflow
+
+The processing workflow typically involves the following steps:
+1. **Data Input**: Accepts and validates the input data required for processing.
+2. **Preprocessing**: Performs any necessary transformations or preparations on the input data.
+3. **Core Processing**: Executes the main logic or algorithm to achieve the desired outcome.
+4. **Postprocessing**: Applies any final adjustments or formatting to the processed data.
+5. **Output**: Returns the final result or stores it in the appropriate location.
+
+Each step in the workflow is designed to ensure efficiency, accuracy, and maintainability.
+This documentation provides an overview of the workflow and its purpose.
+
+1. **Load raw dataset**  
+  Import the dataset containing traffic violation records from **Kaggle**, ensuring it includes all relevant features such as time, location, vehicle type, and violation type.
+
+2. **Extract Date/Time features**  
+  Derive meaningful features like hour of the day, day of the week from the raw date/time column to capture temporal patterns.
+
+3. **Drop unused columns**  
+  Remove irrelevant or redundant columns (e.g., IDs, free-text notes) that do not contribute to the prediction task.
+
+4. **Split into train/test (80/20, stratified)**  
+  Divide the dataset into training and testing subsets, ensuring the class distribution remains consistent across both splits.
+
+5. **Build preprocessing pipeline**  
+  Design a pipeline to handle missing values, encode categorical variables, scale numeric features, and apply any necessary transformations.
+
+6. **Fit preprocessing only on training data**  
+  Apply the preprocessing pipeline exclusively to the training data to avoid data leakage into the test set.
+
+7. **Train model**  
+  Use the preprocessed training data to fit the selected machine learning model(s), optimizing **hyperparameters** as needed.
+
+8. **Evaluate on test data**  
+  Assess the model's performance on the test set using metrics like accuracy, precision, recall, F1-score, and confusion matrix to ensure generalization.
+
+```text
+Raw Dataset (Kaggle)
+        ↓
+data_analysis.py      → feature decisions
+        ↓
+data_preparation.py   → train.csv / test.csv
+        ↓
+data_preprocessing.py → ColumnTransformer
+        ↓
+MODEL TRAINING        → Trains all 6 models
+        ↓
+Saved .pkl files      → Saves the trained object so we don't have to run the training every time application runs
+        ↓
+Streamlit UI          → User Interface to upload and test all 6 models based on metrics and confusion matrix

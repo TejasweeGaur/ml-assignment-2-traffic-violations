@@ -1,5 +1,14 @@
 {
   "python-envs.defaultEnvManager": "ms-python.python:system",
   "python-envs.pythonProjects": [],
-  "cSpell.words": ["dayofweek"]
+  "cSpell.words": [
+    "dayofweek",
+    "Gurugram",
+    "Interpretability",
+    "Kaggle",
+    "multicollinearity",
+    "Multinomial",
+    "overfit",
+    "Streamlit"
+  ]
 }
