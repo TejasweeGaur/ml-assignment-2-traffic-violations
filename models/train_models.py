@@ -135,7 +135,7 @@ def train_machine_learning_models():
         print("Pipeline created successfully.")
 
         # Train model
-        training_time = train_and_save_model(X_train, y_train_enc, model_name, pipeline)
+        training_time = train_and_save_model(X_train, y_train_enc, model_name, pipeline, artifacts_dir)
 
         y_pred = evaluate_model_metrics(
             X_test, y_test_enc, model_performance, model_name, pipeline, training_time
@@ -353,7 +353,7 @@ def evaluate_model_metrics(
     return y_pred
 
 
-def train_and_save_model(X_train, y_train_enc, model_name, pipeline):
+def train_and_save_model(X_train, y_train_enc, model_name, pipeline, artifacts_dir):
     """
     Trains a machine learning model using the provided training data and pipeline,
     and saves the trained model to a file.
@@ -369,10 +369,11 @@ def train_and_save_model(X_train, y_train_enc, model_name, pipeline):
         pipeline (Pipeline): A machine learning pipeline that includes preprocessing
             steps and the model to be trained. The pipeline should be compatible
             with the `fit` method.
+        artifacts_dir (Path): The directory where the trained model will be saved.
     Behavior:
         - Prints messages to indicate the progress of training and saving the model.
         - Trains the model using the provided training data and pipeline.
-        - Saves the trained model to a file in the "models/artifacts/" directory.
+        - Saves the trained model to a file in the specified artifacts directory.
           The filename is generated based on the model name, converted to lowercase
           and spaces replaced with underscores, with a ".pkl" extension.
     Raises:
@@ -391,7 +392,7 @@ def train_and_save_model(X_train, y_train_enc, model_name, pipeline):
     # Save trained model
     try:
         print(f"Saving trained {model_name} to file...")
-        model_filename = f"models/artifacts/{model_name.lower().replace(' ', '_')}.pkl"
+        model_filename = artifacts_dir / f"{model_name.lower().replace(' ', '_')}.pkl"
         joblib.dump(pipeline, model_filename)
         print(f"Trained model saved as {model_filename}.\n")
         return training_time
