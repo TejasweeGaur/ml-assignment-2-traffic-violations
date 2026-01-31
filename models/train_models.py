@@ -8,7 +8,7 @@ import numpy as np
 import pandas as pd
 from data_analysis import analyze_data
 from data_preprocessing import build_preprocessor
-from sklearn.calibration import LabelEncoder
+from sklearn.preprocessing import LabelEncoder
 from sklearn.ensemble import RandomForestClassifier
 from sklearn.linear_model import LogisticRegression
 from sklearn.metrics import (
