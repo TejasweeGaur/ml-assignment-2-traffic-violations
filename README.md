@@ -113,7 +113,7 @@ For each model:
 
 These artifacts are stored under:
 ```text
-| models/artifacts/
+models/artifacts/
 ├── confusion_matrices/
 ├── classification_reports/
 ```
