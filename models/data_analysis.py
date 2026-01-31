@@ -1,31 +1,49 @@
 import pandas as pd
 
 
-def analyze_data():
+def analyze_data(display_comments=True):
+    """
+    Docstring for analyze_data
+
+    :param display_comments: Boolean indicating whether to print analysis comments
+    :return: A tuple containing the following in sequence:
+    
+        - df: The dataframe loaded from the dataset
+        - target_column: The name of the target column
+        - features_to_drop: List of features to be dropped
+        - numerical_features: List of numerical features
+        - categorical_features: List of categorical features
+        - date_and_time_features: List of date and time features
+    """
+
     data_path = "datasets/dataset.csv"
     df = pd.read_csv(data_path)
 
-    print("-" * 50, "Data Summary:", "-" * 50)
-    print("\nDescribe Dataset => \n", df.describe())
-    print("\nDataset Shape => \n", df.shape)
-    print("\nDataset Columns/Features => \n", df.columns)
-
-    print("\nMissing Values => \n", df.isnull().sum())
-
-    print("\nUnique Values per Column => \n", df.nunique())
-
-    print("\nUnique Violations => \n", df["Violation_Type"].value_counts())
-    print("\nUnique Locations => \n", df["Location"].value_counts())
-    print("\nUnique Vehicle Types => \n", df["Vehicle_Type"].value_counts())
-    print("\nUnique Vehicle Colors => \n", df["Vehicle_Color"].value_counts())
-    print("\nUnique Registration States => \n", df["Registration_State"].value_counts())
-    print("\nUnique Driver Gender => \n", df["Driver_Gender"].value_counts())
-    print("\nUnique License Type => \n", df["License_Type"].value_counts())
-    print("\nUnique Weather Condition => \n", df["Weather_Condition"].value_counts())
-    print("\nUnique Road Condition => \n", df["Road_Condition"].value_counts())
-    print(
-        "\nUnique Traffic Light Status => \n", df["Traffic_Light_Status"].value_counts()
-    )
+    if display_comments:
+        print("*" * 50, "Starting Data Analysis :", "*" * 50)
+        print("\nDescribe Dataset => \n", df.describe())
+        print("\nDataset Shape => \n", df.shape)
+        print("\nDataset Columns/Features => \n", df.columns)
+        print("\nMissing Values => \n", df.isnull().sum())
+        print("\nUnique Values per Column => \n", df.nunique())
+        print("\nUnique Violations => \n", df["Violation_Type"].value_counts())
+        print("\nUnique Locations => \n", df["Location"].value_counts())
+        print("\nUnique Vehicle Types => \n", df["Vehicle_Type"].value_counts())
+        print("\nUnique Vehicle Colors => \n", df["Vehicle_Color"].value_counts())
+        print(
+            "\nUnique Registration States => \n",
+            df["Registration_State"].value_counts(),
+        )
+        print("\nUnique Driver Gender => \n", df["Driver_Gender"].value_counts())
+        print("\nUnique License Type => \n", df["License_Type"].value_counts())
+        print(
+            "\nUnique Weather Condition => \n", df["Weather_Condition"].value_counts()
+        )
+        print("\nUnique Road Condition => \n", df["Road_Condition"].value_counts())
+        print(
+            "\nUnique Traffic Light Status => \n",
+            df["Traffic_Light_Status"].value_counts(),
+        )
 
     # Data Analysis based on above insights - type of features and their potential use cases
     # "Violation_ID",  # Unique identifier for each violation - can be dropped
@@ -113,12 +131,14 @@ def analyze_data():
         "Time",  # Time feature - can be used to extract hour, minute for analyzing the data around early mornings, late nights etc. leading to violations
     ]
 
-    print("\nTarget Column => \n", target_column)
-    print("\nDropping Features => \n", features_to_drop)
-    print("\nNumerical Features => \n", numerical_features)
-    print("\nCategorical Features => \n", categorical_features)
-    print("\nDate and Time Features => \n", date_and_time_features)
-    print("\n" + "-" * 50 + " Data Analysis Complete " + "-" * 50)
+    if display_comments:
+        print("\nTarget Column => \n", target_column)
+        print("\nDropping Features => \n", features_to_drop)
+        print("\nNumerical Features => \n", numerical_features)
+        print("\nCategorical Features => \n", categorical_features)
+        print("\nDate and Time Features => \n", date_and_time_features)
+        print("\n" + "*" * 50 + " Data Analysis Completed " + "*" * 50)
+
     return (
         df,
         target_column,
@@ -130,4 +150,4 @@ def analyze_data():
 
 
 if __name__ == "__main__":
-    analyze_data()
+    analyze_data(True)
