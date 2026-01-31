@@ -4,7 +4,31 @@ from sklearn.model_selection import train_test_split
 
 
 def data_preparation():
-    print("-" * 50 + " Starting data preparation " + "-" * 50)
+    """
+    Prepares the data for machine learning by performing the following steps:
+    1. Fetches data and metadata from the `data_analysis` module.
+    2. Creates a copy of the original dataframe to avoid modifying it directly.
+    3. Extracts date and time features (e.g., day of the week, hour of the day) from specified columns.
+    4. Drops the original date and time columns after extraction.
+    5. Removes unnecessary features specified in the `features_to_drop` list.
+    6. Separates the target column from the feature columns.
+    7. Splits the data into training and testing sets with an 80-20 split, ensuring stratified sampling.
+    8. Saves the training and testing data to CSV files for future use.
+    Returns:
+        tuple: A tuple containing the following:
+            - X_train (pd.DataFrame): The training feature set.
+            - X_test (pd.DataFrame): The testing feature set.
+            - y_train (pd.Series): The training target values.
+            - y_test (pd.Series): The testing target values.
+    Raises:
+        Any exceptions raised during data fetching, processing, or file operations.
+    Dependencies:
+        - Requires the `data_analysis` module to provide the data and metadata.
+        - Uses pandas for data manipulation and sklearn for data splitting.
+    Side Effects:
+        - Saves the prepared training data to 'datasets/train.csv'.
+        - Saves the prepared testing data to 'datasets/test.csv'.
+    """
 
     # Fetching data from data_analysis module
     print("Fetching data from data_analysis module...")
@@ -12,8 +36,8 @@ def data_preparation():
         df,
         target_column,
         features_to_drop,
-        numerical_features,
-        categorical_features,
+        _,
+        _,
         date_and_time_features,
     ) = da.analyze_data()
     print("Data fetched successfully.")
@@ -21,6 +45,7 @@ def data_preparation():
     print(f"Features to drop: {features_to_drop}")
     print(f"Date and time features: {date_and_time_features}")
 
+    print("*" * 50 + " Starting data preparation " + "*" * 50)
     # Assigning df to new variable so as to avoid modifying original dataframe
     print("Creating a copy of the original dataframe...")
     df_new = df.copy()
@@ -77,7 +102,7 @@ def data_preparation():
     test_df.to_csv("datasets/test.csv", index=False)
     print("Testing data saved to 'datasets/test.csv'")
 
-    print("-" * 50 + " Data preparation completed " + "-" * 50)
+    print("*" * 50 + " Data preparation completed " + "*" * 50)
     return X_train, X_test, y_train, y_test
 
 

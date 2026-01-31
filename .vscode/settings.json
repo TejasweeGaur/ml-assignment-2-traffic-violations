@@ -2,13 +2,17 @@
   "python-envs.defaultEnvManager": "ms-python.python:system",
   "python-envs.pythonProjects": [],
   "cSpell.words": [
+    "corrcoef",
     "dayofweek",
     "Gurugram",
     "Interpretability",
     "Kaggle",
+    "mlogloss",
     "multicollinearity",
     "Multinomial",
     "overfit",
+    "proba",
+    "softprob",
     "Streamlit"
   ]
 }

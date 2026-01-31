@@ -216,6 +216,13 @@ __pypackages__/
 __pycache__/
 .ipynb_checkpoints/
 
+# Compiled Python files
+*.c
+*.pyc
+*.pyo
+*.pyd
+__pycache__/
+*pkl
 
 # Training and Testing CSV
 *.csv
