@@ -3,7 +3,7 @@ import pandas as pd
 
 def analyze_data(display_comments=True):
     """
-    Docstring for analyze_data
+    Load the violations dataset, perform exploratory analysis, and derive feature groups for modeling.
 
     :param display_comments: Boolean indicating whether to print analysis comments
     :return: A tuple containing the following in sequence:
