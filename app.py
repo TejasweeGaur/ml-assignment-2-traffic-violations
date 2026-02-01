@@ -95,12 +95,35 @@ with tab_evaluate:
 
     @st.cache_data
     def load_test_data(file) -> pd.DataFrame:
-        return pd.read_csv(file)
+        try:
+            return pd.read_csv(file)
+        except pd.errors.EmptyDataError:
+            st.error("The uploaded CSV file is empty. Please upload a valid CSV file with data.")
+            st.stop()
+        except pd.errors.ParserError as e:
+            st.error(f"Failed to parse the CSV file. Please ensure it is a valid CSV format.\n\nError: {e}")
+            st.stop()
+        except Exception as e:
+            st.error(f"An unexpected error occurred while reading the CSV file: {e}")
+            st.stop()
 
     @st.cache_data
     def load_sample_test_data() -> pd.DataFrame:
         sample_path = DATASETS_DIR / "test.csv"
-        return pd.read_csv(sample_path)
+        try:
+            return pd.read_csv(sample_path)
+        except pd.errors.EmptyDataError:
+            st.error("The sample test dataset file is empty. Please check the datasets directory.")
+            st.stop()
+        except pd.errors.ParserError as e:
+            st.error(f"Failed to parse the sample test dataset. Please check the file format.\n\nError: {e}")
+            st.stop()
+        except FileNotFoundError:
+            st.error(f"Sample test dataset not found at {sample_path}. Please ensure the file exists.")
+            st.stop()
+        except Exception as e:
+            st.error(f"An unexpected error occurred while reading the sample test dataset: {e}")
+            st.stop()
 
     st.download_button(
         "Download Sample Test Dataset (CSV)",
