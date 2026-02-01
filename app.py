@@ -295,8 +295,11 @@ with tab_compare:
         help="Choose a metric to compare models visually",
     )
 
+    # Sort times in ascending order (faster models first), others in descending order
+    ascending = metric_to_plot in ["Training Time (s)", "Evaluation Time (s)"]
+
     plot_df = comparison_df[["Model", metric_to_plot]].sort_values(
-        by=metric_to_plot, ascending=False
+        by=metric_to_plot, ascending=ascending
     )
 
     st.bar_chart(plot_df.set_index("Model"))
