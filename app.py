@@ -101,7 +101,7 @@ with tab_evaluate:
             st.error("The uploaded CSV file is empty. Please upload a valid CSV file with data.")
             st.stop()
         except pd.errors.ParserError as e:
-            st.error(f"Failed to parse the CSV file. Please ensure it is a valid CSV format.\n\nError: {e}")
+            st.error(f"Failed to parse the CSV file. Please ensure it is a valid CSV format. Error: {e}")
             st.stop()
         except UnicodeDecodeError:
             st.error("The uploaded file contains invalid characters or encoding. Please ensure it is a valid UTF-8 encoded CSV file.")
@@ -119,7 +119,7 @@ with tab_evaluate:
             st.error("The sample test dataset file is empty. Please check the datasets directory.")
             st.stop()
         except pd.errors.ParserError as e:
-            st.error(f"Failed to parse the sample test dataset. Please check the file format.\n\nError: {e}")
+            st.error(f"Failed to parse the sample test dataset. Please check the file format. Error: {e}")
             st.stop()
         except FileNotFoundError:
             st.error(f"Sample test dataset not found at {sample_path}. Please ensure the file exists.")
