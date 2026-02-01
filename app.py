@@ -151,6 +151,20 @@ with tab_evaluate:
     X_test = test_df.drop(columns=[TARGET_COLUMN])
     y_test = test_df[TARGET_COLUMN]
 
+    # Validate that all violation types in the uploaded data were seen during training
+    known_classes = set(label_encoder.classes_)
+    uploaded_classes = set(y_test.unique())
+    unknown_classes = uploaded_classes - known_classes
+
+    if unknown_classes:
+        unknown_list = sorted(list(unknown_classes))
+        example_unknowns = ", ".join(map(str, unknown_list[:5]))
+        st.error(
+            "The uploaded data contains violation types that were not present in the "
+            "training data and cannot be evaluated.\n\n"
+            f"Unknown violation type(s) (showing up to 5): {example_unknowns}"
+        )
+        st.stop()
     y_test_enc = label_encoder.transform(y_test)
 
     st.subheader("Model Evaluation")
