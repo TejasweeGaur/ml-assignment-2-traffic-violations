@@ -134,6 +134,31 @@ The Streamlit web application provides the following features:
 
 ---
 
+## Security Considerations
+
+### Model File Deserialization
+
+This application uses `joblib.load()` to load pre-trained machine learning models stored as pickle files. 
+
+**⚠️ Security Risk**: Pickle deserialization can execute arbitrary Python code. This poses a security risk if pickle files from untrusted sources are loaded.
+
+**Current Mitigation**: 
+- All model files (`.pkl`) are committed directly to this repository and are trusted.
+- The application only loads models from the `models/artifacts/` directory.
+- Users do not have the ability to upload or specify custom model files.
+
+**Future Considerations**:
+- If this application is extended to allow users to upload custom model files, implement strict security controls:
+  - Use sandboxed environments or containers
+  - Implement file validation and scanning
+  - Consider alternative serialization formats (e.g., ONNX, SafeTensors)
+  - Add explicit user warnings about security risks
+  - Restrict file sources to trusted origins only
+
+For more information on pickle security, see: [Python Pickle Documentation](https://docs.python.org/3/library/pickle.html#module-pickle)
+
+---
+
 ## Technologies / Libraries Used
 
 - Python  
