@@ -1,0 +1,801 @@
+Location,Vehicle_Type,Vehicle_Color,Vehicle_Model_Year,Registration_State,Driver_Age,Driver_Gender,License_Type,Penalty_Points,Weather_Condition,Road_Condition,License_Validity,Number_of_Passengers,Helmet_Worn,Seatbelt_Worn,Traffic_Light_Status,Speed_Limit,Recorded_Speed,Alcohol_Level,Breathalyzer_Result,Towed,Previous_Violations,day_of_week,hour,Violation_Type
+Delhi,Bike,Green,2002,Gujarat,20,Female,Two-Wheeler,6,Rainy,Dry,Expired,2,No,Yes,Red,80,98,0.32,Negative,Yes,1,0,22,Overloading
+Punjab,Car,Grey,2022,Delhi,37,Male,Two-Wheeler,6,Rainy,Under Construction,Valid,4,Yes,No,Green,80,32,0.17,Not Conducted,No,1,1,16,Driving Without License
+West Bengal,Car,Yellow,2005,Gujarat,63,Male,Four-Wheeler,0,Clear,Potholes,Expired,1,,,Yellow,30,115,0.06,Positive,No,0,6,14,No Helmet
+West Bengal,Truck,Silver,2005,West Bengal,37,Other,Four-Wheeler,1,Rainy,Potholes,Expired,3,,Yes,Yellow,100,35,0.33,Not Conducted,No,0,3,20,Drunk Driving
+Punjab,Auto Rickshaw,Yellow,2015,Delhi,69,Male,Two-Wheeler,6,Cloudy,Wet,Valid,4,Yes,,Yellow,50,111,0.29,Not Conducted,Yes,4,6,1,No Seatbelt
+Gujarat,Bus,Blue,2020,Delhi,20,Male,Four-Wheeler,9,Clear,Wet,Expired,2,Yes,No,Yellow,50,98,0.25,Not Conducted,No,2,3,5,No Seatbelt
+Maharashtra,Scooter,Green,2021,Maharashtra,54,Male,Learner,3,Dust Storm,Dry,Suspended,5,No,Yes,Red,100,32,0.03,Positive,No,1,4,3,No Helmet
+Uttar Pradesh,Bus,Silver,1996,Tamil Nadu,64,Female,Learner,1,Clear,Dry,Expired,5,No,No,Red,40,42,0.41,Negative,Yes,5,0,22,Drunk Driving
+Karnataka,Car,White,2014,Maharashtra,47,Male,Four-Wheeler,8,Rainy,Wet,Expired,3,No,Yes,Yellow,80,34,0.26,Positive,Yes,4,5,7,Overloading
+West Bengal,Car,Black,2018,Punjab,46,Male,Learner,5,Clear,Under Construction,Valid,2,No,,Red,100,75,0.22,Not Conducted,Yes,5,6,21,Overloading
+Uttar Pradesh,Bike,Black,2012,Gujarat,32,Male,Heavy Vehicle,6,Clear,Under Construction,Valid,4,,No,Green,100,81,0.4,Not Conducted,No,2,5,11,Over-speeding
+Uttar Pradesh,Bike,Blue,1995,West Bengal,71,Female,Learner,4,Cloudy,Dry,Expired,1,No,Yes,Yellow,60,68,0.24,Not Conducted,Yes,4,5,22,Driving Without License
+Punjab,Car,Black,2012,Uttar Pradesh,59,Female,Learner,0,Cloudy,Slippery,Suspended,4,,No,Red,60,31,0.03,Negative,Yes,2,1,6,No Seatbelt
+Gujarat,Car,White,2016,Tamil Nadu,22,Female,Learner,7,Dust Storm,Dry,Suspended,4,Yes,,Red,30,118,0.12,Negative,Yes,4,1,17,Signal Jumping
+Uttar Pradesh,Car,White,2015,Karnataka,56,Female,Four-Wheeler,6,Foggy,Wet,Suspended,3,,No,Yellow,80,106,0.32,Positive,Yes,4,0,17,Drunk Driving
+West Bengal,Truck,Yellow,1997,Maharashtra,38,Female,Learner,5,Foggy,Dry,Expired,4,,No,Green,80,97,0.28,Positive,Yes,5,5,21,Wrong Parking
+Uttar Pradesh,Truck,Blue,1998,Maharashtra,60,Female,Four-Wheeler,2,Clear,Dry,Valid,4,No,,Yellow,60,66,0.11,Positive,No,3,5,7,No Helmet
+Uttar Pradesh,Auto Rickshaw,Yellow,2006,Delhi,72,Other,Learner,6,Dust Storm,Dry,Valid,4,,,Green,30,23,0.44,Positive,No,1,2,16,Signal Jumping
+West Bengal,Auto Rickshaw,Red,2021,West Bengal,61,Other,Commercial,6,Cloudy,Wet,Suspended,5,,,Red,80,42,0.08,Positive,Yes,4,4,14,Over-speeding
+Delhi,Truck,Green,2019,Gujarat,69,Other,Four-Wheeler,6,Cloudy,Potholes,Suspended,1,Yes,,Red,60,55,0.17,Not Conducted,Yes,0,1,23,No Seatbelt
+Karnataka,Scooter,Yellow,2009,Delhi,44,Male,Learner,4,Clear,Potholes,Expired,5,No,No,Yellow,30,48,0.31,Not Conducted,Yes,3,3,22,Using Mobile Phone
+Karnataka,Auto Rickshaw,Blue,2020,Maharashtra,60,Male,Commercial,8,Foggy,Dry,Suspended,5,,No,Yellow,100,51,0.12,Negative,Yes,0,3,10,Signal Jumping
+Karnataka,Auto Rickshaw,Grey,2000,Punjab,39,Female,Commercial,1,Foggy,Under Construction,Suspended,2,,,Green,30,117,0.13,Negative,No,1,1,13,No Seatbelt
+Gujarat,Auto Rickshaw,Green,2023,Karnataka,51,Male,Commercial,10,Clear,Wet,Suspended,1,,Yes,Green,40,39,0.24,Negative,No,3,4,3,Signal Jumping
+Gujarat,Bus,Silver,2002,Gujarat,37,Female,Four-Wheeler,2,Clear,Potholes,Expired,2,Yes,Yes,Yellow,100,72,0.12,Negative,No,1,2,9,Signal Jumping
+Maharashtra,Scooter,Yellow,1996,Punjab,23,Female,Commercial,7,Clear,Slippery,Suspended,1,Yes,,Green,80,35,0.22,Not Conducted,No,0,0,0,Driving Without License
+Tamil Nadu,Car,White,2014,Delhi,36,Other,Two-Wheeler,9,Rainy,Under Construction,Valid,3,Yes,,Yellow,100,22,0.14,Negative,No,3,2,13,Using Mobile Phone
+Gujarat,Auto Rickshaw,Blue,1997,Tamil Nadu,74,Male,Learner,8,Cloudy,Wet,Suspended,4,No,Yes,Green,40,30,0.34,Positive,Yes,5,3,20,No Helmet
+Maharashtra,Scooter,Silver,1995,Maharashtra,34,Other,Learner,2,Rainy,Under Construction,Expired,1,No,,Green,80,47,0.36,Positive,No,4,5,9,Signal Jumping
+West Bengal,Auto Rickshaw,Blue,2021,West Bengal,72,Male,Commercial,7,Rainy,Under Construction,Suspended,1,Yes,No,Yellow,40,49,0.36,Positive,No,4,3,22,Drunk Driving
+Uttar Pradesh,Bus,Yellow,1997,Karnataka,67,Male,Commercial,6,Dust Storm,Slippery,Suspended,3,Yes,No,Green,100,98,0.49,Positive,No,1,5,12,Drunk Driving
+Punjab,Bike,Red,2003,Punjab,59,Other,Two-Wheeler,7,Foggy,Under Construction,Suspended,2,Yes,,Yellow,80,94,0.18,Not Conducted,Yes,1,6,21,Using Mobile Phone
+Maharashtra,Scooter,Silver,2019,Gujarat,20,Male,Two-Wheeler,0,Cloudy,Slippery,Suspended,5,No,No,Green,60,33,0.34,Positive,Yes,0,4,10,Over-speeding
+Tamil Nadu,Scooter,White,2021,Tamil Nadu,29,Other,Two-Wheeler,2,Dust Storm,Under Construction,Expired,5,No,Yes,Red,40,73,0.48,Positive,Yes,4,3,0,Wrong Parking
+Delhi,Bus,Red,2007,West Bengal,49,Female,Learner,7,Cloudy,Potholes,Expired,3,No,Yes,Red,60,63,0.15,Negative,Yes,4,2,13,Using Mobile Phone
+Gujarat,Bus,Black,2016,Uttar Pradesh,53,Female,Heavy Vehicle,8,Foggy,Under Construction,Suspended,2,,No,Green,80,65,0.09,Not Conducted,No,2,6,1,Drunk Driving
+Delhi,Car,Yellow,2007,Punjab,34,Female,Heavy Vehicle,3,Foggy,Wet,Expired,4,,,Yellow,30,35,0.41,Positive,No,5,4,13,No Seatbelt
+Maharashtra,Scooter,Blue,2018,Uttar Pradesh,28,Female,Two-Wheeler,3,Rainy,Under Construction,Suspended,2,No,Yes,Yellow,40,120,0.02,Negative,Yes,1,2,8,No Helmet
+Tamil Nadu,Scooter,Yellow,2007,Gujarat,72,Other,Four-Wheeler,4,Dust Storm,Under Construction,Valid,3,Yes,,Green,40,72,0.34,Negative,Yes,5,3,17,Overloading
+Delhi,Bus,Silver,2000,Uttar Pradesh,23,Female,Heavy Vehicle,4,Rainy,Dry,Suspended,4,No,Yes,Green,80,120,0.15,Positive,No,2,2,16,Wrong Parking
+Uttar Pradesh,Truck,Yellow,2001,Punjab,24,Male,Learner,9,Foggy,Potholes,Valid,4,No,No,Red,80,44,0.19,Positive,Yes,4,6,14,Drunk Driving
+Delhi,Scooter,Red,2019,Karnataka,30,Female,Learner,8,Dust Storm,Wet,Valid,3,,No,Yellow,60,92,0.4,Negative,No,4,2,15,Signal Jumping
+Karnataka,Bus,Grey,2005,Punjab,45,Female,Heavy Vehicle,8,Rainy,Wet,Valid,1,No,,Yellow,100,99,0.25,Negative,No,0,0,7,Overloading
+Punjab,Bike,Red,2016,Tamil Nadu,41,Other,Four-Wheeler,3,Rainy,Potholes,Valid,5,,,Yellow,40,115,0.07,Positive,No,0,2,10,Wrong Parking
+Karnataka,Scooter,Yellow,2021,Maharashtra,19,Other,Four-Wheeler,5,Clear,Slippery,Suspended,3,No,Yes,Green,40,115,0.09,Not Conducted,Yes,4,1,12,Driving Without License
+Punjab,Auto Rickshaw,Silver,1997,Karnataka,52,Other,Four-Wheeler,9,Clear,Dry,Expired,5,No,No,Green,100,87,0.15,Not Conducted,No,5,4,21,Signal Jumping
+Uttar Pradesh,Scooter,White,2012,Karnataka,70,Male,Learner,3,Foggy,Potholes,Suspended,2,,No,Yellow,60,82,0.23,Negative,No,0,4,6,Overloading
+West Bengal,Bus,White,2012,Maharashtra,53,Female,Learner,4,Dust Storm,Under Construction,Suspended,4,No,,Red,50,111,0.11,Negative,No,1,3,22,Drunk Driving
+Maharashtra,Scooter,Green,2017,Gujarat,18,Other,Heavy Vehicle,2,Clear,Under Construction,Expired,3,,No,Yellow,60,23,0.36,Negative,No,1,6,11,Signal Jumping
+Maharashtra,Bike,Blue,2023,Maharashtra,75,Female,Two-Wheeler,2,Dust Storm,Potholes,Suspended,5,No,No,Red,30,37,0.22,Positive,Yes,0,0,20,Signal Jumping
+Gujarat,Bus,Grey,2020,Uttar Pradesh,74,Other,Two-Wheeler,1,Cloudy,Wet,Valid,1,,,Green,40,84,0.05,Negative,No,5,6,15,Drunk Driving
+Gujarat,Bike,White,1997,West Bengal,21,Male,Commercial,8,Rainy,Under Construction,Valid,4,Yes,Yes,Yellow,50,34,0.46,Positive,No,2,0,21,No Seatbelt
+Uttar Pradesh,Car,White,2001,Punjab,30,Female,Four-Wheeler,5,Dust Storm,Wet,Suspended,3,No,,Green,60,108,0.02,Negative,No,4,3,22,Using Mobile Phone
+Gujarat,Scooter,Black,2015,Delhi,70,Female,Heavy Vehicle,10,Rainy,Dry,Valid,1,No,No,Yellow,30,118,0.36,Positive,Yes,1,3,6,No Helmet
+Gujarat,Bus,Blue,2014,Punjab,71,Other,Learner,6,Foggy,Slippery,Suspended,2,Yes,,Green,30,56,0.25,Not Conducted,Yes,3,0,2,Over-speeding
+Tamil Nadu,Truck,Green,2008,Punjab,67,Male,Commercial,1,Dust Storm,Dry,Expired,2,,No,Green,50,62,0.04,Positive,Yes,0,4,8,Signal Jumping
+Karnataka,Car,White,1999,Gujarat,69,Female,Two-Wheeler,7,Foggy,Under Construction,Expired,4,Yes,Yes,Yellow,60,81,0.33,Positive,No,1,3,23,Drunk Driving
+West Bengal,Scooter,Silver,1999,Karnataka,67,Male,Two-Wheeler,6,Rainy,Wet,Suspended,1,Yes,Yes,Green,100,88,0.43,Negative,No,0,3,6,Driving Without License
+Tamil Nadu,Scooter,Red,2015,Uttar Pradesh,37,Other,Two-Wheeler,9,Foggy,Potholes,Suspended,4,,Yes,Green,60,50,0.1,Positive,No,2,0,19,Overloading
+Gujarat,Auto Rickshaw,Yellow,1997,Tamil Nadu,68,Male,Heavy Vehicle,7,Clear,Slippery,Valid,1,,No,Green,80,52,0.17,Negative,No,3,6,10,Wrong Parking
+West Bengal,Bus,Silver,2021,Punjab,43,Male,Four-Wheeler,5,Dust Storm,Slippery,Expired,5,,No,Red,80,42,0.2,Negative,Yes,1,4,7,No Helmet
+Maharashtra,Truck,Grey,2009,West Bengal,72,Other,Four-Wheeler,2,Dust Storm,Slippery,Valid,4,Yes,Yes,Green,80,24,0.39,Not Conducted,No,5,0,11,Signal Jumping
+West Bengal,Bike,Blue,2008,Punjab,27,Male,Commercial,0,Foggy,Slippery,Expired,4,Yes,No,Yellow,100,107,0.19,Not Conducted,Yes,1,2,16,Driving Without License
+Gujarat,Bus,Green,2014,Tamil Nadu,31,Male,Four-Wheeler,9,Dust Storm,Wet,Suspended,1,,Yes,Red,50,70,0.12,Positive,Yes,0,3,15,Drunk Driving
+Punjab,Car,Green,2019,West Bengal,44,Female,Learner,9,Clear,Slippery,Valid,3,No,No,Green,30,33,0.2,Negative,Yes,2,5,10,Drunk Driving
+Maharashtra,Auto Rickshaw,Grey,2015,Maharashtra,59,Female,Learner,3,Cloudy,Dry,Expired,3,No,Yes,Green,80,45,0.05,Positive,Yes,1,3,19,Over-speeding
+Delhi,Truck,Yellow,2011,Karnataka,46,Other,Heavy Vehicle,6,Clear,Potholes,Expired,3,No,No,Yellow,60,120,0.34,Not Conducted,No,3,3,23,No Seatbelt
+Karnataka,Truck,Grey,2003,West Bengal,30,Male,Commercial,10,Rainy,Under Construction,Suspended,1,,No,Red,30,95,0.09,Positive,Yes,2,5,1,Over-speeding
+Tamil Nadu,Bike,Black,2001,Uttar Pradesh,19,Male,Heavy Vehicle,4,Clear,Dry,Valid,3,No,,Green,60,50,0.45,Not Conducted,Yes,5,6,3,Signal Jumping
+Karnataka,Truck,Blue,2008,West Bengal,39,Male,Four-Wheeler,2,Foggy,Slippery,Suspended,5,Yes,,Red,60,23,0.21,Negative,No,0,5,8,Using Mobile Phone
+Gujarat,Bus,White,2012,Uttar Pradesh,21,Other,Heavy Vehicle,9,Foggy,Dry,Valid,3,,No,Red,80,63,0.02,Negative,No,0,0,20,Drunk Driving
+Delhi,Auto Rickshaw,Yellow,1998,Maharashtra,67,Male,Learner,7,Cloudy,Potholes,Valid,5,,No,Red,80,20,0.47,Not Conducted,No,4,1,13,Signal Jumping
+Uttar Pradesh,Car,Blue,2001,West Bengal,42,Female,Four-Wheeler,9,Foggy,Potholes,Expired,3,Yes,Yes,Red,40,77,0.06,Positive,Yes,3,4,16,Overloading
+Delhi,Bus,White,2020,Uttar Pradesh,24,Other,Two-Wheeler,6,Clear,Slippery,Valid,5,Yes,,Yellow,30,84,0.13,Positive,Yes,1,5,4,No Seatbelt
+Tamil Nadu,Auto Rickshaw,White,2005,Maharashtra,41,Other,Learner,2,Foggy,Potholes,Expired,4,No,,Red,40,44,0.39,Positive,Yes,4,6,6,Drunk Driving
+Gujarat,Bus,Yellow,2001,Gujarat,46,Female,Commercial,4,Rainy,Slippery,Suspended,2,,No,Green,100,98,0.3,Positive,Yes,3,2,14,Signal Jumping
+Punjab,Bus,Grey,2001,Karnataka,52,Female,Four-Wheeler,3,Rainy,Dry,Expired,1,No,Yes,Green,100,111,0.31,Positive,Yes,2,0,21,Overloading
+Delhi,Bike,Yellow,2011,Tamil Nadu,25,Other,Two-Wheeler,0,Rainy,Slippery,Expired,4,Yes,No,Yellow,40,83,0.0,Positive,Yes,0,1,13,Over-speeding
+Uttar Pradesh,Car,Red,2022,Karnataka,47,Male,Heavy Vehicle,10,Dust Storm,Potholes,Valid,5,Yes,,Green,40,55,0.45,Negative,Yes,3,3,2,Overloading
+Tamil Nadu,Bike,White,1995,Maharashtra,58,Other,Heavy Vehicle,0,Clear,Wet,Valid,5,Yes,Yes,Red,30,110,0.33,Negative,No,2,5,6,Drunk Driving
+West Bengal,Truck,Silver,2002,Maharashtra,22,Female,Heavy Vehicle,5,Cloudy,Under Construction,Valid,2,Yes,,Red,80,68,0.42,Not Conducted,No,3,5,9,No Seatbelt
+Maharashtra,Auto Rickshaw,White,2000,Uttar Pradesh,34,Female,Commercial,2,Foggy,Potholes,Expired,1,No,,Red,50,55,0.19,Positive,No,5,0,22,No Seatbelt
+Tamil Nadu,Auto Rickshaw,Green,2006,Karnataka,39,Female,Four-Wheeler,10,Rainy,Under Construction,Suspended,1,Yes,No,Green,100,98,0.39,Not Conducted,Yes,0,6,7,Over-speeding
+Gujarat,Car,Grey,2004,Tamil Nadu,72,Male,Four-Wheeler,0,Cloudy,Slippery,Valid,2,,,Yellow,60,41,0.18,Negative,No,3,6,9,Wrong Parking
+Uttar Pradesh,Bus,Black,2007,Delhi,37,Other,Two-Wheeler,6,Rainy,Slippery,Expired,3,No,No,Yellow,80,21,0.32,Positive,Yes,0,6,12,Signal Jumping
+Maharashtra,Scooter,Yellow,2013,Delhi,23,Other,Learner,3,Dust Storm,Wet,Valid,2,No,,Red,80,52,0.33,Negative,Yes,3,3,4,No Seatbelt
+Delhi,Bus,Grey,2007,West Bengal,36,Female,Four-Wheeler,3,Foggy,Slippery,Suspended,2,,No,Green,40,86,0.37,Negative,Yes,3,4,9,Drunk Driving
+Tamil Nadu,Bike,Grey,2003,Maharashtra,70,Female,Commercial,1,Foggy,Slippery,Expired,2,No,No,Yellow,100,84,0.07,Not Conducted,No,4,2,22,Driving Without License
+Gujarat,Bike,Black,2018,Punjab,63,Male,Two-Wheeler,9,Dust Storm,Under Construction,Suspended,4,No,No,Yellow,60,42,0.24,Negative,Yes,1,2,19,Drunk Driving
+Delhi,Truck,Yellow,2020,Punjab,41,Other,Heavy Vehicle,6,Dust Storm,Under Construction,Expired,4,,No,Green,50,100,0.35,Negative,Yes,1,1,23,Drunk Driving
+Tamil Nadu,Bike,Green,2019,Karnataka,49,Male,Commercial,0,Rainy,Under Construction,Valid,1,Yes,Yes,Green,80,116,0.01,Positive,No,0,1,16,Driving Without License
+Maharashtra,Car,Silver,2000,Punjab,37,Male,Heavy Vehicle,9,Dust Storm,Wet,Valid,3,Yes,No,Green,40,26,0.1,Not Conducted,Yes,2,6,20,Drunk Driving
+Maharashtra,Bike,Blue,2022,Delhi,55,Other,Four-Wheeler,4,Foggy,Dry,Suspended,3,No,No,Red,80,87,0.06,Not Conducted,No,0,1,13,Overloading
+Gujarat,Car,Silver,1995,Karnataka,24,Female,Two-Wheeler,2,Dust Storm,Under Construction,Valid,3,Yes,,Green,100,111,0.27,Negative,No,1,1,15,Over-speeding
+Gujarat,Car,Grey,2011,West Bengal,68,Female,Heavy Vehicle,10,Dust Storm,Potholes,Valid,3,Yes,No,Yellow,80,30,0.05,Positive,Yes,4,3,14,Over-speeding
+Punjab,Auto Rickshaw,White,2014,Punjab,55,Male,Heavy Vehicle,9,Dust Storm,Dry,Valid,5,Yes,,Yellow,60,56,0.08,Positive,No,1,3,14,Drunk Driving
+Punjab,Scooter,Yellow,2004,Punjab,59,Female,Four-Wheeler,6,Cloudy,Under Construction,Suspended,2,No,No,Green,30,37,0.18,Not Conducted,Yes,3,0,7,No Helmet
+Punjab,Auto Rickshaw,Grey,2003,Delhi,36,Male,Learner,0,Rainy,Slippery,Valid,3,Yes,,Yellow,40,89,0.45,Not Conducted,No,3,0,4,Signal Jumping
+Karnataka,Bus,Black,2008,West Bengal,52,Female,Heavy Vehicle,3,Cloudy,Under Construction,Suspended,2,No,No,Red,100,27,0.21,Not Conducted,No,5,5,16,Signal Jumping
+Karnataka,Car,Green,1997,Tamil Nadu,48,Male,Learner,7,Clear,Slippery,Suspended,5,Yes,Yes,Green,80,92,0.38,Negative,Yes,2,5,12,Overloading
+Tamil Nadu,Auto Rickshaw,Silver,1997,Maharashtra,73,Male,Learner,8,Foggy,Wet,Expired,1,,Yes,Red,80,26,0.07,Negative,Yes,3,4,12,No Seatbelt
+Tamil Nadu,Bike,Silver,2007,Delhi,70,Female,Four-Wheeler,1,Clear,Slippery,Suspended,3,Yes,,Yellow,80,108,0.1,Not Conducted,Yes,4,3,12,Overloading
+Maharashtra,Auto Rickshaw,Black,2020,Tamil Nadu,61,Female,Learner,0,Clear,Potholes,Valid,4,,,Green,40,101,0.47,Not Conducted,No,1,3,19,Wrong Parking
+Gujarat,Car,Grey,1999,Uttar Pradesh,30,Female,Two-Wheeler,4,Dust Storm,Slippery,Valid,3,Yes,,Red,80,29,0.1,Positive,Yes,4,4,15,Driving Without License
+Tamil Nadu,Bike,Yellow,2020,Delhi,35,Other,Two-Wheeler,5,Clear,Slippery,Expired,1,No,Yes,Green,30,118,0.11,Not Conducted,No,0,0,2,Overloading
+Punjab,Bus,Blue,2008,Maharashtra,51,Female,Heavy Vehicle,3,Foggy,Dry,Expired,5,Yes,Yes,Yellow,30,102,0.06,Positive,Yes,0,4,21,No Helmet
+Karnataka,Auto Rickshaw,Yellow,2009,Uttar Pradesh,75,Other,Four-Wheeler,3,Dust Storm,Under Construction,Expired,2,,,Green,40,58,0.07,Negative,No,3,2,3,Over-speeding
+Punjab,Bus,Green,2015,Delhi,30,Male,Commercial,10,Rainy,Slippery,Expired,1,Yes,No,Red,100,97,0.27,Not Conducted,No,5,4,13,No Seatbelt
+Delhi,Auto Rickshaw,Green,1997,Maharashtra,65,Male,Heavy Vehicle,7,Foggy,Wet,Suspended,4,,,Red,100,22,0.07,Not Conducted,Yes,5,1,6,Over-speeding
+Uttar Pradesh,Scooter,Green,2013,Tamil Nadu,21,Female,Two-Wheeler,4,Clear,Potholes,Expired,2,,No,Green,50,53,0.46,Positive,Yes,4,6,23,Driving Without License
+Maharashtra,Auto Rickshaw,Red,2002,Punjab,28,Female,Four-Wheeler,4,Cloudy,Dry,Expired,4,,,Red,30,30,0.06,Positive,Yes,1,2,9,Wrong Parking
+Tamil Nadu,Bike,Blue,1998,Punjab,40,Other,Two-Wheeler,8,Clear,Dry,Expired,2,,Yes,Green,60,108,0.45,Negative,No,2,2,8,Signal Jumping
+Tamil Nadu,Car,Yellow,2003,Delhi,54,Female,Two-Wheeler,6,Foggy,Potholes,Suspended,2,No,Yes,Yellow,50,94,0.27,Not Conducted,No,4,5,11,Signal Jumping
+West Bengal,Auto Rickshaw,Red,2009,Punjab,34,Other,Heavy Vehicle,8,Foggy,Under Construction,Valid,5,,,Yellow,50,38,0.16,Positive,Yes,5,0,3,Using Mobile Phone
+Karnataka,Car,White,2002,Gujarat,69,Female,Commercial,10,Dust Storm,Slippery,Expired,2,,,Red,30,44,0.05,Positive,Yes,0,1,3,Driving Without License
+Maharashtra,Truck,Yellow,2006,Gujarat,52,Female,Learner,5,Foggy,Wet,Expired,3,No,Yes,Green,40,77,0.15,Positive,Yes,4,1,6,Using Mobile Phone
+Tamil Nadu,Truck,Blue,2016,Uttar Pradesh,25,Female,Learner,10,Cloudy,Slippery,Valid,3,,,Green,50,92,0.33,Positive,Yes,2,5,17,Using Mobile Phone
+Punjab,Bus,Grey,1998,Maharashtra,34,Female,Four-Wheeler,5,Dust Storm,Wet,Valid,4,,,Yellow,60,92,0.49,Negative,No,0,0,21,Wrong Parking
+Punjab,Scooter,Black,2018,Delhi,52,Male,Four-Wheeler,7,Clear,Wet,Expired,5,Yes,,Yellow,50,20,0.11,Not Conducted,No,5,2,2,Using Mobile Phone
+Delhi,Truck,Yellow,2012,Delhi,31,Other,Commercial,6,Rainy,Potholes,Expired,1,,Yes,Green,50,33,0.48,Positive,No,2,3,13,Overloading
+Tamil Nadu,Scooter,Green,2017,West Bengal,72,Other,Two-Wheeler,7,Dust Storm,Wet,Expired,3,No,,Yellow,30,77,0.22,Not Conducted,Yes,2,2,10,Using Mobile Phone
+West Bengal,Auto Rickshaw,Green,2016,Delhi,20,Male,Commercial,5,Rainy,Potholes,Expired,2,No,No,Red,60,39,0.12,Positive,Yes,5,0,2,Over-speeding
+Tamil Nadu,Auto Rickshaw,Blue,1998,Delhi,26,Other,Heavy Vehicle,10,Clear,Dry,Valid,4,,Yes,Green,50,108,0.15,Not Conducted,Yes,5,3,11,No Helmet
+Maharashtra,Bus,Grey,2017,Tamil Nadu,54,Male,Learner,1,Cloudy,Potholes,Suspended,1,Yes,Yes,Yellow,80,31,0.25,Not Conducted,Yes,5,4,4,Overloading
+Punjab,Car,Red,2009,Tamil Nadu,25,Other,Heavy Vehicle,7,Clear,Dry,Expired,4,No,Yes,Red,100,38,0.18,Positive,Yes,0,4,2,Driving Without License
+Maharashtra,Auto Rickshaw,Grey,2007,Punjab,62,Other,Commercial,1,Dust Storm,Potholes,Valid,5,No,Yes,Yellow,60,79,0.41,Negative,No,2,3,18,Over-speeding
+Gujarat,Car,Blue,2001,West Bengal,55,Female,Two-Wheeler,5,Rainy,Wet,Expired,1,No,Yes,Green,60,44,0.39,Not Conducted,No,4,2,19,Overloading
+Uttar Pradesh,Truck,Silver,2015,Karnataka,22,Female,Commercial,10,Cloudy,Under Construction,Suspended,5,No,Yes,Red,30,67,0.36,Negative,No,2,1,1,Over-speeding
+Gujarat,Truck,Yellow,2002,West Bengal,24,Other,Two-Wheeler,9,Cloudy,Dry,Valid,5,Yes,Yes,Yellow,60,42,0.27,Positive,No,2,6,19,Wrong Parking
+Karnataka,Bike,Green,2005,Uttar Pradesh,22,Female,Four-Wheeler,9,Foggy,Wet,Suspended,5,Yes,No,Yellow,40,45,0.03,Not Conducted,No,3,3,18,Drunk Driving
+Maharashtra,Car,Black,2021,Karnataka,70,Other,Learner,8,Cloudy,Under Construction,Expired,4,Yes,No,Green,50,22,0.22,Not Conducted,Yes,0,6,1,Over-speeding
+Maharashtra,Auto Rickshaw,Blue,2016,Maharashtra,67,Male,Two-Wheeler,8,Foggy,Wet,Suspended,2,,Yes,Yellow,100,26,0.37,Negative,Yes,4,3,18,Using Mobile Phone
+Gujarat,Bike,Silver,2008,West Bengal,37,Female,Four-Wheeler,9,Dust Storm,Under Construction,Suspended,5,No,,Green,60,64,0.42,Negative,No,0,0,20,No Seatbelt
+Delhi,Scooter,Yellow,2008,Maharashtra,66,Other,Two-Wheeler,9,Cloudy,Dry,Expired,3,,No,Green,60,82,0.32,Negative,No,2,0,7,Drunk Driving
+Delhi,Scooter,Yellow,1996,Punjab,22,Female,Four-Wheeler,10,Dust Storm,Slippery,Suspended,5,Yes,,Green,60,29,0.38,Not Conducted,No,2,6,6,No Seatbelt
+Karnataka,Scooter,Green,2022,Tamil Nadu,61,Female,Learner,2,Clear,Slippery,Expired,5,Yes,Yes,Red,100,59,0.33,Not Conducted,No,0,3,10,No Helmet
+Gujarat,Auto Rickshaw,Red,2018,Maharashtra,53,Other,Two-Wheeler,7,Clear,Potholes,Suspended,1,No,,Yellow,50,38,0.2,Positive,Yes,3,0,17,Driving Without License
+Gujarat,Bus,Grey,2016,Delhi,64,Female,Two-Wheeler,4,Clear,Slippery,Suspended,2,,No,Yellow,60,77,0.23,Negative,No,2,0,18,Overloading
+Karnataka,Scooter,Green,2008,West Bengal,36,Female,Four-Wheeler,6,Cloudy,Potholes,Suspended,1,,,Yellow,40,95,0.24,Not Conducted,Yes,1,6,7,Signal Jumping
+Gujarat,Bike,Blue,2012,Maharashtra,53,Female,Commercial,7,Clear,Dry,Valid,3,Yes,,Red,60,102,0.28,Negative,Yes,4,4,16,No Seatbelt
+Gujarat,Auto Rickshaw,Silver,2006,Maharashtra,72,Female,Two-Wheeler,2,Foggy,Slippery,Suspended,2,,Yes,Yellow,60,88,0.48,Negative,Yes,2,6,12,Overloading
+Punjab,Bus,Grey,2012,Gujarat,23,Male,Commercial,5,Clear,Wet,Valid,3,No,Yes,Green,30,20,0.03,Not Conducted,Yes,2,3,16,Wrong Parking
+Delhi,Auto Rickshaw,Blue,1998,Gujarat,18,Female,Commercial,5,Clear,Under Construction,Suspended,3,Yes,No,Red,30,82,0.06,Positive,Yes,2,5,6,Signal Jumping
+Tamil Nadu,Bike,Silver,2008,Punjab,33,Other,Four-Wheeler,8,Dust Storm,Slippery,Expired,3,No,,Yellow,40,100,0.39,Not Conducted,No,3,5,11,No Helmet
+West Bengal,Truck,White,2011,Tamil Nadu,51,Other,Learner,8,Cloudy,Dry,Valid,3,No,Yes,Green,50,75,0.17,Not Conducted,No,1,2,7,Signal Jumping
+Uttar Pradesh,Bike,White,2002,Gujarat,39,Other,Commercial,1,Dust Storm,Slippery,Suspended,3,,,Red,60,96,0.27,Negative,Yes,2,4,3,Signal Jumping
+Gujarat,Car,Yellow,1995,Punjab,48,Female,Commercial,6,Clear,Slippery,Valid,4,,No,Green,60,99,0.25,Positive,Yes,3,6,8,Over-speeding
+Uttar Pradesh,Truck,White,2023,Gujarat,65,Male,Learner,5,Cloudy,Dry,Valid,1,Yes,No,Yellow,100,58,0.22,Positive,No,0,3,7,No Helmet
+Uttar Pradesh,Bike,Grey,1996,Tamil Nadu,61,Female,Commercial,7,Cloudy,Dry,Suspended,2,,,Yellow,30,48,0.46,Not Conducted,No,5,0,11,Driving Without License
+Maharashtra,Truck,Grey,2023,Gujarat,73,Male,Learner,7,Cloudy,Dry,Expired,2,Yes,Yes,Red,60,65,0.21,Not Conducted,No,5,2,5,No Seatbelt
+Gujarat,Bike,Red,1997,Tamil Nadu,72,Other,Two-Wheeler,4,Foggy,Under Construction,Suspended,3,Yes,No,Yellow,50,90,0.31,Positive,No,3,1,12,Driving Without License
+Gujarat,Bus,Blue,2000,West Bengal,38,Other,Four-Wheeler,9,Clear,Wet,Valid,3,No,No,Red,60,110,0.33,Not Conducted,Yes,3,2,0,No Helmet
+Delhi,Auto Rickshaw,Grey,2013,Punjab,46,Female,Two-Wheeler,7,Cloudy,Dry,Valid,1,No,No,Green,30,27,0.01,Not Conducted,Yes,0,6,9,Over-speeding
+Karnataka,Bus,White,2014,Karnataka,40,Female,Heavy Vehicle,10,Cloudy,Dry,Suspended,1,,No,Yellow,50,96,0.47,Positive,No,0,0,14,Overloading
+Tamil Nadu,Car,Yellow,2022,Karnataka,43,Female,Heavy Vehicle,1,Clear,Dry,Valid,2,,No,Red,80,63,0.35,Positive,No,0,6,8,Overloading
+Karnataka,Bus,Green,2023,Maharashtra,28,Female,Two-Wheeler,8,Dust Storm,Slippery,Valid,2,No,No,Yellow,80,86,0.42,Positive,Yes,1,5,6,Signal Jumping
+Maharashtra,Bike,Grey,2010,Gujarat,29,Other,Commercial,6,Foggy,Potholes,Expired,1,No,No,Yellow,100,77,0.5,Positive,No,5,0,23,Signal Jumping
+Karnataka,Auto Rickshaw,Red,2022,Delhi,62,Other,Heavy Vehicle,8,Cloudy,Slippery,Expired,2,No,Yes,Green,80,86,0.12,Negative,Yes,0,6,12,Wrong Parking
+Tamil Nadu,Scooter,Green,2002,Tamil Nadu,21,Female,Commercial,8,Clear,Dry,Valid,5,No,Yes,Red,40,64,0.43,Positive,Yes,1,6,16,Using Mobile Phone
+Uttar Pradesh,Auto Rickshaw,Green,1995,Tamil Nadu,43,Male,Commercial,5,Rainy,Dry,Suspended,4,No,No,Red,100,27,0.35,Positive,Yes,5,4,8,No Helmet
+Delhi,Truck,Silver,1998,Karnataka,42,Female,Two-Wheeler,5,Rainy,Potholes,Valid,4,No,No,Yellow,60,28,0.09,Not Conducted,Yes,3,2,14,Overloading
+Karnataka,Truck,Red,2015,Gujarat,58,Male,Two-Wheeler,8,Cloudy,Under Construction,Expired,1,Yes,Yes,Red,40,47,0.33,Not Conducted,No,4,4,8,No Helmet
+Punjab,Truck,Green,2014,Punjab,25,Male,Two-Wheeler,0,Foggy,Under Construction,Valid,4,No,,Yellow,80,93,0.25,Negative,Yes,2,4,4,Signal Jumping
+Maharashtra,Bike,Red,2006,West Bengal,75,Male,Learner,2,Clear,Wet,Suspended,3,No,No,Red,50,115,0.47,Negative,No,4,1,16,Overloading
+West Bengal,Car,Silver,1997,Maharashtra,67,Other,Commercial,7,Cloudy,Slippery,Valid,1,Yes,No,Green,40,30,0.19,Positive,Yes,0,4,9,No Helmet
+Uttar Pradesh,Bike,Red,2005,Gujarat,36,Male,Heavy Vehicle,10,Clear,Dry,Suspended,1,No,No,Green,100,55,0.12,Not Conducted,No,2,1,7,Driving Without License
+West Bengal,Scooter,Blue,2008,Punjab,36,Female,Learner,6,Cloudy,Wet,Valid,1,Yes,Yes,Red,60,62,0.24,Not Conducted,Yes,3,0,15,Drunk Driving
+Punjab,Truck,Black,2011,Delhi,68,Male,Heavy Vehicle,4,Foggy,Wet,Suspended,2,No,Yes,Green,30,115,0.18,Not Conducted,No,5,1,21,Overloading
+West Bengal,Scooter,Grey,1996,Delhi,58,Male,Commercial,10,Rainy,Potholes,Suspended,1,Yes,Yes,Red,40,47,0.23,Positive,Yes,2,4,23,No Seatbelt
+Maharashtra,Auto Rickshaw,White,2019,Tamil Nadu,34,Male,Commercial,10,Foggy,Wet,Expired,5,Yes,,Red,80,43,0.48,Not Conducted,No,1,3,7,No Seatbelt
+Punjab,Bus,Blue,2004,Punjab,55,Female,Four-Wheeler,8,Rainy,Potholes,Valid,5,,,Green,60,36,0.12,Negative,Yes,5,4,2,No Helmet
+Maharashtra,Car,Grey,2004,Tamil Nadu,27,Female,Two-Wheeler,4,Cloudy,Wet,Expired,1,Yes,No,Green,30,47,0.13,Negative,No,1,6,10,Wrong Parking
+Uttar Pradesh,Bike,Red,2001,Punjab,46,Male,Commercial,1,Cloudy,Under Construction,Expired,3,,Yes,Red,100,40,0.08,Negative,Yes,0,3,2,Wrong Parking
+Tamil Nadu,Auto Rickshaw,Yellow,2019,Karnataka,60,Male,Four-Wheeler,10,Cloudy,Under Construction,Expired,3,No,Yes,Green,30,91,0.31,Not Conducted,No,4,6,5,No Helmet
+Karnataka,Auto Rickshaw,Red,1997,Delhi,64,Other,Learner,4,Clear,Under Construction,Expired,2,,,Yellow,40,62,0.05,Negative,No,4,0,5,No Seatbelt
+Punjab,Truck,Green,2019,Gujarat,71,Male,Two-Wheeler,1,Foggy,Potholes,Valid,3,,No,Yellow,30,42,0.03,Positive,No,4,1,13,No Seatbelt
+Uttar Pradesh,Truck,Green,2016,West Bengal,71,Female,Four-Wheeler,0,Dust Storm,Under Construction,Valid,1,No,Yes,Red,80,36,0.0,Not Conducted,Yes,5,0,3,Wrong Parking
+Uttar Pradesh,Bike,Silver,1997,Uttar Pradesh,75,Male,Two-Wheeler,3,Rainy,Wet,Expired,4,Yes,No,Red,80,64,0.05,Negative,No,0,5,14,Over-speeding
+Uttar Pradesh,Auto Rickshaw,Black,2000,Uttar Pradesh,69,Male,Heavy Vehicle,10,Clear,Potholes,Valid,1,No,Yes,Yellow,60,119,0.17,Not Conducted,Yes,1,2,6,Over-speeding
+Karnataka,Scooter,Yellow,2018,Uttar Pradesh,26,Female,Learner,7,Rainy,Potholes,Suspended,5,No,Yes,Yellow,40,40,0.37,Positive,No,3,3,13,Using Mobile Phone
+Tamil Nadu,Scooter,Silver,2016,Delhi,41,Female,Heavy Vehicle,10,Clear,Under Construction,Expired,5,Yes,Yes,Yellow,100,106,0.18,Not Conducted,No,2,0,15,Over-speeding
+Gujarat,Truck,Green,2012,Gujarat,22,Other,Commercial,6,Foggy,Wet,Valid,4,,,Red,50,80,0.16,Positive,Yes,0,4,6,Driving Without License
+Uttar Pradesh,Truck,Black,1998,Delhi,28,Other,Heavy Vehicle,7,Rainy,Slippery,Valid,5,No,,Yellow,30,44,0.05,Not Conducted,No,2,5,19,Over-speeding
+Punjab,Car,Yellow,2018,West Bengal,18,Female,Learner,8,Foggy,Under Construction,Valid,2,Yes,Yes,Green,100,101,0.31,Not Conducted,No,4,6,21,No Seatbelt
+Punjab,Truck,Blue,2015,Maharashtra,26,Female,Commercial,10,Rainy,Wet,Suspended,2,,No,Green,60,60,0.32,Negative,Yes,1,0,7,Using Mobile Phone
+Uttar Pradesh,Car,Black,2004,Tamil Nadu,52,Female,Commercial,6,Dust Storm,Slippery,Expired,4,No,Yes,Yellow,100,88,0.29,Positive,Yes,5,2,7,Using Mobile Phone
+West Bengal,Auto Rickshaw,Silver,2015,Delhi,64,Other,Commercial,2,Dust Storm,Dry,Suspended,5,No,No,Yellow,30,32,0.13,Positive,Yes,2,5,4,Wrong Parking
+Uttar Pradesh,Truck,Silver,2000,West Bengal,18,Male,Heavy Vehicle,1,Rainy,Potholes,Expired,1,No,No,Red,60,26,0.07,Negative,Yes,1,0,16,Using Mobile Phone
+Karnataka,Scooter,Silver,2000,Tamil Nadu,72,Female,Four-Wheeler,4,Foggy,Slippery,Expired,2,No,No,Red,50,89,0.32,Negative,Yes,0,0,13,Overloading
+Tamil Nadu,Bike,Black,2019,Tamil Nadu,41,Other,Four-Wheeler,10,Rainy,Wet,Expired,4,No,,Red,60,51,0.07,Positive,Yes,0,4,12,No Seatbelt
+Uttar Pradesh,Bus,Green,2009,West Bengal,22,Other,Commercial,7,Rainy,Dry,Expired,5,No,No,Green,80,49,0.11,Positive,No,0,3,21,Drunk Driving
+Karnataka,Bus,Green,2014,Gujarat,36,Male,Learner,2,Foggy,Potholes,Suspended,3,,No,Green,40,32,0.47,Not Conducted,No,2,2,9,No Helmet
+Gujarat,Bus,Black,2000,Karnataka,73,Female,Commercial,5,Cloudy,Potholes,Valid,5,Yes,Yes,Green,60,55,0.38,Negative,No,0,1,1,Wrong Parking
+West Bengal,Bike,Blue,2018,Punjab,47,Male,Four-Wheeler,0,Clear,Slippery,Valid,1,Yes,Yes,Red,40,35,0.07,Not Conducted,Yes,5,3,0,Overloading
+Tamil Nadu,Truck,Silver,2023,Delhi,28,Female,Heavy Vehicle,6,Rainy,Wet,Valid,4,,No,Green,50,70,0.31,Not Conducted,No,3,4,17,Using Mobile Phone
+Maharashtra,Scooter,Black,2010,West Bengal,72,Male,Commercial,9,Clear,Wet,Expired,4,Yes,,Yellow,60,120,0.26,Not Conducted,Yes,5,3,17,Signal Jumping
+Delhi,Car,Black,2015,Karnataka,45,Other,Commercial,3,Cloudy,Potholes,Suspended,4,Yes,No,Green,30,70,0.14,Negative,No,0,2,3,No Helmet
+Gujarat,Bus,Red,2004,Gujarat,46,Other,Learner,4,Clear,Dry,Suspended,2,No,No,Green,100,76,0.34,Negative,No,1,4,21,Using Mobile Phone
+Tamil Nadu,Auto Rickshaw,Black,2016,Punjab,70,Female,Commercial,1,Dust Storm,Under Construction,Expired,1,Yes,,Yellow,80,72,0.28,Positive,No,1,4,14,Signal Jumping
+Uttar Pradesh,Auto Rickshaw,Silver,2003,Maharashtra,67,Other,Heavy Vehicle,9,Rainy,Potholes,Valid,4,No,,Green,30,103,0.2,Positive,No,2,5,4,Drunk Driving
+Punjab,Truck,White,2012,Uttar Pradesh,64,Other,Four-Wheeler,9,Foggy,Dry,Valid,3,Yes,Yes,Yellow,80,21,0.49,Not Conducted,Yes,2,3,1,No Seatbelt
+Karnataka,Bus,Grey,2016,Punjab,37,Female,Learner,1,Foggy,Dry,Suspended,2,,,Yellow,100,38,0.44,Not Conducted,No,2,5,13,Signal Jumping
+Maharashtra,Scooter,White,2019,Tamil Nadu,21,Other,Learner,6,Clear,Slippery,Expired,5,No,No,Red,40,37,0.34,Not Conducted,Yes,3,3,12,Signal Jumping
+Gujarat,Auto Rickshaw,Black,2020,Uttar Pradesh,63,Male,Four-Wheeler,5,Rainy,Under Construction,Suspended,3,Yes,Yes,Green,80,96,0.22,Positive,Yes,5,2,8,Using Mobile Phone
+West Bengal,Auto Rickshaw,Red,2020,Punjab,59,Other,Two-Wheeler,1,Dust Storm,Slippery,Valid,5,Yes,,Red,60,57,0.46,Negative,Yes,2,1,8,Using Mobile Phone
+Maharashtra,Scooter,White,2012,Tamil Nadu,48,Female,Commercial,0,Dust Storm,Dry,Expired,3,No,Yes,Red,60,75,0.14,Not Conducted,Yes,3,1,18,Overloading
+Karnataka,Scooter,Silver,2000,Tamil Nadu,58,Male,Heavy Vehicle,10,Clear,Dry,Suspended,5,Yes,,Yellow,50,73,0.38,Negative,No,5,5,23,Overloading
+Uttar Pradesh,Bus,Black,1997,Delhi,48,Female,Two-Wheeler,0,Rainy,Under Construction,Expired,2,No,Yes,Red,30,80,0.29,Negative,Yes,0,6,9,Signal Jumping
+Gujarat,Scooter,Blue,2010,Karnataka,54,Female,Four-Wheeler,7,Rainy,Wet,Suspended,5,,No,Yellow,50,77,0.21,Positive,Yes,4,2,12,Signal Jumping
+Uttar Pradesh,Scooter,Grey,2017,Tamil Nadu,20,Male,Four-Wheeler,1,Clear,Dry,Valid,4,Yes,Yes,Yellow,40,36,0.34,Not Conducted,Yes,0,2,6,No Helmet
+Delhi,Car,Blue,2008,Maharashtra,64,Male,Commercial,3,Foggy,Dry,Expired,4,,Yes,Red,100,108,0.27,Negative,Yes,4,3,0,No Helmet
+Tamil Nadu,Car,Blue,2010,Gujarat,35,Male,Commercial,3,Clear,Potholes,Suspended,2,Yes,No,Red,30,101,0.25,Not Conducted,No,5,1,11,Overloading
+Delhi,Car,Red,2016,Delhi,43,Male,Four-Wheeler,1,Cloudy,Slippery,Suspended,5,No,No,Yellow,50,93,0.36,Negative,Yes,3,6,5,No Seatbelt
+Gujarat,Truck,Grey,1998,Tamil Nadu,61,Other,Commercial,8,Rainy,Slippery,Suspended,2,No,No,Green,100,118,0.12,Positive,No,5,4,16,Driving Without License
+Karnataka,Bus,Green,1998,Delhi,65,Male,Commercial,8,Clear,Slippery,Valid,5,,No,Red,100,95,0.04,Negative,No,2,5,6,No Helmet
+Uttar Pradesh,Scooter,Red,2013,Tamil Nadu,40,Male,Two-Wheeler,2,Dust Storm,Wet,Valid,5,Yes,No,Red,60,67,0.46,Negative,Yes,0,2,22,Signal Jumping
+Delhi,Auto Rickshaw,Green,2003,Karnataka,56,Other,Two-Wheeler,8,Cloudy,Under Construction,Valid,2,No,No,Red,100,20,0.08,Not Conducted,No,2,1,4,No Seatbelt
+Gujarat,Auto Rickshaw,Grey,2004,Uttar Pradesh,20,Male,Four-Wheeler,8,Dust Storm,Potholes,Valid,1,,No,Green,30,41,0.35,Positive,No,2,1,20,Wrong Parking
+Punjab,Bus,Blue,1999,Punjab,28,Other,Learner,2,Foggy,Wet,Expired,4,Yes,No,Red,50,36,0.2,Negative,No,2,1,15,No Seatbelt
+Delhi,Car,Black,2014,West Bengal,45,Other,Learner,2,Clear,Slippery,Expired,1,No,,Green,60,81,0.2,Negative,No,5,6,13,No Seatbelt
+Karnataka,Truck,Blue,2015,Tamil Nadu,42,Male,Heavy Vehicle,8,Cloudy,Dry,Expired,2,,No,Red,80,108,0.49,Not Conducted,No,5,5,6,No Seatbelt
+Karnataka,Scooter,Grey,2020,Delhi,38,Other,Commercial,5,Cloudy,Dry,Expired,2,,Yes,Red,30,87,0.46,Negative,Yes,0,4,18,No Helmet
+Delhi,Auto Rickshaw,Silver,2010,Delhi,62,Female,Four-Wheeler,3,Clear,Under Construction,Expired,3,No,Yes,Red,80,56,0.44,Negative,Yes,2,0,1,No Helmet
+Delhi,Bus,Yellow,2020,Tamil Nadu,43,Female,Commercial,6,Rainy,Slippery,Suspended,3,Yes,No,Red,60,53,0.37,Positive,No,1,6,9,Over-speeding
+Delhi,Truck,Blue,2016,Delhi,63,Female,Commercial,10,Dust Storm,Slippery,Valid,3,No,Yes,Red,30,98,0.16,Positive,No,2,3,2,Wrong Parking
+Uttar Pradesh,Truck,Green,2010,Delhi,28,Male,Two-Wheeler,8,Rainy,Potholes,Expired,1,,No,Yellow,50,33,0.03,Negative,Yes,0,4,8,Using Mobile Phone
+Gujarat,Bus,Blue,2015,Gujarat,50,Other,Commercial,4,Dust Storm,Wet,Valid,2,,No,Red,60,106,0.38,Positive,No,5,5,21,Driving Without License
+Maharashtra,Scooter,Blue,2023,Gujarat,70,Male,Commercial,5,Rainy,Dry,Expired,1,No,,Green,40,75,0.02,Positive,No,4,6,7,Wrong Parking
+Karnataka,Bike,White,2009,Delhi,46,Other,Two-Wheeler,2,Rainy,Slippery,Expired,3,Yes,Yes,Red,30,76,0.34,Not Conducted,Yes,5,1,4,Using Mobile Phone
+Uttar Pradesh,Bike,Red,2016,Gujarat,51,Other,Learner,4,Foggy,Wet,Suspended,2,Yes,No,Green,60,60,0.38,Positive,No,0,6,13,Signal Jumping
+Delhi,Bus,Grey,2000,Karnataka,35,Female,Two-Wheeler,5,Dust Storm,Dry,Valid,1,Yes,Yes,Red,30,101,0.17,Not Conducted,No,2,6,21,No Seatbelt
+West Bengal,Car,White,2011,Uttar Pradesh,66,Female,Two-Wheeler,8,Dust Storm,Dry,Valid,1,,Yes,Red,100,31,0.42,Positive,No,1,4,14,Driving Without License
+Tamil Nadu,Car,Yellow,2014,West Bengal,61,Other,Learner,7,Cloudy,Under Construction,Valid,3,No,No,Red,40,112,0.12,Positive,No,5,5,18,Using Mobile Phone
+West Bengal,Truck,Red,2021,West Bengal,61,Other,Learner,0,Foggy,Under Construction,Expired,4,Yes,Yes,Yellow,30,38,0.27,Positive,Yes,0,5,8,Using Mobile Phone
+Gujarat,Scooter,Blue,2001,Maharashtra,56,Male,Heavy Vehicle,6,Rainy,Slippery,Expired,4,Yes,,Green,60,27,0.27,Negative,Yes,5,3,9,Over-speeding
+Maharashtra,Bus,Green,2019,Punjab,42,Other,Heavy Vehicle,9,Dust Storm,Potholes,Suspended,1,No,,Yellow,60,28,0.17,Not Conducted,No,2,0,7,Wrong Parking
+Punjab,Auto Rickshaw,Red,2016,Tamil Nadu,48,Female,Heavy Vehicle,0,Dust Storm,Wet,Valid,2,,,Green,60,33,0.26,Positive,No,3,3,12,Drunk Driving
+Delhi,Bus,Green,2004,Delhi,41,Other,Heavy Vehicle,1,Clear,Slippery,Valid,2,Yes,,Red,60,37,0.31,Negative,No,3,1,19,Driving Without License
+Gujarat,Truck,Yellow,2013,West Bengal,33,Female,Four-Wheeler,0,Cloudy,Wet,Suspended,2,,No,Yellow,100,97,0.2,Positive,Yes,2,5,14,Driving Without License
+Punjab,Truck,Green,2023,Punjab,42,Female,Learner,2,Cloudy,Dry,Valid,4,,No,Yellow,40,104,0.0,Negative,Yes,3,6,9,Using Mobile Phone
+Delhi,Bike,Black,1999,Uttar Pradesh,40,Female,Commercial,4,Dust Storm,Wet,Valid,3,,,Yellow,100,105,0.23,Not Conducted,Yes,2,3,11,Wrong Parking
+Delhi,Bus,Blue,2002,Uttar Pradesh,33,Female,Two-Wheeler,0,Foggy,Under Construction,Expired,5,Yes,No,Red,100,112,0.05,Positive,Yes,1,3,8,No Seatbelt
+Gujarat,Truck,Red,2013,Maharashtra,48,Female,Two-Wheeler,3,Cloudy,Slippery,Suspended,2,,,Yellow,50,87,0.05,Negative,Yes,0,5,5,Wrong Parking
+Gujarat,Truck,Grey,2008,West Bengal,35,Male,Two-Wheeler,10,Dust Storm,Under Construction,Expired,2,No,Yes,Green,60,71,0.48,Positive,No,2,0,9,Driving Without License
+Punjab,Bus,Yellow,2017,Gujarat,34,Female,Learner,0,Rainy,Potholes,Valid,4,,Yes,Green,60,83,0.2,Positive,No,5,3,8,Over-speeding
+West Bengal,Bus,Black,2015,Punjab,25,Other,Commercial,1,Dust Storm,Under Construction,Expired,3,No,Yes,Green,30,89,0.2,Positive,No,0,5,22,No Helmet
+Maharashtra,Bus,Green,2010,Tamil Nadu,49,Other,Heavy Vehicle,5,Dust Storm,Slippery,Suspended,3,,No,Yellow,30,25,0.08,Positive,No,3,0,19,No Seatbelt
+Punjab,Bus,Silver,2001,West Bengal,69,Male,Learner,0,Foggy,Slippery,Valid,2,No,Yes,Green,40,56,0.16,Positive,Yes,4,2,3,Signal Jumping
+Punjab,Scooter,Red,2020,Tamil Nadu,46,Male,Heavy Vehicle,10,Clear,Potholes,Valid,5,,,Green,50,76,0.21,Not Conducted,No,4,2,20,Wrong Parking
+West Bengal,Bus,White,1998,Maharashtra,35,Other,Four-Wheeler,8,Cloudy,Under Construction,Valid,3,,No,Green,30,41,0.42,Positive,Yes,0,2,9,Drunk Driving
+Tamil Nadu,Scooter,Grey,1995,Punjab,44,Other,Two-Wheeler,3,Foggy,Wet,Expired,3,,Yes,Yellow,60,89,0.29,Not Conducted,Yes,5,0,14,Overloading
+Uttar Pradesh,Truck,White,2018,Maharashtra,18,Male,Four-Wheeler,9,Clear,Wet,Valid,5,Yes,Yes,Green,60,104,0.05,Negative,Yes,3,1,11,Overloading
+Uttar Pradesh,Bike,Black,2014,Karnataka,33,Male,Commercial,5,Dust Storm,Dry,Expired,1,,No,Red,60,111,0.2,Not Conducted,No,1,5,3,No Seatbelt
+Tamil Nadu,Truck,Grey,2012,Karnataka,59,Female,Four-Wheeler,3,Cloudy,Wet,Valid,4,Yes,Yes,Red,100,50,0.08,Positive,Yes,2,5,14,Over-speeding
+Punjab,Auto Rickshaw,Yellow,2017,Gujarat,48,Female,Commercial,10,Dust Storm,Potholes,Expired,1,No,,Green,60,55,0.26,Negative,Yes,1,4,16,Wrong Parking
+Tamil Nadu,Truck,Green,1995,Maharashtra,20,Female,Heavy Vehicle,8,Dust Storm,Dry,Expired,1,Yes,Yes,Yellow,30,42,0.21,Not Conducted,Yes,0,2,17,Using Mobile Phone
+Maharashtra,Car,Grey,2007,Delhi,26,Other,Four-Wheeler,1,Clear,Slippery,Suspended,5,,Yes,Green,80,114,0.31,Positive,Yes,5,3,18,Using Mobile Phone
+Maharashtra,Auto Rickshaw,Black,2018,Gujarat,26,Female,Learner,3,Rainy,Slippery,Expired,1,No,,Green,100,61,0.34,Not Conducted,Yes,3,5,5,Signal Jumping
+Uttar Pradesh,Scooter,Silver,2023,Uttar Pradesh,26,Male,Heavy Vehicle,2,Rainy,Dry,Valid,2,Yes,No,Red,40,20,0.26,Negative,No,4,5,21,Drunk Driving
+Maharashtra,Scooter,White,2014,West Bengal,49,Male,Four-Wheeler,4,Rainy,Under Construction,Suspended,2,Yes,,Yellow,50,25,0.29,Positive,Yes,3,4,11,Drunk Driving
+Punjab,Bus,Green,2021,Karnataka,18,Female,Four-Wheeler,0,Clear,Wet,Expired,4,,,Green,40,64,0.23,Not Conducted,Yes,4,5,3,Driving Without License
+Punjab,Auto Rickshaw,Red,1999,Delhi,44,Other,Four-Wheeler,3,Cloudy,Slippery,Suspended,5,,,Green,80,62,0.22,Not Conducted,Yes,5,2,0,Signal Jumping
+West Bengal,Bike,Green,2020,Tamil Nadu,42,Other,Heavy Vehicle,4,Clear,Under Construction,Valid,5,Yes,,Red,60,29,0.44,Not Conducted,Yes,2,5,17,Overloading
+Karnataka,Bike,Black,2014,West Bengal,35,Male,Commercial,8,Rainy,Slippery,Expired,4,,,Green,40,71,0.34,Not Conducted,Yes,2,1,0,Drunk Driving
+Delhi,Bike,Grey,2003,Uttar Pradesh,74,Male,Four-Wheeler,8,Cloudy,Potholes,Expired,4,,No,Green,60,21,0.12,Not Conducted,No,4,0,6,Signal Jumping
+Tamil Nadu,Bike,Silver,2015,Tamil Nadu,37,Male,Heavy Vehicle,3,Rainy,Dry,Expired,5,,Yes,Yellow,40,108,0.43,Negative,Yes,5,0,13,No Helmet
+Delhi,Bus,Black,2021,Tamil Nadu,53,Female,Four-Wheeler,2,Dust Storm,Slippery,Valid,1,No,Yes,Red,30,25,0.42,Positive,No,0,6,6,Over-speeding
+Delhi,Bike,Green,2007,Karnataka,62,Male,Commercial,9,Clear,Dry,Expired,2,Yes,No,Red,30,96,0.1,Not Conducted,No,4,1,23,Wrong Parking
+Karnataka,Bus,White,2005,Punjab,30,Other,Four-Wheeler,10,Dust Storm,Potholes,Valid,3,No,,Green,100,43,0.5,Positive,Yes,3,6,16,Over-speeding
+Gujarat,Truck,Yellow,2007,Karnataka,63,Other,Commercial,3,Rainy,Wet,Expired,2,No,,Red,50,84,0.48,Not Conducted,Yes,0,5,1,No Helmet
+Uttar Pradesh,Bike,Red,2007,Gujarat,62,Female,Four-Wheeler,2,Rainy,Dry,Expired,1,Yes,Yes,Green,60,78,0.49,Positive,Yes,2,3,8,No Helmet
+Gujarat,Truck,Red,2016,Uttar Pradesh,52,Female,Four-Wheeler,10,Cloudy,Wet,Valid,1,Yes,,Green,60,79,0.17,Not Conducted,Yes,0,0,16,Drunk Driving
+Karnataka,Bus,White,2010,Karnataka,64,Male,Four-Wheeler,9,Cloudy,Wet,Expired,2,,,Red,40,61,0.17,Positive,Yes,4,0,18,No Seatbelt
+Tamil Nadu,Truck,Blue,2016,Tamil Nadu,26,Male,Two-Wheeler,3,Dust Storm,Under Construction,Valid,2,No,No,Yellow,40,80,0.2,Positive,No,4,5,8,Signal Jumping
+Tamil Nadu,Truck,Black,1995,Delhi,57,Other,Learner,8,Clear,Potholes,Expired,4,No,Yes,Red,50,70,0.08,Not Conducted,Yes,2,1,2,No Helmet
+Karnataka,Bike,Black,2019,Maharashtra,38,Female,Learner,9,Dust Storm,Slippery,Suspended,1,Yes,,Red,40,105,0.15,Negative,Yes,4,0,14,No Helmet
+West Bengal,Scooter,Blue,2010,West Bengal,43,Male,Learner,5,Rainy,Under Construction,Valid,2,,No,Red,80,44,0.02,Positive,Yes,0,5,14,Over-speeding
+Punjab,Auto Rickshaw,Blue,2008,Delhi,68,Female,Learner,1,Dust Storm,Dry,Suspended,1,Yes,Yes,Green,40,58,0.17,Not Conducted,No,4,0,7,Driving Without License
+Maharashtra,Truck,Silver,2022,Karnataka,75,Other,Commercial,7,Cloudy,Slippery,Expired,4,No,,Yellow,40,53,0.02,Negative,Yes,2,6,6,No Helmet
+Maharashtra,Scooter,Blue,2004,Tamil Nadu,37,Female,Heavy Vehicle,9,Clear,Under Construction,Valid,5,Yes,No,Green,50,82,0.06,Positive,Yes,3,0,2,Using Mobile Phone
+Delhi,Scooter,White,2006,Gujarat,52,Female,Heavy Vehicle,0,Rainy,Slippery,Suspended,5,No,,Red,60,71,0.39,Positive,Yes,2,1,15,No Seatbelt
+Punjab,Scooter,Blue,1999,Maharashtra,44,Female,Heavy Vehicle,1,Dust Storm,Slippery,Valid,3,No,Yes,Green,80,110,0.23,Not Conducted,No,4,5,6,Using Mobile Phone
+Delhi,Bus,Red,2003,Tamil Nadu,40,Other,Commercial,3,Foggy,Under Construction,Expired,1,No,Yes,Green,50,106,0.37,Not Conducted,Yes,3,3,5,Over-speeding
+Karnataka,Auto Rickshaw,Red,2016,West Bengal,42,Female,Heavy Vehicle,2,Clear,Under Construction,Suspended,4,,No,Red,40,49,0.34,Negative,Yes,1,1,19,Drunk Driving
+Delhi,Car,Black,2012,West Bengal,53,Female,Heavy Vehicle,2,Cloudy,Slippery,Expired,2,,,Red,80,61,0.33,Not Conducted,No,4,2,5,Using Mobile Phone
+Maharashtra,Bike,Silver,2008,Maharashtra,35,Other,Two-Wheeler,9,Cloudy,Wet,Suspended,5,No,No,Green,100,110,0.14,Negative,Yes,5,2,7,Wrong Parking
+West Bengal,Truck,Blue,2008,Tamil Nadu,72,Other,Four-Wheeler,1,Foggy,Dry,Suspended,4,No,No,Yellow,100,39,0.3,Positive,No,1,1,1,Signal Jumping
+Delhi,Auto Rickshaw,Blue,2016,Karnataka,46,Other,Heavy Vehicle,0,Rainy,Slippery,Suspended,1,,,Green,50,23,0.38,Negative,No,3,1,5,Using Mobile Phone
+Uttar Pradesh,Truck,Red,2020,Punjab,38,Female,Learner,5,Clear,Potholes,Valid,5,No,,Green,40,34,0.34,Negative,No,5,3,8,Signal Jumping
+Gujarat,Bike,Blue,2023,Punjab,23,Other,Commercial,5,Cloudy,Slippery,Suspended,5,No,No,Green,40,104,0.03,Positive,No,1,5,5,Driving Without License
+Tamil Nadu,Truck,Silver,2006,Delhi,69,Other,Heavy Vehicle,3,Cloudy,Wet,Expired,1,,Yes,Yellow,60,64,0.08,Not Conducted,Yes,2,5,18,Wrong Parking
+Tamil Nadu,Bike,Red,2019,Maharashtra,56,Male,Commercial,3,Dust Storm,Potholes,Suspended,1,Yes,,Yellow,40,83,0.23,Negative,Yes,3,2,17,No Helmet
+Maharashtra,Scooter,Black,2017,Karnataka,50,Male,Heavy Vehicle,2,Clear,Under Construction,Suspended,3,No,,Yellow,30,21,0.24,Negative,No,0,6,7,Drunk Driving
+West Bengal,Bike,Green,2011,Uttar Pradesh,59,Other,Commercial,1,Dust Storm,Slippery,Valid,3,No,,Green,50,52,0.09,Negative,Yes,0,4,22,Overloading
+Maharashtra,Truck,Red,2015,Karnataka,27,Other,Two-Wheeler,5,Dust Storm,Dry,Valid,1,No,Yes,Green,50,116,0.17,Positive,Yes,0,0,4,Wrong Parking
+Punjab,Bike,Silver,2014,Uttar Pradesh,72,Female,Heavy Vehicle,6,Cloudy,Under Construction,Suspended,2,,No,Green,80,39,0.08,Positive,No,2,1,15,Over-speeding
+Maharashtra,Bike,Green,2023,Delhi,60,Male,Commercial,7,Dust Storm,Under Construction,Suspended,5,,No,Red,80,52,0.12,Positive,No,3,0,9,Drunk Driving
+Tamil Nadu,Auto Rickshaw,Grey,2017,Maharashtra,19,Female,Commercial,0,Clear,Dry,Valid,1,,Yes,Green,60,117,0.19,Negative,No,0,2,23,Using Mobile Phone
+Tamil Nadu,Scooter,Red,2014,Gujarat,51,Female,Learner,3,Cloudy,Dry,Suspended,2,No,,Green,60,71,0.15,Not Conducted,Yes,4,4,19,Wrong Parking
+Gujarat,Bus,Black,2016,Gujarat,51,Female,Heavy Vehicle,5,Dust Storm,Slippery,Valid,3,Yes,No,Green,80,95,0.3,Positive,Yes,0,2,17,No Helmet
+Punjab,Scooter,Blue,2004,Uttar Pradesh,41,Male,Four-Wheeler,10,Foggy,Under Construction,Suspended,3,Yes,No,Red,80,91,0.21,Negative,Yes,3,2,10,Over-speeding
+Delhi,Bike,White,2009,Punjab,51,Other,Two-Wheeler,9,Rainy,Dry,Suspended,1,Yes,Yes,Yellow,80,59,0.38,Positive,No,4,5,7,Driving Without License
+Uttar Pradesh,Bus,Grey,2023,Maharashtra,45,Other,Two-Wheeler,0,Cloudy,Potholes,Valid,2,Yes,,Green,30,96,0.01,Negative,Yes,0,6,13,No Seatbelt
+Maharashtra,Truck,Silver,2020,West Bengal,52,Male,Two-Wheeler,9,Cloudy,Slippery,Suspended,5,Yes,Yes,Green,60,104,0.07,Negative,Yes,2,3,13,Over-speeding
+Karnataka,Car,Green,2006,Tamil Nadu,27,Female,Heavy Vehicle,2,Clear,Under Construction,Expired,1,Yes,Yes,Yellow,50,32,0.26,Negative,Yes,4,5,12,Wrong Parking
+Karnataka,Car,Blue,2016,Karnataka,50,Other,Commercial,0,Foggy,Wet,Suspended,3,Yes,No,Red,30,82,0.03,Not Conducted,No,3,0,12,Using Mobile Phone
+Delhi,Truck,Silver,2009,Karnataka,31,Other,Commercial,5,Cloudy,Wet,Suspended,2,,Yes,Yellow,40,31,0.4,Not Conducted,Yes,4,5,2,Drunk Driving
+Karnataka,Car,Silver,2007,Gujarat,60,Other,Four-Wheeler,7,Dust Storm,Potholes,Suspended,1,Yes,Yes,Yellow,60,34,0.44,Negative,No,2,4,8,Using Mobile Phone
+Gujarat,Car,Red,1995,Karnataka,50,Female,Four-Wheeler,6,Foggy,Potholes,Suspended,1,,Yes,Red,30,109,0.43,Negative,No,0,6,22,Using Mobile Phone
+Tamil Nadu,Scooter,Grey,2021,Delhi,44,Female,Four-Wheeler,6,Foggy,Under Construction,Valid,5,No,No,Red,30,45,0.02,Not Conducted,Yes,2,1,8,Drunk Driving
+Gujarat,Auto Rickshaw,Red,2005,Punjab,50,Male,Four-Wheeler,7,Rainy,Slippery,Expired,3,,Yes,Yellow,50,106,0.11,Not Conducted,No,4,0,14,Drunk Driving
+Uttar Pradesh,Auto Rickshaw,Red,2019,Uttar Pradesh,27,Female,Learner,5,Cloudy,Dry,Suspended,4,Yes,Yes,Yellow,50,101,0.25,Negative,Yes,4,3,16,Signal Jumping
+Delhi,Auto Rickshaw,Grey,2013,Delhi,68,Male,Heavy Vehicle,2,Cloudy,Potholes,Suspended,3,No,No,Yellow,30,111,0.38,Positive,Yes,2,4,5,Over-speeding
+Gujarat,Car,White,1998,West Bengal,43,Female,Heavy Vehicle,6,Clear,Dry,Suspended,4,Yes,No,Red,80,94,0.27,Positive,Yes,2,0,8,Driving Without License
+Karnataka,Scooter,Silver,2008,West Bengal,67,Other,Two-Wheeler,7,Dust Storm,Dry,Suspended,3,No,No,Yellow,80,79,0.03,Not Conducted,Yes,2,6,9,Drunk Driving
+West Bengal,Bike,Yellow,2013,Gujarat,23,Female,Two-Wheeler,2,Rainy,Wet,Suspended,2,Yes,,Yellow,40,75,0.22,Not Conducted,No,3,4,8,No Helmet
+Punjab,Truck,Grey,2017,Karnataka,51,Male,Heavy Vehicle,4,Rainy,Dry,Expired,2,Yes,No,Red,40,33,0.24,Positive,No,5,4,22,Over-speeding
+Uttar Pradesh,Scooter,Green,2006,Gujarat,23,Other,Heavy Vehicle,9,Dust Storm,Wet,Expired,4,Yes,,Yellow,50,22,0.17,Negative,Yes,1,2,21,Driving Without License
+Uttar Pradesh,Car,White,2001,Gujarat,46,Other,Four-Wheeler,8,Dust Storm,Potholes,Valid,1,No,,Red,80,56,0.26,Negative,Yes,1,6,4,No Helmet
+Gujarat,Bus,Grey,2006,Delhi,32,Female,Heavy Vehicle,10,Rainy,Dry,Expired,1,No,No,Yellow,40,114,0.15,Negative,No,2,1,8,Drunk Driving
+Maharashtra,Scooter,Blue,2010,Punjab,67,Female,Two-Wheeler,9,Cloudy,Dry,Valid,1,,Yes,Red,40,54,0.18,Positive,Yes,5,4,23,Using Mobile Phone
+Maharashtra,Bus,Blue,2019,Punjab,50,Other,Heavy Vehicle,7,Cloudy,Potholes,Valid,5,Yes,No,Green,50,51,0.1,Positive,Yes,1,4,4,Driving Without License
+Karnataka,Truck,Red,1996,Delhi,47,Female,Commercial,10,Dust Storm,Under Construction,Expired,5,Yes,,Yellow,100,32,0.4,Negative,No,3,0,17,No Seatbelt
+West Bengal,Auto Rickshaw,White,1996,Uttar Pradesh,64,Other,Commercial,0,Cloudy,Potholes,Valid,3,No,No,Red,30,37,0.22,Negative,Yes,0,0,16,Driving Without License
+Gujarat,Car,Grey,2022,Tamil Nadu,34,Female,Four-Wheeler,8,Clear,Wet,Suspended,1,No,,Yellow,100,30,0.2,Not Conducted,No,5,2,8,No Helmet
+Maharashtra,Bus,Black,2010,Punjab,47,Male,Heavy Vehicle,0,Rainy,Slippery,Suspended,5,,,Yellow,30,106,0.38,Negative,No,0,0,6,Signal Jumping
+West Bengal,Auto Rickshaw,Blue,2013,Maharashtra,43,Other,Commercial,1,Foggy,Wet,Valid,5,,Yes,Green,30,25,0.4,Positive,Yes,2,6,20,Wrong Parking
+Maharashtra,Bus,Silver,2014,West Bengal,38,Female,Learner,7,Cloudy,Wet,Suspended,2,Yes,,Green,60,81,0.41,Not Conducted,Yes,4,6,15,Drunk Driving
+Punjab,Bus,Black,2010,Maharashtra,52,Other,Learner,6,Dust Storm,Potholes,Expired,1,,No,Red,80,98,0.09,Not Conducted,Yes,1,4,3,Drunk Driving
+Punjab,Auto Rickshaw,Yellow,2017,Maharashtra,19,Female,Heavy Vehicle,3,Dust Storm,Wet,Valid,4,Yes,No,Red,80,36,0.34,Positive,Yes,0,5,7,Driving Without License
+Tamil Nadu,Auto Rickshaw,Grey,2006,Maharashtra,36,Female,Heavy Vehicle,6,Foggy,Slippery,Valid,2,Yes,Yes,Red,60,93,0.15,Not Conducted,Yes,0,5,1,Using Mobile Phone
+Delhi,Bus,White,2016,Karnataka,43,Other,Two-Wheeler,1,Cloudy,Slippery,Valid,5,Yes,,Yellow,60,46,0.04,Positive,Yes,5,6,2,Driving Without License
+Gujarat,Truck,Green,2003,Maharashtra,27,Female,Commercial,1,Foggy,Wet,Valid,2,,No,Yellow,40,74,0.35,Positive,Yes,2,6,11,Drunk Driving
+Tamil Nadu,Bike,White,2008,Punjab,61,Male,Learner,4,Clear,Dry,Expired,5,No,No,Red,50,74,0.03,Positive,No,2,4,15,No Helmet
+Delhi,Scooter,Red,2005,Maharashtra,19,Other,Commercial,5,Clear,Under Construction,Expired,3,,,Yellow,60,56,0.24,Negative,Yes,5,3,17,No Seatbelt
+Punjab,Bus,Green,2011,Uttar Pradesh,60,Male,Two-Wheeler,2,Rainy,Dry,Valid,1,No,Yes,Green,40,115,0.41,Negative,No,3,1,3,Over-speeding
+Karnataka,Car,Yellow,2021,West Bengal,31,Female,Two-Wheeler,3,Cloudy,Potholes,Suspended,2,Yes,Yes,Green,100,102,0.42,Positive,Yes,0,0,6,Wrong Parking
+Karnataka,Scooter,Blue,2015,Punjab,61,Female,Two-Wheeler,7,Clear,Potholes,Expired,2,,No,Yellow,100,51,0.26,Positive,Yes,4,3,17,Drunk Driving
+Uttar Pradesh,Bus,Grey,2014,Gujarat,69,Female,Heavy Vehicle,0,Cloudy,Wet,Expired,3,,,Green,40,75,0.19,Positive,No,4,6,2,Driving Without License
+Gujarat,Scooter,Black,2010,Tamil Nadu,46,Female,Heavy Vehicle,10,Foggy,Wet,Suspended,3,No,Yes,Red,80,115,0.13,Not Conducted,Yes,2,1,3,Signal Jumping
+Delhi,Auto Rickshaw,Red,2007,Uttar Pradesh,45,Female,Two-Wheeler,7,Foggy,Under Construction,Expired,5,Yes,No,Yellow,80,87,0.26,Negative,Yes,2,3,11,Wrong Parking
+Karnataka,Bus,Green,2007,West Bengal,72,Other,Four-Wheeler,4,Clear,Potholes,Suspended,1,No,Yes,Green,30,24,0.36,Not Conducted,Yes,1,0,12,Signal Jumping
+Maharashtra,Scooter,Grey,2017,West Bengal,30,Male,Commercial,4,Rainy,Under Construction,Suspended,5,,Yes,Green,40,25,0.24,Negative,Yes,4,6,21,Signal Jumping
+West Bengal,Bike,Silver,2001,West Bengal,65,Other,Learner,4,Foggy,Dry,Expired,2,Yes,Yes,Green,40,54,0.15,Negative,Yes,4,3,8,No Helmet
+West Bengal,Scooter,White,2004,Punjab,54,Female,Heavy Vehicle,8,Rainy,Potholes,Expired,2,Yes,,Red,80,48,0.44,Positive,No,2,2,1,No Helmet
+Tamil Nadu,Car,Yellow,2017,West Bengal,68,Male,Commercial,7,Dust Storm,Under Construction,Valid,4,,No,Yellow,60,69,0.3,Not Conducted,No,0,6,12,Drunk Driving
+Punjab,Bike,Red,2007,Tamil Nadu,30,Male,Four-Wheeler,10,Clear,Dry,Expired,1,,No,Yellow,30,70,0.11,Negative,Yes,0,0,23,No Seatbelt
+Delhi,Scooter,Red,2001,Delhi,72,Female,Two-Wheeler,4,Rainy,Dry,Expired,1,No,Yes,Yellow,40,73,0.37,Negative,No,2,3,13,Overloading
+Punjab,Bus,Yellow,1998,Delhi,59,Other,Heavy Vehicle,6,Dust Storm,Dry,Suspended,1,,Yes,Yellow,50,113,0.06,Positive,No,3,0,22,Wrong Parking
+West Bengal,Scooter,Black,2005,Punjab,41,Female,Learner,3,Foggy,Slippery,Expired,3,No,Yes,Yellow,60,79,0.32,Not Conducted,No,1,4,6,Using Mobile Phone
+West Bengal,Car,Silver,2002,Delhi,71,Male,Heavy Vehicle,2,Foggy,Wet,Suspended,3,Yes,Yes,Green,40,29,0.48,Negative,No,4,5,14,Overloading
+Punjab,Car,Yellow,2014,Gujarat,35,Other,Four-Wheeler,10,Cloudy,Wet,Suspended,4,No,No,Green,60,78,0.12,Negative,Yes,3,6,17,Using Mobile Phone
+Uttar Pradesh,Truck,Blue,1997,Gujarat,28,Other,Heavy Vehicle,3,Rainy,Under Construction,Suspended,1,Yes,No,Yellow,40,112,0.25,Positive,No,1,0,13,Drunk Driving
+Tamil Nadu,Bus,Blue,2018,Tamil Nadu,43,Male,Commercial,2,Clear,Under Construction,Valid,1,Yes,No,Red,100,57,0.15,Not Conducted,Yes,5,4,16,No Seatbelt
+Karnataka,Truck,Grey,2012,Delhi,20,Other,Two-Wheeler,4,Foggy,Wet,Valid,2,Yes,No,Green,40,43,0.36,Positive,Yes,1,5,13,Driving Without License
+Punjab,Truck,Green,2003,West Bengal,53,Other,Learner,6,Cloudy,Potholes,Valid,1,Yes,Yes,Red,40,68,0.25,Positive,Yes,0,4,13,Using Mobile Phone
+Maharashtra,Car,Red,2023,Delhi,50,Female,Commercial,5,Dust Storm,Under Construction,Valid,1,No,No,Red,60,29,0.39,Positive,No,5,3,6,Drunk Driving
+Delhi,Truck,Yellow,2020,Maharashtra,48,Other,Four-Wheeler,7,Foggy,Under Construction,Suspended,3,No,No,Green,60,104,0.18,Positive,No,5,5,5,Drunk Driving
+Punjab,Bus,Silver,2004,Maharashtra,46,Female,Heavy Vehicle,7,Dust Storm,Dry,Suspended,5,No,No,Green,100,80,0.18,Negative,No,1,1,9,Wrong Parking
+Karnataka,Truck,Black,2008,Uttar Pradesh,34,Female,Heavy Vehicle,4,Clear,Wet,Valid,3,Yes,,Green,50,21,0.39,Not Conducted,Yes,3,6,8,Overloading
+Karnataka,Bus,Grey,2007,Uttar Pradesh,67,Other,Two-Wheeler,2,Cloudy,Dry,Suspended,4,No,,Green,80,94,0.38,Negative,Yes,2,4,5,Driving Without License
+Delhi,Auto Rickshaw,Silver,2007,Delhi,73,Female,Heavy Vehicle,10,Clear,Potholes,Suspended,5,No,Yes,Red,50,65,0.19,Negative,No,0,6,18,No Helmet
+Uttar Pradesh,Bike,Green,2000,Uttar Pradesh,18,Male,Learner,0,Dust Storm,Under Construction,Expired,5,,Yes,Yellow,60,60,0.17,Negative,No,5,1,20,Driving Without License
+Punjab,Bus,Red,1999,Gujarat,21,Female,Heavy Vehicle,8,Dust Storm,Slippery,Suspended,4,No,,Red,80,88,0.17,Not Conducted,No,3,5,13,Signal Jumping
+Punjab,Scooter,Blue,2009,Punjab,45,Female,Commercial,8,Dust Storm,Slippery,Suspended,4,No,No,Yellow,50,45,0.18,Positive,No,1,1,15,Wrong Parking
+Tamil Nadu,Scooter,Black,2007,Maharashtra,69,Male,Learner,4,Rainy,Potholes,Suspended,4,,Yes,Green,50,102,0.16,Positive,Yes,3,6,3,Overloading
+Delhi,Bike,White,1997,Uttar Pradesh,39,Other,Two-Wheeler,6,Cloudy,Potholes,Suspended,4,,,Yellow,80,95,0.34,Negative,No,5,3,3,Drunk Driving
+Uttar Pradesh,Auto Rickshaw,Silver,2022,Delhi,38,Male,Learner,8,Cloudy,Dry,Expired,4,Yes,,Yellow,80,76,0.15,Negative,Yes,5,0,21,Drunk Driving
+Uttar Pradesh,Auto Rickshaw,White,2022,Gujarat,24,Male,Two-Wheeler,7,Rainy,Potholes,Suspended,5,,Yes,Yellow,40,107,0.03,Not Conducted,No,3,0,21,Driving Without License
+Gujarat,Auto Rickshaw,Blue,2006,Punjab,69,Female,Heavy Vehicle,8,Rainy,Wet,Suspended,2,Yes,No,Green,50,110,0.19,Positive,No,2,3,16,Overloading
+Maharashtra,Bike,Grey,2007,Karnataka,29,Female,Four-Wheeler,8,Rainy,Potholes,Valid,1,,No,Yellow,60,73,0.28,Negative,No,4,6,8,No Seatbelt
+Karnataka,Bus,Blue,2003,Delhi,53,Female,Two-Wheeler,3,Rainy,Slippery,Valid,4,Yes,Yes,Red,100,27,0.49,Not Conducted,Yes,4,0,7,No Helmet
+Uttar Pradesh,Truck,Black,1997,Maharashtra,18,Female,Two-Wheeler,1,Cloudy,Slippery,Expired,5,,Yes,Red,100,39,0.38,Positive,No,3,2,16,No Seatbelt
+Gujarat,Bus,Blue,2006,Gujarat,37,Female,Four-Wheeler,4,Dust Storm,Slippery,Expired,2,Yes,,Red,100,66,0.38,Not Conducted,Yes,4,4,18,Signal Jumping
+West Bengal,Bus,Blue,1998,Delhi,34,Male,Learner,0,Foggy,Slippery,Valid,5,No,,Green,40,84,0.49,Negative,Yes,0,1,10,Over-speeding
+Gujarat,Bike,Green,1999,West Bengal,34,Other,Commercial,0,Foggy,Potholes,Expired,4,Yes,,Red,30,65,0.34,Negative,No,4,0,13,Over-speeding
+Karnataka,Truck,Grey,2022,Maharashtra,32,Other,Learner,0,Foggy,Under Construction,Valid,1,,,Green,30,119,0.15,Positive,No,3,3,22,No Helmet
+Punjab,Bike,Grey,2013,Gujarat,28,Other,Learner,7,Foggy,Under Construction,Suspended,2,No,No,Red,30,59,0.18,Negative,Yes,0,2,3,Signal Jumping
+Delhi,Bike,Blue,2010,Maharashtra,32,Male,Four-Wheeler,9,Cloudy,Under Construction,Suspended,1,,,Yellow,100,61,0.07,Positive,Yes,4,1,22,Wrong Parking
+Tamil Nadu,Scooter,Red,2020,Delhi,18,Female,Commercial,0,Clear,Potholes,Expired,4,No,,Red,100,79,0.32,Not Conducted,Yes,1,2,17,Wrong Parking
+Uttar Pradesh,Car,Silver,2009,West Bengal,73,Male,Learner,1,Clear,Under Construction,Valid,1,No,,Green,40,101,0.17,Not Conducted,Yes,3,1,7,No Helmet
+Uttar Pradesh,Truck,Grey,2000,Delhi,24,Other,Learner,8,Clear,Under Construction,Suspended,2,No,Yes,Red,40,68,0.28,Not Conducted,No,2,1,7,No Seatbelt
+Punjab,Car,Green,2015,Punjab,58,Male,Learner,2,Dust Storm,Wet,Valid,3,No,No,Red,100,105,0.25,Negative,No,1,3,12,Overloading
+Maharashtra,Bus,White,2002,Maharashtra,66,Other,Two-Wheeler,0,Cloudy,Dry,Expired,2,No,Yes,Red,100,98,0.11,Positive,Yes,1,4,22,Wrong Parking
+Gujarat,Auto Rickshaw,Blue,2010,Punjab,64,Female,Learner,2,Dust Storm,Wet,Expired,2,Yes,,Red,40,98,0.33,Not Conducted,Yes,2,4,21,Wrong Parking
+Uttar Pradesh,Bike,Green,2004,Tamil Nadu,36,Other,Commercial,2,Foggy,Under Construction,Suspended,5,,,Green,100,42,0.41,Positive,Yes,1,3,3,Driving Without License
+Gujarat,Car,Silver,2015,West Bengal,43,Other,Four-Wheeler,4,Clear,Dry,Valid,1,No,,Red,80,98,0.23,Not Conducted,Yes,2,1,20,No Seatbelt
+Gujarat,Bike,Red,2007,Gujarat,72,Female,Heavy Vehicle,9,Rainy,Slippery,Valid,5,No,No,Red,80,48,0.32,Negative,Yes,3,2,4,Wrong Parking
+Karnataka,Bike,Red,2011,Tamil Nadu,40,Male,Heavy Vehicle,10,Rainy,Dry,Suspended,2,,,Yellow,40,48,0.16,Negative,No,0,0,20,Overloading
+West Bengal,Car,White,2008,Delhi,71,Other,Heavy Vehicle,7,Foggy,Under Construction,Suspended,3,,No,Green,80,36,0.08,Positive,No,2,5,6,Signal Jumping
+Uttar Pradesh,Auto Rickshaw,Silver,1998,Punjab,37,Other,Commercial,7,Cloudy,Potholes,Valid,4,No,Yes,Red,40,64,0.24,Positive,No,2,1,9,Driving Without License
+Delhi,Bus,Green,2010,Karnataka,46,Male,Two-Wheeler,5,Dust Storm,Slippery,Expired,2,,No,Green,50,85,0.33,Positive,Yes,3,6,22,No Seatbelt
+Maharashtra,Scooter,Yellow,2005,Uttar Pradesh,40,Male,Commercial,8,Clear,Wet,Valid,1,No,Yes,Yellow,30,34,0.35,Not Conducted,Yes,5,6,11,Overloading
+Uttar Pradesh,Car,Silver,1998,Delhi,75,Female,Heavy Vehicle,10,Dust Storm,Under Construction,Suspended,1,Yes,,Red,80,68,0.13,Not Conducted,Yes,1,3,12,Drunk Driving
+Delhi,Bus,Black,2006,Delhi,20,Female,Two-Wheeler,4,Rainy,Potholes,Valid,5,,Yes,Green,100,47,0.17,Positive,Yes,2,4,19,Drunk Driving
+West Bengal,Auto Rickshaw,White,2016,Maharashtra,59,Male,Commercial,7,Dust Storm,Under Construction,Expired,4,,No,Yellow,80,55,0.16,Negative,No,4,6,4,Over-speeding
+Tamil Nadu,Scooter,Black,2003,Punjab,25,Female,Heavy Vehicle,6,Rainy,Wet,Valid,1,Yes,No,Red,60,114,0.04,Not Conducted,No,2,6,4,Using Mobile Phone
+Karnataka,Auto Rickshaw,Grey,2007,West Bengal,52,Male,Four-Wheeler,9,Clear,Slippery,Valid,5,Yes,Yes,Green,40,24,0.0,Positive,Yes,3,3,10,Drunk Driving
+Karnataka,Scooter,Blue,2006,Karnataka,45,Male,Two-Wheeler,1,Cloudy,Potholes,Valid,3,No,,Green,80,95,0.21,Negative,Yes,4,0,23,Over-speeding
+Karnataka,Car,Yellow,2006,West Bengal,48,Male,Heavy Vehicle,2,Clear,Dry,Expired,2,Yes,Yes,Green,30,72,0.06,Positive,No,3,3,1,Overloading
+Maharashtra,Car,Black,2001,Delhi,73,Female,Heavy Vehicle,0,Clear,Potholes,Suspended,3,Yes,Yes,Red,30,53,0.25,Not Conducted,No,3,3,17,Over-speeding
+Delhi,Auto Rickshaw,White,2002,Tamil Nadu,68,Female,Commercial,10,Clear,Slippery,Expired,3,No,Yes,Green,60,20,0.11,Positive,Yes,3,0,19,Wrong Parking
+Maharashtra,Bus,Silver,2008,Tamil Nadu,59,Female,Commercial,9,Dust Storm,Potholes,Valid,3,,No,Red,80,71,0.31,Positive,Yes,5,1,1,Wrong Parking
+Maharashtra,Bike,Yellow,1999,Gujarat,26,Female,Two-Wheeler,6,Foggy,Dry,Valid,4,No,No,Green,60,92,0.41,Positive,No,5,5,9,Using Mobile Phone
+Delhi,Bike,Black,1998,Karnataka,42,Female,Two-Wheeler,8,Foggy,Dry,Expired,3,No,,Green,40,24,0.19,Negative,Yes,0,0,9,Wrong Parking
+Punjab,Truck,Green,1999,Uttar Pradesh,27,Male,Learner,10,Clear,Wet,Suspended,2,,No,Red,60,57,0.14,Not Conducted,No,1,6,13,Over-speeding
+Tamil Nadu,Scooter,Blue,1997,Delhi,75,Other,Commercial,3,Cloudy,Under Construction,Suspended,1,No,,Red,40,120,0.41,Negative,Yes,5,0,4,No Helmet
+West Bengal,Truck,Black,2006,Gujarat,37,Male,Commercial,4,Rainy,Wet,Suspended,4,,No,Red,40,42,0.31,Positive,Yes,1,4,12,Driving Without License
+Maharashtra,Scooter,Yellow,2014,Uttar Pradesh,42,Male,Commercial,9,Cloudy,Wet,Suspended,3,No,No,Yellow,60,61,0.09,Negative,No,2,4,5,Wrong Parking
+Punjab,Scooter,Red,2016,Delhi,58,Other,Learner,8,Cloudy,Potholes,Suspended,3,Yes,Yes,Green,30,41,0.35,Not Conducted,No,4,1,5,Driving Without License
+Punjab,Bike,White,2014,Delhi,60,Other,Two-Wheeler,8,Foggy,Slippery,Suspended,5,No,Yes,Red,60,70,0.17,Negative,No,4,1,2,Signal Jumping
+West Bengal,Bus,Blue,2002,Maharashtra,51,Female,Heavy Vehicle,0,Cloudy,Slippery,Suspended,1,,No,Green,60,60,0.33,Not Conducted,Yes,0,0,10,Signal Jumping
+Uttar Pradesh,Scooter,Yellow,2020,Maharashtra,69,Male,Commercial,2,Dust Storm,Dry,Valid,3,,Yes,Green,30,28,0.18,Not Conducted,No,1,6,23,Using Mobile Phone
+West Bengal,Car,Red,1996,Uttar Pradesh,62,Other,Two-Wheeler,0,Dust Storm,Under Construction,Suspended,1,Yes,Yes,Green,100,20,0.15,Negative,No,4,3,13,Driving Without License
+Maharashtra,Truck,Blue,2005,Delhi,29,Male,Learner,8,Foggy,Under Construction,Valid,2,No,,Green,50,47,0.22,Negative,No,3,4,9,Driving Without License
+West Bengal,Auto Rickshaw,Green,2001,Uttar Pradesh,23,Female,Commercial,4,Cloudy,Dry,Expired,2,,No,Red,30,103,0.13,Negative,No,5,5,20,Signal Jumping
+Maharashtra,Car,Grey,2002,Maharashtra,20,Male,Commercial,5,Foggy,Potholes,Expired,1,No,Yes,Green,50,108,0.11,Not Conducted,No,0,2,8,Driving Without License
+Uttar Pradesh,Bus,Yellow,2016,Maharashtra,56,Female,Learner,3,Foggy,Slippery,Valid,2,Yes,Yes,Green,30,37,0.32,Not Conducted,Yes,5,1,16,Signal Jumping
+Punjab,Scooter,Blue,2008,Punjab,63,Male,Learner,10,Rainy,Potholes,Valid,5,No,No,Green,40,64,0.24,Positive,No,1,3,18,Drunk Driving
+Maharashtra,Bus,Black,2022,Uttar Pradesh,56,Male,Four-Wheeler,10,Rainy,Dry,Expired,5,,,Red,40,90,0.06,Not Conducted,Yes,1,6,19,No Seatbelt
+West Bengal,Bus,Red,2011,Uttar Pradesh,64,Female,Commercial,5,Rainy,Dry,Suspended,1,No,,Yellow,60,106,0.47,Positive,No,4,3,13,Wrong Parking
+Karnataka,Truck,Red,2018,Gujarat,69,Male,Four-Wheeler,5,Cloudy,Dry,Valid,5,,,Red,30,95,0.19,Not Conducted,Yes,1,1,7,Using Mobile Phone
+Gujarat,Bus,Yellow,1995,Uttar Pradesh,69,Other,Four-Wheeler,8,Foggy,Under Construction,Suspended,5,No,,Red,40,29,0.26,Not Conducted,No,1,4,13,Wrong Parking
+Gujarat,Car,Red,2016,Punjab,36,Female,Heavy Vehicle,3,Cloudy,Slippery,Expired,1,Yes,Yes,Red,50,44,0.08,Positive,No,4,0,6,Overloading
+Uttar Pradesh,Scooter,Yellow,1996,Tamil Nadu,72,Female,Heavy Vehicle,6,Rainy,Dry,Suspended,5,,No,Red,100,105,0.18,Positive,No,3,0,21,Wrong Parking
+Delhi,Bike,Grey,2013,Delhi,67,Other,Four-Wheeler,9,Rainy,Slippery,Suspended,2,,No,Yellow,30,76,0.17,Negative,Yes,0,4,16,Driving Without License
+Maharashtra,Truck,White,1998,West Bengal,58,Male,Heavy Vehicle,5,Dust Storm,Wet,Expired,1,No,No,Yellow,40,105,0.21,Not Conducted,Yes,4,2,13,No Helmet
+West Bengal,Bike,Black,2000,Gujarat,49,Other,Four-Wheeler,3,Dust Storm,Potholes,Expired,4,No,No,Red,80,78,0.35,Negative,Yes,0,1,10,Driving Without License
+Tamil Nadu,Scooter,Yellow,2003,Maharashtra,46,Other,Learner,10,Clear,Potholes,Expired,2,,,Red,30,89,0.17,Not Conducted,Yes,3,5,2,Signal Jumping
+Tamil Nadu,Bike,Green,2006,West Bengal,71,Male,Four-Wheeler,5,Dust Storm,Under Construction,Valid,4,No,,Red,100,42,0.33,Not Conducted,Yes,2,2,12,Overloading
+Gujarat,Car,Silver,2018,West Bengal,53,Male,Learner,1,Dust Storm,Under Construction,Expired,5,No,,Yellow,60,23,0.31,Not Conducted,Yes,5,2,7,Driving Without License
+Gujarat,Scooter,Green,2010,Uttar Pradesh,29,Male,Two-Wheeler,6,Cloudy,Under Construction,Valid,1,,,Green,40,95,0.4,Negative,No,0,0,11,Drunk Driving
+Gujarat,Truck,Grey,2016,West Bengal,72,Other,Learner,0,Cloudy,Under Construction,Expired,2,No,No,Red,40,84,0.24,Not Conducted,Yes,0,2,12,Wrong Parking
+Karnataka,Truck,White,2009,West Bengal,60,Male,Heavy Vehicle,2,Rainy,Potholes,Expired,1,Yes,No,Yellow,80,83,0.22,Positive,No,3,3,1,No Seatbelt
+Maharashtra,Auto Rickshaw,Green,2006,Uttar Pradesh,71,Male,Heavy Vehicle,9,Rainy,Slippery,Suspended,3,Yes,,Green,80,52,0.19,Positive,No,3,4,1,Over-speeding
+Tamil Nadu,Truck,Green,2008,Punjab,75,Other,Learner,4,Clear,Wet,Expired,4,,No,Red,60,41,0.45,Not Conducted,Yes,0,0,9,Driving Without License
+Tamil Nadu,Bike,Grey,2016,West Bengal,64,Male,Learner,10,Foggy,Potholes,Expired,5,No,Yes,Yellow,30,26,0.32,Positive,No,1,0,23,Signal Jumping
+Gujarat,Auto Rickshaw,Blue,1996,Uttar Pradesh,66,Male,Two-Wheeler,5,Cloudy,Slippery,Expired,5,No,No,Green,100,112,0.22,Positive,No,0,6,3,No Seatbelt
+Gujarat,Car,Green,2020,West Bengal,22,Female,Two-Wheeler,6,Clear,Dry,Suspended,3,No,,Yellow,40,36,0.11,Positive,No,1,0,14,Drunk Driving
+Maharashtra,Bike,Green,2010,Maharashtra,71,Male,Four-Wheeler,0,Dust Storm,Potholes,Expired,4,No,Yes,Green,50,79,0.47,Positive,Yes,3,5,14,Wrong Parking
+Delhi,Auto Rickshaw,Yellow,2016,Tamil Nadu,50,Male,Two-Wheeler,9,Cloudy,Slippery,Suspended,4,No,No,Yellow,80,42,0.26,Not Conducted,No,0,3,2,No Helmet
+Maharashtra,Truck,Red,2022,Punjab,30,Male,Heavy Vehicle,8,Clear,Wet,Valid,1,Yes,,Yellow,40,92,0.45,Not Conducted,Yes,2,2,19,Drunk Driving
+West Bengal,Auto Rickshaw,Grey,2001,West Bengal,62,Female,Commercial,6,Dust Storm,Dry,Expired,2,No,No,Green,50,29,0.18,Not Conducted,No,5,4,8,No Seatbelt
+Gujarat,Bike,Silver,1996,Punjab,45,Female,Commercial,1,Cloudy,Wet,Expired,1,Yes,,Yellow,50,82,0.36,Not Conducted,Yes,0,2,22,Wrong Parking
+Delhi,Bus,Blue,2020,Delhi,36,Female,Two-Wheeler,4,Foggy,Wet,Valid,3,Yes,,Yellow,100,90,0.29,Negative,No,5,3,22,Driving Without License
+Maharashtra,Car,Grey,2019,Uttar Pradesh,45,Other,Four-Wheeler,10,Clear,Under Construction,Suspended,1,No,No,Green,30,53,0.29,Not Conducted,No,4,4,16,Driving Without License
+Maharashtra,Bus,Silver,2013,Punjab,34,Female,Four-Wheeler,1,Rainy,Dry,Valid,4,,Yes,Yellow,30,70,0.08,Not Conducted,Yes,5,5,23,Signal Jumping
+Punjab,Auto Rickshaw,Grey,1998,Uttar Pradesh,70,Other,Two-Wheeler,3,Foggy,Under Construction,Valid,3,,Yes,Yellow,30,101,0.36,Positive,No,5,2,15,Wrong Parking
+Gujarat,Bike,Red,1995,Delhi,61,Male,Commercial,7,Foggy,Slippery,Valid,1,Yes,,Green,50,26,0.32,Positive,Yes,1,2,21,Wrong Parking
+Punjab,Bus,Grey,2007,Gujarat,18,Other,Four-Wheeler,7,Dust Storm,Potholes,Suspended,4,,,Red,30,23,0.37,Positive,Yes,2,2,16,No Helmet
+Maharashtra,Truck,Green,2010,Maharashtra,69,Female,Two-Wheeler,1,Foggy,Under Construction,Suspended,1,Yes,No,Red,60,38,0.1,Not Conducted,Yes,3,1,13,Over-speeding
+Delhi,Bus,Silver,1996,Karnataka,56,Other,Two-Wheeler,0,Dust Storm,Slippery,Valid,5,No,,Green,60,78,0.49,Not Conducted,Yes,5,2,8,Over-speeding
+Uttar Pradesh,Bike,Yellow,2016,Tamil Nadu,50,Male,Learner,5,Foggy,Slippery,Valid,3,,No,Green,40,90,0.26,Not Conducted,Yes,0,4,13,Wrong Parking
+Gujarat,Bike,Blue,2017,West Bengal,58,Female,Learner,3,Rainy,Dry,Suspended,5,Yes,No,Yellow,30,31,0.1,Negative,No,1,5,9,Using Mobile Phone
+Delhi,Scooter,Black,2018,Gujarat,39,Female,Commercial,6,Dust Storm,Dry,Suspended,4,,,Yellow,30,56,0.01,Negative,No,2,3,10,Using Mobile Phone
+Uttar Pradesh,Auto Rickshaw,Silver,2015,Punjab,25,Male,Learner,1,Foggy,Slippery,Suspended,3,No,,Green,60,104,0.34,Positive,Yes,2,2,9,Over-speeding
+Tamil Nadu,Truck,Black,2012,Karnataka,56,Other,Two-Wheeler,7,Rainy,Slippery,Valid,5,Yes,No,Green,50,26,0.18,Positive,Yes,5,6,17,Drunk Driving
+Punjab,Auto Rickshaw,Yellow,2008,Punjab,28,Female,Four-Wheeler,7,Rainy,Slippery,Expired,1,No,No,Green,40,40,0.41,Not Conducted,No,4,1,5,Wrong Parking
+Gujarat,Bus,Black,2019,Uttar Pradesh,67,Male,Two-Wheeler,8,Dust Storm,Potholes,Valid,3,No,Yes,Green,50,84,0.27,Not Conducted,Yes,2,2,4,Driving Without License
+Maharashtra,Auto Rickshaw,Black,1995,Delhi,65,Other,Heavy Vehicle,9,Clear,Slippery,Valid,5,,Yes,Yellow,60,72,0.46,Positive,Yes,4,1,18,Using Mobile Phone
+Delhi,Truck,Red,2000,Gujarat,73,Other,Two-Wheeler,7,Rainy,Slippery,Valid,3,No,,Red,40,72,0.17,Negative,Yes,1,3,16,No Seatbelt
+West Bengal,Bike,Yellow,2018,West Bengal,66,Other,Four-Wheeler,9,Clear,Dry,Valid,4,No,Yes,Red,100,83,0.38,Positive,No,0,3,20,No Seatbelt
+Delhi,Scooter,Green,2006,Karnataka,59,Male,Four-Wheeler,8,Clear,Slippery,Expired,5,No,No,Green,60,68,0.31,Negative,No,0,2,4,Driving Without License
+Uttar Pradesh,Bus,Grey,1996,Karnataka,47,Other,Learner,0,Foggy,Slippery,Expired,3,No,,Green,30,104,0.27,Positive,No,3,0,20,Drunk Driving
+Gujarat,Bus,Black,2012,Gujarat,72,Other,Heavy Vehicle,1,Clear,Under Construction,Expired,2,,No,Red,30,108,0.29,Positive,No,4,4,18,Driving Without License
+Karnataka,Bike,Grey,2016,Delhi,64,Male,Learner,1,Dust Storm,Slippery,Expired,1,No,No,Red,80,47,0.29,Positive,No,4,4,7,No Helmet
+West Bengal,Car,Green,2013,Karnataka,34,Female,Two-Wheeler,6,Clear,Wet,Valid,2,,,Yellow,80,68,0.32,Not Conducted,No,3,4,21,Using Mobile Phone
+Maharashtra,Bus,Silver,2015,Maharashtra,65,Other,Four-Wheeler,2,Rainy,Potholes,Expired,2,Yes,No,Yellow,80,112,0.32,Negative,No,1,5,9,No Seatbelt
+Karnataka,Bike,Yellow,2002,Karnataka,44,Male,Commercial,8,Foggy,Potholes,Expired,1,No,No,Yellow,80,40,0.34,Not Conducted,No,4,1,15,No Seatbelt
+Punjab,Auto Rickshaw,Green,2011,Punjab,63,Male,Four-Wheeler,9,Foggy,Potholes,Valid,4,,No,Green,40,59,0.37,Negative,No,5,6,23,No Helmet
+Gujarat,Scooter,Red,2007,Tamil Nadu,66,Male,Commercial,3,Cloudy,Wet,Expired,4,,Yes,Yellow,50,102,0.41,Negative,Yes,5,1,13,No Helmet
+Punjab,Auto Rickshaw,Blue,2021,Punjab,61,Male,Learner,9,Clear,Wet,Expired,1,,,Red,60,33,0.27,Negative,No,2,1,14,Wrong Parking
+Tamil Nadu,Auto Rickshaw,Grey,2015,Punjab,38,Other,Commercial,0,Clear,Under Construction,Suspended,3,Yes,No,Green,50,60,0.1,Positive,No,1,2,10,No Helmet
+Gujarat,Bus,Blue,2010,Gujarat,50,Female,Four-Wheeler,1,Clear,Dry,Suspended,1,,No,Red,40,94,0.26,Not Conducted,Yes,2,0,7,Using Mobile Phone
+Uttar Pradesh,Scooter,Yellow,1996,Punjab,39,Female,Commercial,5,Dust Storm,Under Construction,Expired,3,No,,Red,100,20,0.14,Negative,No,4,1,8,Drunk Driving
+West Bengal,Bike,Black,2016,Tamil Nadu,49,Other,Heavy Vehicle,7,Foggy,Potholes,Valid,1,Yes,No,Yellow,40,91,0.47,Negative,Yes,0,5,13,Drunk Driving
+Punjab,Car,Blue,2008,Karnataka,64,Male,Heavy Vehicle,3,Clear,Slippery,Suspended,4,,No,Yellow,100,56,0.43,Negative,Yes,0,3,14,No Seatbelt
+Karnataka,Bus,Blue,2021,West Bengal,33,Female,Learner,7,Rainy,Slippery,Valid,3,,,Yellow,30,117,0.3,Not Conducted,No,1,4,5,No Seatbelt
+Gujarat,Car,Green,1996,Punjab,38,Male,Two-Wheeler,4,Rainy,Potholes,Suspended,1,No,Yes,Yellow,40,119,0.06,Positive,No,5,2,22,Overloading
+Gujarat,Car,Blue,2023,Punjab,23,Female,Commercial,7,Clear,Dry,Suspended,5,,No,Yellow,80,33,0.43,Not Conducted,Yes,3,5,8,Wrong Parking
+Uttar Pradesh,Scooter,Red,2003,Delhi,18,Other,Heavy Vehicle,3,Rainy,Potholes,Valid,4,No,Yes,Red,60,31,0.27,Positive,Yes,2,0,8,Using Mobile Phone
+Punjab,Truck,Grey,2023,Gujarat,72,Other,Four-Wheeler,4,Rainy,Wet,Valid,3,,No,Green,40,30,0.21,Not Conducted,No,3,4,21,Overloading
+Tamil Nadu,Truck,Green,2001,Gujarat,23,Other,Commercial,2,Dust Storm,Slippery,Suspended,4,,,Green,40,100,0.17,Positive,No,4,1,14,Signal Jumping
+Punjab,Car,Red,2000,West Bengal,68,Other,Commercial,2,Clear,Wet,Suspended,4,Yes,,Green,40,41,0.44,Positive,Yes,5,1,21,Driving Without License
+Punjab,Bike,White,1998,Delhi,56,Other,Heavy Vehicle,1,Cloudy,Dry,Expired,1,Yes,Yes,Red,80,77,0.2,Not Conducted,Yes,5,0,13,Overloading
+Uttar Pradesh,Auto Rickshaw,Black,2005,Uttar Pradesh,74,Female,Four-Wheeler,0,Foggy,Dry,Valid,1,,Yes,Red,100,87,0.05,Positive,No,0,2,20,No Seatbelt
+Gujarat,Scooter,Silver,2012,Punjab,27,Other,Commercial,10,Clear,Dry,Valid,4,Yes,,Yellow,30,22,0.08,Not Conducted,No,1,6,4,No Seatbelt
+Gujarat,Auto Rickshaw,Blue,2022,Maharashtra,39,Other,Commercial,4,Dust Storm,Wet,Valid,4,Yes,Yes,Red,40,49,0.16,Not Conducted,Yes,0,4,2,Drunk Driving
+West Bengal,Truck,Red,2023,Gujarat,68,Male,Two-Wheeler,2,Rainy,Dry,Valid,1,Yes,Yes,Red,60,63,0.4,Negative,No,0,2,7,Wrong Parking
+Delhi,Bus,White,1995,Delhi,20,Other,Heavy Vehicle,6,Foggy,Slippery,Valid,5,,No,Green,80,26,0.23,Positive,Yes,3,2,22,Overloading
+Karnataka,Bike,Yellow,2017,Maharashtra,33,Other,Learner,4,Dust Storm,Slippery,Suspended,2,,No,Red,60,111,0.34,Positive,No,0,0,11,No Seatbelt
+Delhi,Bike,Grey,2004,Tamil Nadu,40,Female,Four-Wheeler,3,Rainy,Potholes,Suspended,4,No,,Yellow,100,67,0.32,Positive,No,2,6,12,No Helmet
+Gujarat,Scooter,Red,2015,Uttar Pradesh,61,Male,Two-Wheeler,6,Dust Storm,Potholes,Suspended,2,No,,Red,100,120,0.23,Negative,Yes,1,3,17,Overloading
+Punjab,Truck,Yellow,1999,Uttar Pradesh,27,Male,Learner,10,Dust Storm,Wet,Expired,3,No,No,Red,50,67,0.49,Positive,Yes,4,1,11,Over-speeding
+Punjab,Bike,Grey,2020,Gujarat,37,Male,Learner,8,Dust Storm,Dry,Suspended,5,Yes,No,Red,100,101,0.2,Positive,No,1,5,8,Drunk Driving
+Uttar Pradesh,Scooter,Red,2020,Karnataka,41,Other,Two-Wheeler,5,Clear,Dry,Expired,4,,No,Green,80,92,0.2,Positive,No,1,0,9,Overloading
+Tamil Nadu,Car,White,1996,Uttar Pradesh,55,Other,Heavy Vehicle,0,Rainy,Potholes,Suspended,2,No,,Green,60,53,0.05,Negative,No,4,5,18,Overloading
+Maharashtra,Auto Rickshaw,Green,1999,Punjab,60,Male,Four-Wheeler,9,Clear,Under Construction,Suspended,1,No,,Red,40,54,0.07,Not Conducted,No,3,5,17,Driving Without License
+Punjab,Car,White,2012,Maharashtra,23,Female,Four-Wheeler,7,Cloudy,Slippery,Valid,3,No,,Red,60,48,0.07,Positive,No,1,3,4,Using Mobile Phone
+Maharashtra,Bus,Blue,2013,West Bengal,41,Other,Four-Wheeler,9,Cloudy,Wet,Suspended,5,Yes,Yes,Red,100,34,0.19,Negative,No,0,6,18,Wrong Parking
+Karnataka,Bike,Yellow,2019,Delhi,75,Male,Two-Wheeler,2,Clear,Wet,Suspended,5,,No,Yellow,100,113,0.06,Negative,Yes,5,3,19,No Helmet
+Tamil Nadu,Truck,Blue,2007,Tamil Nadu,24,Other,Heavy Vehicle,5,Clear,Dry,Suspended,3,Yes,Yes,Green,100,38,0.44,Negative,Yes,5,6,9,Using Mobile Phone
+Tamil Nadu,Auto Rickshaw,Yellow,2013,Punjab,51,Female,Two-Wheeler,5,Clear,Slippery,Suspended,4,,Yes,Yellow,40,112,0.35,Positive,Yes,3,0,2,Signal Jumping
+Delhi,Scooter,Green,2022,West Bengal,54,Male,Two-Wheeler,1,Cloudy,Potholes,Valid,5,,,Red,100,52,0.49,Negative,No,3,3,18,Over-speeding
+Gujarat,Truck,White,2014,Gujarat,41,Female,Four-Wheeler,9,Cloudy,Wet,Expired,5,Yes,No,Yellow,80,58,0.02,Positive,Yes,4,3,0,Overloading
+West Bengal,Bus,Green,2004,Maharashtra,59,Other,Heavy Vehicle,7,Clear,Slippery,Valid,3,Yes,No,Red,30,52,0.03,Not Conducted,Yes,0,6,2,Wrong Parking
+Punjab,Auto Rickshaw,Red,2009,Gujarat,64,Female,Commercial,5,Cloudy,Dry,Valid,4,,,Green,100,40,0.43,Positive,Yes,2,6,19,Signal Jumping
+West Bengal,Scooter,Black,2014,Karnataka,62,Female,Learner,5,Rainy,Potholes,Valid,3,No,No,Green,30,93,0.06,Positive,Yes,3,3,10,Drunk Driving
+Delhi,Truck,Grey,1995,West Bengal,62,Male,Commercial,6,Clear,Slippery,Valid,5,Yes,,Red,60,43,0.16,Positive,Yes,1,0,6,Driving Without License
+Delhi,Scooter,Yellow,2011,West Bengal,43,Other,Two-Wheeler,10,Clear,Potholes,Valid,3,Yes,Yes,Green,100,72,0.23,Positive,Yes,0,1,14,Signal Jumping
+Tamil Nadu,Auto Rickshaw,Red,2023,Karnataka,46,Female,Heavy Vehicle,1,Rainy,Under Construction,Suspended,3,,,Green,100,116,0.5,Positive,No,5,0,23,Using Mobile Phone
+Maharashtra,Car,Green,2019,Maharashtra,53,Male,Heavy Vehicle,5,Rainy,Slippery,Valid,5,No,No,Green,80,88,0.43,Not Conducted,No,4,5,20,Wrong Parking
+Punjab,Bike,Blue,1996,Karnataka,74,Male,Learner,7,Rainy,Dry,Valid,4,No,Yes,Red,60,31,0.45,Positive,No,4,1,18,Drunk Driving
+Delhi,Auto Rickshaw,Grey,2019,Karnataka,39,Male,Heavy Vehicle,4,Clear,Under Construction,Suspended,1,,No,Red,60,115,0.46,Negative,No,4,1,20,Signal Jumping
+Tamil Nadu,Car,Red,1998,Gujarat,30,Male,Commercial,5,Foggy,Slippery,Suspended,4,,,Yellow,40,56,0.02,Negative,Yes,3,2,19,Over-speeding
+Punjab,Bike,Grey,2012,Tamil Nadu,72,Male,Learner,4,Dust Storm,Slippery,Suspended,1,Yes,No,Green,40,64,0.45,Negative,Yes,4,6,0,No Helmet
+Delhi,Bike,Black,2023,Delhi,42,Male,Two-Wheeler,5,Clear,Slippery,Suspended,1,Yes,Yes,Red,80,101,0.04,Not Conducted,No,4,6,12,Drunk Driving
+Delhi,Auto Rickshaw,Silver,2010,Punjab,72,Male,Learner,9,Cloudy,Dry,Expired,4,No,No,Yellow,30,31,0.21,Positive,Yes,3,1,11,No Seatbelt
+Gujarat,Auto Rickshaw,Grey,2014,West Bengal,73,Other,Four-Wheeler,9,Dust Storm,Under Construction,Expired,3,,,Green,50,82,0.15,Not Conducted,Yes,4,1,5,Using Mobile Phone
+Maharashtra,Bus,Silver,2007,Maharashtra,46,Other,Commercial,2,Clear,Dry,Suspended,4,Yes,,Red,40,81,0.11,Negative,No,0,6,0,Driving Without License
+Punjab,Auto Rickshaw,Silver,1999,Punjab,40,Other,Commercial,10,Foggy,Slippery,Valid,3,,,Green,80,111,0.09,Positive,No,5,5,11,Wrong Parking
+Karnataka,Scooter,Black,2000,Uttar Pradesh,63,Male,Commercial,2,Dust Storm,Wet,Valid,3,No,No,Yellow,30,20,0.29,Positive,No,2,5,8,Overloading
+Uttar Pradesh,Scooter,Red,2022,Karnataka,26,Female,Learner,7,Cloudy,Slippery,Expired,2,Yes,,Green,60,117,0.48,Negative,Yes,4,4,1,Over-speeding
+Tamil Nadu,Bus,Black,2003,Maharashtra,56,Male,Learner,10,Rainy,Dry,Valid,3,No,No,Green,50,118,0.41,Positive,Yes,5,4,12,No Seatbelt
+West Bengal,Bike,Silver,2007,Uttar Pradesh,72,Female,Heavy Vehicle,7,Cloudy,Wet,Expired,4,Yes,No,Green,30,89,0.29,Not Conducted,Yes,3,6,0,No Seatbelt
+Tamil Nadu,Bike,Yellow,2022,Tamil Nadu,67,Male,Heavy Vehicle,7,Dust Storm,Under Construction,Expired,3,,No,Yellow,50,88,0.3,Not Conducted,Yes,3,1,17,Wrong Parking
+Punjab,Bike,White,2003,Uttar Pradesh,31,Other,Two-Wheeler,9,Foggy,Wet,Valid,3,,No,Yellow,80,40,0.43,Not Conducted,Yes,1,5,1,Over-speeding
+Uttar Pradesh,Auto Rickshaw,Silver,2001,Delhi,72,Other,Commercial,4,Dust Storm,Potholes,Expired,5,Yes,,Yellow,60,89,0.42,Negative,Yes,1,2,5,Using Mobile Phone
+Gujarat,Bike,Red,1997,Uttar Pradesh,67,Male,Commercial,9,Rainy,Slippery,Expired,2,Yes,Yes,Yellow,80,51,0.09,Not Conducted,No,2,2,23,No Seatbelt
+Punjab,Bus,Silver,1997,West Bengal,49,Other,Learner,9,Foggy,Slippery,Suspended,5,Yes,Yes,Yellow,30,35,0.26,Negative,No,5,3,22,Wrong Parking
+Karnataka,Scooter,Blue,2003,Gujarat,30,Female,Commercial,7,Foggy,Dry,Suspended,1,Yes,No,Green,60,108,0.03,Negative,Yes,2,4,2,Using Mobile Phone
+West Bengal,Scooter,Yellow,2003,Karnataka,28,Female,Two-Wheeler,1,Clear,Slippery,Expired,4,No,Yes,Yellow,50,59,0.15,Not Conducted,Yes,5,2,1,Overloading
+Maharashtra,Scooter,Silver,2011,Maharashtra,35,Male,Four-Wheeler,5,Dust Storm,Slippery,Expired,2,No,,Yellow,80,50,0.11,Negative,Yes,4,6,11,Drunk Driving
+Punjab,Truck,Silver,1997,Tamil Nadu,18,Male,Heavy Vehicle,6,Clear,Wet,Suspended,5,,,Red,30,100,0.34,Negative,Yes,1,3,15,Wrong Parking
+West Bengal,Car,Yellow,2009,Karnataka,45,Male,Learner,7,Foggy,Under Construction,Expired,5,Yes,,Green,60,29,0.28,Positive,Yes,0,6,15,Using Mobile Phone
+Punjab,Scooter,Silver,2001,Karnataka,56,Other,Two-Wheeler,6,Dust Storm,Potholes,Expired,2,No,,Green,50,81,0.42,Not Conducted,Yes,2,1,14,Signal Jumping
+Karnataka,Bus,Black,2009,Tamil Nadu,39,Female,Two-Wheeler,1,Dust Storm,Dry,Suspended,1,,No,Red,30,27,0.08,Negative,No,5,3,0,No Seatbelt
+Karnataka,Truck,Grey,2022,Gujarat,28,Other,Two-Wheeler,0,Clear,Wet,Valid,2,,No,Green,50,116,0.22,Positive,Yes,3,1,8,No Seatbelt
+Gujarat,Truck,White,1995,Delhi,43,Other,Learner,3,Dust Storm,Potholes,Suspended,2,Yes,No,Yellow,100,80,0.24,Negative,Yes,4,2,23,Signal Jumping
+Tamil Nadu,Truck,Grey,2005,Tamil Nadu,37,Male,Two-Wheeler,1,Rainy,Dry,Suspended,2,Yes,Yes,Red,40,31,0.24,Positive,No,5,6,0,Using Mobile Phone
+Uttar Pradesh,Auto Rickshaw,Red,2003,West Bengal,64,Male,Learner,1,Foggy,Wet,Valid,4,No,No,Yellow,60,35,0.13,Negative,Yes,4,3,3,Drunk Driving
+Tamil Nadu,Scooter,White,2021,Gujarat,69,Male,Four-Wheeler,1,Rainy,Wet,Valid,2,Yes,,Yellow,30,61,0.18,Negative,No,4,2,8,Drunk Driving
+West Bengal,Car,Red,1997,Uttar Pradesh,75,Other,Commercial,0,Clear,Dry,Expired,5,No,Yes,Red,30,114,0.48,Not Conducted,Yes,2,1,17,Using Mobile Phone
+Punjab,Car,Red,1995,Delhi,36,Other,Commercial,0,Dust Storm,Wet,Valid,5,,Yes,Red,100,83,0.28,Negative,Yes,1,5,17,Over-speeding
+West Bengal,Bike,Yellow,2022,West Bengal,58,Female,Commercial,7,Foggy,Dry,Expired,2,Yes,,Green,100,46,0.48,Negative,No,3,2,10,Wrong Parking
+Maharashtra,Scooter,Silver,2022,Tamil Nadu,38,Male,Learner,1,Dust Storm,Potholes,Suspended,2,,No,Yellow,30,82,0.33,Not Conducted,No,0,3,4,Wrong Parking
+Delhi,Bike,Grey,2006,Uttar Pradesh,38,Male,Heavy Vehicle,3,Rainy,Wet,Valid,4,,,Green,100,118,0.16,Not Conducted,Yes,2,4,17,Drunk Driving
+West Bengal,Bike,Yellow,2013,Maharashtra,69,Female,Commercial,10,Foggy,Under Construction,Expired,2,No,Yes,Red,100,32,0.01,Not Conducted,Yes,0,1,14,Drunk Driving
+Karnataka,Bike,Black,2019,Gujarat,46,Other,Two-Wheeler,3,Dust Storm,Wet,Suspended,2,No,,Red,30,27,0.36,Positive,No,1,1,6,Drunk Driving
+Delhi,Bus,Green,2022,Maharashtra,69,Other,Heavy Vehicle,1,Dust Storm,Wet,Valid,5,,Yes,Red,100,99,0.27,Positive,Yes,0,4,9,No Seatbelt
+Karnataka,Auto Rickshaw,Red,1995,Karnataka,36,Female,Learner,3,Cloudy,Dry,Expired,4,,,Yellow,100,64,0.06,Not Conducted,Yes,1,6,20,Drunk Driving
+West Bengal,Bike,Green,2020,Uttar Pradesh,33,Female,Two-Wheeler,7,Rainy,Wet,Suspended,2,,Yes,Yellow,50,22,0.21,Not Conducted,No,0,3,19,Driving Without License
+Punjab,Truck,Yellow,2022,Punjab,39,Other,Learner,1,Dust Storm,Slippery,Expired,2,,Yes,Green,30,32,0.44,Not Conducted,No,0,2,23,No Helmet
+West Bengal,Bus,Green,2008,Punjab,47,Male,Commercial,9,Rainy,Slippery,Suspended,4,,,Yellow,80,59,0.33,Positive,Yes,5,5,17,Driving Without License
+Gujarat,Bike,Silver,2014,Punjab,50,Female,Learner,0,Rainy,Potholes,Valid,2,No,,Green,80,26,0.24,Positive,No,0,1,3,Overloading
+Karnataka,Scooter,Yellow,2015,West Bengal,42,Female,Learner,1,Rainy,Under Construction,Suspended,5,,No,Green,60,104,0.5,Negative,Yes,3,3,16,Driving Without License
+Karnataka,Scooter,Green,2017,Gujarat,59,Other,Commercial,8,Cloudy,Slippery,Expired,4,,,Green,50,102,0.15,Positive,Yes,4,4,16,Wrong Parking
+West Bengal,Truck,White,2001,Uttar Pradesh,63,Male,Heavy Vehicle,9,Rainy,Under Construction,Valid,2,No,,Green,60,65,0.48,Negative,No,1,4,6,Over-speeding
+Punjab,Truck,Red,2006,Maharashtra,64,Other,Learner,6,Dust Storm,Slippery,Valid,2,,Yes,Red,60,75,0.34,Not Conducted,Yes,2,4,18,Using Mobile Phone
+Delhi,Car,Red,2023,Punjab,24,Female,Two-Wheeler,8,Rainy,Potholes,Suspended,3,No,Yes,Red,60,27,0.32,Negative,No,2,4,6,Drunk Driving
+Karnataka,Bus,Green,2008,Delhi,60,Male,Commercial,8,Clear,Under Construction,Suspended,4,,No,Red,100,54,0.12,Not Conducted,No,3,4,15,Drunk Driving
+Karnataka,Truck,Red,2023,Maharashtra,38,Other,Commercial,3,Foggy,Slippery,Valid,3,,,Yellow,100,45,0.2,Negative,No,4,5,9,No Helmet
+West Bengal,Truck,Red,2014,Punjab,22,Female,Heavy Vehicle,1,Foggy,Wet,Valid,1,Yes,Yes,Red,50,24,0.23,Not Conducted,Yes,1,1,13,No Helmet
+Delhi,Scooter,Blue,1996,West Bengal,26,Male,Heavy Vehicle,6,Cloudy,Wet,Valid,4,,Yes,Red,30,64,0.09,Positive,Yes,5,1,8,Wrong Parking
+West Bengal,Bike,Grey,2013,Punjab,56,Male,Commercial,5,Clear,Under Construction,Suspended,3,Yes,Yes,Yellow,30,78,0.46,Negative,No,5,5,3,Over-speeding
+Uttar Pradesh,Car,Silver,2011,Uttar Pradesh,65,Female,Learner,7,Clear,Potholes,Expired,5,Yes,No,Red,40,117,0.4,Not Conducted,Yes,2,4,2,Over-speeding
+Karnataka,Truck,Blue,2015,Uttar Pradesh,52,Other,Heavy Vehicle,1,Clear,Slippery,Expired,3,No,,Yellow,60,72,0.3,Not Conducted,Yes,0,1,2,Wrong Parking
+Gujarat,Bike,Blue,1996,Delhi,49,Male,Commercial,6,Dust Storm,Wet,Valid,3,,Yes,Red,40,68,0.3,Not Conducted,No,1,3,10,Drunk Driving
+Uttar Pradesh,Scooter,Silver,1996,Karnataka,21,Male,Four-Wheeler,2,Cloudy,Potholes,Suspended,2,Yes,Yes,Red,40,81,0.31,Not Conducted,Yes,3,6,0,Driving Without License
+Maharashtra,Scooter,Blue,2016,Uttar Pradesh,24,Male,Four-Wheeler,6,Cloudy,Under Construction,Suspended,3,,Yes,Yellow,50,120,0.16,Not Conducted,Yes,2,6,23,Drunk Driving
+Uttar Pradesh,Scooter,Silver,2003,West Bengal,21,Female,Commercial,6,Clear,Wet,Expired,3,,,Red,60,84,0.05,Not Conducted,Yes,2,3,7,Over-speeding
+Delhi,Auto Rickshaw,Yellow,2021,Karnataka,59,Female,Four-Wheeler,5,Clear,Potholes,Expired,3,No,No,Green,40,107,0.21,Not Conducted,No,2,2,18,Over-speeding
+Tamil Nadu,Car,Silver,2003,Delhi,73,Female,Commercial,1,Cloudy,Slippery,Expired,4,Yes,No,Red,60,20,0.03,Positive,Yes,3,1,8,Signal Jumping
+Punjab,Car,Blue,2001,Karnataka,57,Female,Four-Wheeler,2,Dust Storm,Slippery,Suspended,3,,Yes,Yellow,80,51,0.12,Negative,Yes,5,5,21,Drunk Driving
+Gujarat,Truck,Blue,2012,Delhi,40,Female,Learner,2,Clear,Slippery,Suspended,3,Yes,,Green,40,59,0.21,Negative,Yes,3,4,14,No Helmet
+Karnataka,Bus,Blue,2001,Karnataka,68,Male,Four-Wheeler,4,Clear,Under Construction,Suspended,4,,,Green,60,100,0.17,Not Conducted,Yes,0,0,21,No Helmet
+Karnataka,Bus,Silver,2023,Gujarat,46,Other,Learner,9,Dust Storm,Under Construction,Valid,1,Yes,Yes,Yellow,60,52,0.03,Not Conducted,Yes,3,3,10,Overloading
+Tamil Nadu,Auto Rickshaw,Blue,2010,Tamil Nadu,69,Other,Learner,10,Foggy,Under Construction,Expired,5,No,No,Red,60,59,0.14,Negative,No,4,5,19,Over-speeding
+Delhi,Car,Grey,2001,Maharashtra,38,Female,Heavy Vehicle,5,Foggy,Slippery,Suspended,2,Yes,Yes,Green,40,109,0.4,Negative,Yes,3,0,18,Overloading
+Punjab,Bike,Red,2008,West Bengal,19,Male,Four-Wheeler,6,Clear,Under Construction,Valid,2,,Yes,Green,40,24,0.26,Negative,No,3,0,11,Driving Without License
+Tamil Nadu,Bus,Silver,2023,Uttar Pradesh,30,Other,Heavy Vehicle,10,Rainy,Wet,Valid,5,Yes,Yes,Green,60,99,0.4,Negative,Yes,1,5,10,Overloading
+Delhi,Bike,Black,2010,Tamil Nadu,66,Male,Two-Wheeler,2,Rainy,Wet,Valid,4,Yes,,Red,80,69,0.11,Positive,No,1,2,1,Wrong Parking
+West Bengal,Bike,Grey,2005,West Bengal,73,Male,Learner,7,Dust Storm,Slippery,Valid,4,Yes,,Red,60,67,0.36,Positive,No,0,2,4,Drunk Driving
+West Bengal,Bus,Black,2018,Maharashtra,52,Male,Learner,6,Dust Storm,Slippery,Suspended,4,Yes,,Red,30,75,0.43,Not Conducted,Yes,4,2,9,Wrong Parking
+Maharashtra,Car,Red,2012,Punjab,51,Female,Commercial,8,Cloudy,Dry,Suspended,5,,No,Green,30,23,0.38,Negative,No,3,0,18,Signal Jumping
+Karnataka,Truck,Green,2005,Gujarat,70,Other,Commercial,6,Cloudy,Dry,Suspended,4,Yes,No,Green,80,82,0.22,Negative,No,4,1,7,Wrong Parking
+Punjab,Scooter,Blue,2022,Maharashtra,19,Other,Two-Wheeler,2,Clear,Under Construction,Suspended,5,,No,Red,50,99,0.01,Negative,No,5,1,21,Driving Without License
+Delhi,Truck,Green,2000,Tamil Nadu,66,Male,Commercial,0,Clear,Slippery,Expired,4,Yes,Yes,Green,40,79,0.12,Positive,No,4,3,23,Using Mobile Phone
+Karnataka,Car,Green,1996,Tamil Nadu,35,Other,Four-Wheeler,5,Foggy,Under Construction,Expired,3,Yes,Yes,Red,80,21,0.36,Negative,Yes,3,5,11,Driving Without License
+Punjab,Truck,Black,1999,West Bengal,64,Other,Four-Wheeler,6,Rainy,Slippery,Expired,5,No,No,Red,30,115,0.13,Positive,No,1,6,2,Signal Jumping
+Maharashtra,Auto Rickshaw,White,1999,Tamil Nadu,20,Other,Heavy Vehicle,6,Clear,Wet,Expired,5,Yes,Yes,Green,80,101,0.27,Positive,No,4,4,6,Drunk Driving
+Punjab,Truck,Red,2011,West Bengal,55,Female,Commercial,9,Rainy,Wet,Suspended,4,,,Yellow,80,109,0.28,Negative,No,0,2,7,Drunk Driving
+Punjab,Scooter,Blue,2002,Karnataka,24,Male,Heavy Vehicle,5,Rainy,Under Construction,Suspended,5,,No,Yellow,30,67,0.23,Positive,No,5,1,13,Over-speeding
+Punjab,Auto Rickshaw,Red,2009,Delhi,51,Other,Heavy Vehicle,4,Cloudy,Dry,Expired,2,,Yes,Green,60,74,0.26,Negative,Yes,2,5,9,Driving Without License
+Maharashtra,Car,Black,2019,Tamil Nadu,60,Male,Learner,8,Rainy,Under Construction,Suspended,5,,Yes,Yellow,80,23,0.18,Negative,No,1,3,7,Wrong Parking
+Tamil Nadu,Scooter,Silver,2017,Punjab,74,Female,Commercial,2,Cloudy,Slippery,Valid,4,Yes,No,Red,100,96,0.45,Positive,No,1,5,17,Using Mobile Phone
+Maharashtra,Car,Red,2004,Maharashtra,54,Other,Four-Wheeler,6,Cloudy,Dry,Expired,1,Yes,,Green,80,42,0.24,Not Conducted,No,5,1,9,Over-speeding
+Punjab,Auto Rickshaw,White,1997,Punjab,65,Female,Heavy Vehicle,8,Rainy,Under Construction,Suspended,4,No,Yes,Red,30,64,0.17,Positive,No,4,0,0,No Seatbelt
+Uttar Pradesh,Bus,Yellow,2020,West Bengal,27,Other,Heavy Vehicle,3,Foggy,Wet,Suspended,5,Yes,,Red,40,78,0.11,Positive,Yes,4,3,8,Driving Without License
+Karnataka,Car,Blue,2019,Gujarat,46,Other,Commercial,9,Foggy,Potholes,Suspended,2,Yes,,Green,80,118,0.46,Positive,No,5,0,21,Wrong Parking
+Maharashtra,Auto Rickshaw,Blue,2015,Tamil Nadu,46,Female,Heavy Vehicle,6,Foggy,Wet,Expired,1,,No,Red,100,81,0.28,Not Conducted,Yes,3,3,5,Using Mobile Phone
+Maharashtra,Auto Rickshaw,Green,2023,Uttar Pradesh,69,Other,Commercial,9,Foggy,Dry,Suspended,3,,Yes,Green,80,63,0.21,Not Conducted,Yes,0,1,18,Over-speeding
+Gujarat,Auto Rickshaw,Blue,2009,Punjab,63,Other,Heavy Vehicle,5,Rainy,Under Construction,Suspended,4,No,,Yellow,100,40,0.32,Not Conducted,No,2,6,4,No Helmet
+Karnataka,Truck,Red,2008,Delhi,64,Female,Heavy Vehicle,3,Rainy,Under Construction,Valid,5,,No,Yellow,40,100,0.19,Positive,Yes,1,4,15,No Helmet
+Karnataka,Scooter,White,2006,Uttar Pradesh,45,Female,Four-Wheeler,10,Cloudy,Under Construction,Valid,2,Yes,,Red,60,78,0.48,Not Conducted,Yes,5,1,17,No Helmet
+Delhi,Car,Silver,2015,Karnataka,53,Female,Learner,2,Dust Storm,Dry,Valid,5,,,Yellow,100,109,0.18,Not Conducted,No,1,1,11,No Seatbelt
+West Bengal,Bike,Blue,2002,Gujarat,20,Female,Heavy Vehicle,0,Dust Storm,Slippery,Valid,3,,Yes,Red,100,66,0.1,Not Conducted,No,0,0,8,No Seatbelt
+Uttar Pradesh,Scooter,Yellow,1997,Punjab,37,Other,Learner,8,Foggy,Slippery,Expired,3,No,Yes,Yellow,80,90,0.46,Not Conducted,Yes,1,5,5,No Helmet
+West Bengal,Scooter,Silver,2018,Maharashtra,64,Other,Learner,4,Rainy,Under Construction,Valid,1,Yes,,Green,50,27,0.11,Negative,No,5,4,23,No Helmet
+Maharashtra,Bus,Silver,2018,Uttar Pradesh,53,Male,Heavy Vehicle,8,Clear,Wet,Expired,1,,No,Yellow,80,29,0.44,Positive,Yes,1,0,3,No Seatbelt
+Maharashtra,Auto Rickshaw,Silver,1997,Uttar Pradesh,50,Other,Two-Wheeler,1,Rainy,Dry,Expired,3,No,No,Yellow,40,87,0.35,Negative,Yes,0,6,11,Using Mobile Phone
+Maharashtra,Car,Black,2000,Tamil Nadu,29,Female,Learner,2,Foggy,Wet,Suspended,1,No,,Yellow,30,101,0.08,Negative,Yes,0,3,19,No Helmet
+Punjab,Truck,Red,2005,West Bengal,46,Male,Learner,1,Dust Storm,Under Construction,Suspended,4,No,Yes,Red,50,48,0.09,Negative,No,3,3,12,Wrong Parking
+Tamil Nadu,Scooter,Grey,1996,Uttar Pradesh,45,Female,Learner,10,Dust Storm,Dry,Expired,3,No,No,Green,80,118,0.25,Negative,Yes,5,0,4,Drunk Driving
+Tamil Nadu,Bus,Grey,2000,West Bengal,53,Other,Commercial,5,Rainy,Dry,Suspended,4,No,,Green,60,104,0.39,Not Conducted,Yes,2,3,11,Driving Without License
+West Bengal,Bus,Black,2011,Gujarat,18,Other,Heavy Vehicle,8,Foggy,Slippery,Valid,1,No,No,Yellow,50,90,0.17,Positive,No,1,0,18,No Seatbelt
+Maharashtra,Car,Yellow,2016,Tamil Nadu,18,Female,Learner,10,Clear,Wet,Expired,5,,No,Red,40,44,0.13,Not Conducted,No,3,4,15,Signal Jumping
+Uttar Pradesh,Auto Rickshaw,Grey,2007,Uttar Pradesh,58,Female,Heavy Vehicle,5,Rainy,Dry,Suspended,4,,Yes,Yellow,80,78,0.2,Not Conducted,Yes,2,0,21,No Seatbelt
+West Bengal,Auto Rickshaw,White,2023,Karnataka,48,Female,Four-Wheeler,6,Dust Storm,Wet,Suspended,3,No,,Red,60,70,0.34,Not Conducted,Yes,3,5,3,No Helmet
+Punjab,Scooter,Blue,2003,Uttar Pradesh,30,Male,Four-Wheeler,7,Rainy,Potholes,Expired,5,No,Yes,Red,100,43,0.13,Negative,No,2,2,8,No Helmet
+West Bengal,Bus,Silver,2010,Uttar Pradesh,44,Female,Heavy Vehicle,6,Cloudy,Slippery,Valid,4,No,,Yellow,60,93,0.01,Positive,Yes,4,2,22,Over-speeding
+Uttar Pradesh,Car,Blue,2016,Maharashtra,32,Other,Four-Wheeler,6,Dust Storm,Wet,Expired,1,,Yes,Green,40,103,0.01,Negative,No,2,1,10,Over-speeding
+Tamil Nadu,Bike,Red,1996,Uttar Pradesh,23,Female,Heavy Vehicle,8,Foggy,Slippery,Suspended,2,Yes,Yes,Red,50,26,0.34,Positive,No,5,6,1,Over-speeding
+West Bengal,Bus,Grey,2021,Karnataka,26,Male,Heavy Vehicle,3,Foggy,Potholes,Valid,2,No,Yes,Red,100,53,0.29,Positive,Yes,0,2,14,Signal Jumping
+West Bengal,Auto Rickshaw,Silver,2008,Gujarat,25,Male,Four-Wheeler,9,Foggy,Under Construction,Expired,2,,Yes,Red,100,109,0.26,Not Conducted,No,4,4,7,Signal Jumping
+Tamil Nadu,Bike,Yellow,2014,West Bengal,57,Female,Two-Wheeler,10,Foggy,Wet,Expired,5,,Yes,Yellow,50,76,0.28,Not Conducted,Yes,5,1,16,Driving Without License
+West Bengal,Auto Rickshaw,Grey,2000,Delhi,20,Male,Two-Wheeler,9,Cloudy,Under Construction,Valid,2,No,,Red,40,36,0.23,Negative,No,2,6,1,Using Mobile Phone
+Gujarat,Car,Green,2000,Delhi,72,Other,Heavy Vehicle,4,Rainy,Potholes,Valid,4,Yes,No,Red,30,50,0.14,Negative,Yes,2,1,4,Overloading
+Delhi,Bus,Silver,2017,Karnataka,49,Female,Commercial,3,Cloudy,Slippery,Suspended,1,No,No,Green,100,66,0.5,Negative,Yes,5,5,21,Over-speeding
+Tamil Nadu,Auto Rickshaw,Grey,2005,Maharashtra,27,Male,Two-Wheeler,10,Foggy,Slippery,Suspended,1,No,,Yellow,30,58,0.01,Positive,No,1,5,4,Overloading
+Karnataka,Scooter,Silver,2005,Tamil Nadu,32,Other,Two-Wheeler,1,Foggy,Under Construction,Expired,3,No,Yes,Yellow,80,103,0.47,Not Conducted,No,5,2,9,Using Mobile Phone
+Punjab,Scooter,Black,2020,West Bengal,68,Female,Four-Wheeler,4,Cloudy,Slippery,Suspended,1,Yes,,Green,30,55,0.28,Negative,No,2,3,14,Signal Jumping
+West Bengal,Scooter,Blue,2016,Punjab,66,Male,Two-Wheeler,9,Dust Storm,Wet,Expired,3,No,,Red,100,73,0.17,Not Conducted,No,4,4,20,Wrong Parking
+Delhi,Truck,Silver,2017,Uttar Pradesh,24,Female,Four-Wheeler,5,Rainy,Dry,Valid,1,No,No,Green,80,90,0.47,Negative,Yes,4,4,2,Using Mobile Phone
+Gujarat,Scooter,Yellow,2014,West Bengal,44,Male,Learner,9,Rainy,Potholes,Valid,4,Yes,No,Green,60,80,0.41,Negative,Yes,3,4,5,No Helmet
+Delhi,Auto Rickshaw,Blue,2006,Gujarat,60,Other,Two-Wheeler,4,Foggy,Under Construction,Valid,3,No,,Yellow,80,79,0.1,Negative,No,5,4,6,No Seatbelt
+West Bengal,Bus,Silver,2014,Uttar Pradesh,35,Male,Learner,5,Dust Storm,Dry,Suspended,5,No,Yes,Red,60,45,0.11,Positive,No,0,0,8,Driving Without License
+Gujarat,Truck,Yellow,2009,Delhi,59,Male,Heavy Vehicle,10,Clear,Dry,Valid,4,,,Green,40,38,0.33,Negative,Yes,0,2,21,No Seatbelt
+Tamil Nadu,Car,Black,2004,Karnataka,22,Other,Heavy Vehicle,9,Cloudy,Potholes,Valid,4,,,Red,80,34,0.42,Positive,No,5,2,20,No Seatbelt
+Tamil Nadu,Auto Rickshaw,Blue,2016,Tamil Nadu,30,Female,Commercial,1,Dust Storm,Under Construction,Expired,3,Yes,Yes,Yellow,60,94,0.32,Not Conducted,No,0,2,3,Wrong Parking
+Tamil Nadu,Bus,Blue,2013,Tamil Nadu,45,Female,Learner,3,Rainy,Dry,Suspended,3,,Yes,Yellow,100,77,0.3,Not Conducted,Yes,4,5,3,Signal Jumping
+Karnataka,Car,Grey,1995,Delhi,32,Other,Two-Wheeler,4,Foggy,Wet,Valid,2,Yes,Yes,Red,40,25,0.2,Positive,No,5,0,5,Drunk Driving
+Punjab,Truck,Yellow,2014,Punjab,32,Other,Heavy Vehicle,6,Rainy,Under Construction,Valid,2,,,Red,50,44,0.19,Not Conducted,Yes,5,4,7,Overloading
+Maharashtra,Car,Yellow,1997,Gujarat,28,Female,Commercial,1,Cloudy,Wet,Suspended,3,No,No,Yellow,40,117,0.36,Positive,Yes,5,1,8,No Helmet
+Delhi,Auto Rickshaw,Grey,2000,Punjab,64,Female,Learner,0,Rainy,Dry,Expired,3,Yes,No,Yellow,100,117,0.06,Not Conducted,No,3,6,2,No Helmet
+Maharashtra,Bike,Grey,2006,Uttar Pradesh,46,Female,Commercial,10,Clear,Slippery,Suspended,5,,Yes,Red,60,82,0.02,Negative,No,0,5,2,No Seatbelt
+Gujarat,Bus,Blue,2010,Tamil Nadu,75,Female,Commercial,7,Clear,Slippery,Suspended,4,No,No,Green,50,63,0.42,Not Conducted,Yes,3,4,18,Overloading
+Karnataka,Truck,Grey,2023,Uttar Pradesh,46,Female,Learner,5,Foggy,Potholes,Valid,3,Yes,No,Red,50,111,0.25,Positive,No,1,2,6,No Helmet
+Maharashtra,Bus,Silver,2000,Karnataka,22,Female,Heavy Vehicle,3,Foggy,Potholes,Valid,1,No,Yes,Red,50,47,0.01,Positive,Yes,4,6,14,Signal Jumping
+Tamil Nadu,Bike,Black,1999,Gujarat,51,Other,Learner,9,Foggy,Dry,Valid,2,,,Green,60,102,0.09,Not Conducted,Yes,0,1,22,Overloading
+Karnataka,Bus,Grey,2015,West Bengal,38,Other,Four-Wheeler,1,Dust Storm,Slippery,Expired,2,Yes,,Red,30,117,0.08,Negative,Yes,0,6,14,Over-speeding
+Tamil Nadu,Car,Yellow,1999,Tamil Nadu,64,Female,Four-Wheeler,6,Dust Storm,Slippery,Expired,1,,Yes,Yellow,50,66,0.27,Negative,No,1,0,17,Over-speeding
+Tamil Nadu,Bike,Blue,2019,Karnataka,57,Other,Two-Wheeler,6,Cloudy,Dry,Expired,1,No,Yes,Green,50,81,0.37,Not Conducted,No,1,2,20,No Helmet
+Punjab,Bus,Silver,2001,Delhi,31,Female,Learner,4,Rainy,Under Construction,Valid,3,No,Yes,Green,50,20,0.31,Negative,No,3,2,19,No Seatbelt
+Gujarat,Auto Rickshaw,Silver,2020,Maharashtra,67,Female,Two-Wheeler,5,Rainy,Under Construction,Suspended,4,No,No,Red,50,95,0.35,Negative,No,5,0,22,Drunk Driving
+Punjab,Auto Rickshaw,Red,2018,West Bengal,41,Female,Four-Wheeler,3,Cloudy,Wet,Suspended,3,,Yes,Green,80,111,0.08,Negative,No,4,4,18,Drunk Driving
+West Bengal,Truck,Blue,2003,West Bengal,20,Other,Learner,2,Foggy,Under Construction,Valid,5,,,Green,30,69,0.09,Not Conducted,No,4,2,13,Over-speeding
+Delhi,Scooter,White,2022,West Bengal,18,Other,Four-Wheeler,5,Rainy,Wet,Suspended,3,,Yes,Yellow,100,93,0.43,Negative,No,0,0,5,Wrong Parking
+West Bengal,Bike,Black,2014,Karnataka,50,Female,Two-Wheeler,9,Cloudy,Slippery,Suspended,4,No,Yes,Green,60,109,0.48,Positive,Yes,4,4,11,Wrong Parking
+Maharashtra,Bus,Red,2015,Tamil Nadu,26,Other,Two-Wheeler,3,Foggy,Dry,Expired,1,,Yes,Green,100,76,0.17,Not Conducted,No,3,2,12,Using Mobile Phone
+Maharashtra,Scooter,Silver,2019,Gujarat,66,Female,Commercial,5,Cloudy,Potholes,Suspended,1,No,Yes,Red,40,71,0.5,Negative,No,3,0,12,Drunk Driving
+Delhi,Car,Black,2021,Maharashtra,63,Female,Learner,8,Rainy,Dry,Expired,1,No,Yes,Yellow,40,24,0.06,Negative,No,4,6,8,No Seatbelt
+Punjab,Auto Rickshaw,White,2013,Uttar Pradesh,64,Male,Learner,8,Dust Storm,Dry,Expired,3,No,No,Red,100,20,0.09,Negative,Yes,5,2,23,Signal Jumping
+Maharashtra,Car,Green,1996,Delhi,57,Male,Four-Wheeler,7,Foggy,Wet,Valid,5,Yes,No,Red,80,84,0.3,Not Conducted,Yes,5,4,11,No Helmet
+Gujarat,Auto Rickshaw,Black,1998,Delhi,19,Female,Heavy Vehicle,2,Foggy,Dry,Valid,4,No,Yes,Green,80,100,0.09,Positive,No,2,5,17,No Helmet
+Karnataka,Car,Grey,2017,Maharashtra,64,Male,Commercial,8,Foggy,Under Construction,Expired,3,,Yes,Yellow,50,42,0.47,Positive,Yes,2,2,3,Over-speeding
+Maharashtra,Bus,Silver,2000,Maharashtra,37,Other,Four-Wheeler,4,Foggy,Potholes,Expired,3,Yes,No,Green,100,97,0.04,Not Conducted,No,4,6,7,Over-speeding
+Gujarat,Car,Green,2023,Tamil Nadu,53,Other,Four-Wheeler,10,Rainy,Slippery,Expired,5,No,Yes,Green,30,84,0.19,Not Conducted,Yes,1,1,5,No Helmet
+Uttar Pradesh,Car,Grey,1997,Maharashtra,21,Other,Heavy Vehicle,7,Clear,Slippery,Expired,2,No,Yes,Green,30,119,0.41,Positive,No,1,4,13,Wrong Parking
+Maharashtra,Bus,White,2013,Gujarat,33,Male,Commercial,2,Rainy,Dry,Valid,5,Yes,,Green,100,87,0.17,Negative,Yes,3,4,16,Over-speeding
+Delhi,Bike,Grey,1999,Delhi,67,Male,Four-Wheeler,2,Rainy,Dry,Valid,1,No,,Yellow,60,120,0.34,Positive,Yes,3,2,7,Wrong Parking
+Maharashtra,Car,Blue,2001,Uttar Pradesh,71,Male,Heavy Vehicle,8,Dust Storm,Dry,Valid,1,No,,Red,40,51,0.28,Not Conducted,Yes,0,1,10,Signal Jumping
+Delhi,Car,Blue,2007,Maharashtra,69,Male,Commercial,7,Dust Storm,Potholes,Valid,1,No,No,Red,60,102,0.19,Not Conducted,Yes,3,0,19,Driving Without License
+Uttar Pradesh,Car,Green,2016,Karnataka,65,Male,Heavy Vehicle,3,Foggy,Slippery,Suspended,3,,,Red,80,69,0.33,Positive,No,5,3,21,Overloading
+Karnataka,Bike,Silver,1995,West Bengal,62,Other,Heavy Vehicle,2,Dust Storm,Slippery,Valid,5,Yes,Yes,Green,60,48,0.46,Negative,No,0,2,18,Using Mobile Phone
+Delhi,Auto Rickshaw,Yellow,2006,Gujarat,58,Female,Heavy Vehicle,6,Dust Storm,Slippery,Suspended,2,No,Yes,Red,100,118,0.5,Negative,Yes,0,3,0,Overloading
+Gujarat,Truck,Grey,1996,Gujarat,27,Other,Two-Wheeler,8,Clear,Slippery,Expired,1,,,Red,30,20,0.18,Negative,Yes,5,6,21,Drunk Driving
+Uttar Pradesh,Bus,Red,1998,West Bengal,30,Female,Four-Wheeler,2,Foggy,Potholes,Expired,2,No,Yes,Red,60,116,0.06,Positive,Yes,5,4,9,Driving Without License
+Maharashtra,Truck,Yellow,2011,West Bengal,34,Other,Two-Wheeler,6,Cloudy,Slippery,Expired,2,Yes,No,Yellow,50,101,0.06,Positive,Yes,1,2,23,Overloading
+Uttar Pradesh,Car,Black,2018,West Bengal,75,Male,Two-Wheeler,7,Clear,Potholes,Expired,4,,Yes,Red,80,78,0.46,Not Conducted,Yes,0,0,6,Over-speeding
+Maharashtra,Bus,Silver,2021,Gujarat,22,Other,Two-Wheeler,5,Rainy,Potholes,Valid,4,Yes,Yes,Red,40,33,0.17,Positive,No,5,6,18,No Helmet
+Delhi,Bike,White,2007,Maharashtra,41,Female,Four-Wheeler,10,Foggy,Dry,Valid,5,,,Red,40,99,0.2,Positive,No,2,5,13,Wrong Parking
+Gujarat,Auto Rickshaw,Grey,2011,West Bengal,61,Male,Heavy Vehicle,5,Cloudy,Under Construction,Suspended,2,,Yes,Red,30,95,0.09,Not Conducted,No,1,3,1,Drunk Driving
+Maharashtra,Truck,Black,1999,Gujarat,53,Male,Four-Wheeler,3,Clear,Under Construction,Valid,3,No,Yes,Green,60,72,0.23,Not Conducted,Yes,3,5,8,Drunk Driving
+Uttar Pradesh,Bike,White,1998,Punjab,25,Other,Four-Wheeler,4,Dust Storm,Slippery,Expired,1,No,No,Yellow,60,81,0.29,Negative,Yes,0,3,18,Overloading
+Delhi,Bike,Black,2007,Punjab,63,Other,Learner,2,Foggy,Slippery,Valid,4,Yes,,Yellow,40,72,0.4,Negative,Yes,2,3,7,No Helmet
+Uttar Pradesh,Auto Rickshaw,Blue,2008,Gujarat,69,Female,Two-Wheeler,9,Rainy,Wet,Expired,5,No,Yes,Yellow,30,103,0.01,Not Conducted,Yes,4,3,13,Driving Without License
+West Bengal,Bike,Black,1996,Tamil Nadu,56,Other,Heavy Vehicle,10,Foggy,Potholes,Expired,4,,,Yellow,60,90,0.29,Not Conducted,Yes,1,2,10,No Helmet
+West Bengal,Bus,Yellow,1996,Tamil Nadu,52,Other,Commercial,9,Dust Storm,Dry,Suspended,3,Yes,,Green,80,64,0.36,Negative,Yes,4,4,12,Drunk Driving
+Karnataka,Auto Rickshaw,Yellow,1996,Delhi,68,Female,Learner,10,Cloudy,Dry,Valid,1,Yes,Yes,Red,60,60,0.04,Negative,No,3,3,11,No Helmet
+Karnataka,Bike,Blue,2018,Gujarat,38,Other,Learner,10,Clear,Dry,Valid,3,Yes,Yes,Red,60,102,0.05,Negative,Yes,4,1,20,Signal Jumping
+Delhi,Truck,White,2001,Tamil Nadu,48,Other,Learner,9,Cloudy,Wet,Valid,4,,Yes,Yellow,80,83,0.09,Negative,No,2,5,19,Over-speeding
+Delhi,Truck,Blue,1996,Uttar Pradesh,25,Other,Four-Wheeler,1,Rainy,Dry,Suspended,2,No,Yes,Red,50,76,0.18,Not Conducted,No,5,6,2,Signal Jumping
+Delhi,Bike,Yellow,1997,Karnataka,28,Male,Learner,9,Foggy,Under Construction,Expired,1,Yes,,Red,100,56,0.29,Positive,No,2,2,0,No Helmet
+Karnataka,Bike,White,2005,Delhi,41,Female,Heavy Vehicle,2,Rainy,Slippery,Expired,3,,No,Yellow,60,53,0.36,Positive,Yes,0,6,0,Over-speeding
+Tamil Nadu,Car,Red,2012,Delhi,57,Female,Heavy Vehicle,6,Rainy,Under Construction,Expired,1,,No,Yellow,40,56,0.01,Not Conducted,Yes,0,1,3,Signal Jumping
+Uttar Pradesh,Truck,Blue,2011,Gujarat,66,Female,Heavy Vehicle,7,Clear,Potholes,Suspended,3,No,Yes,Green,80,39,0.22,Not Conducted,Yes,3,1,10,Using Mobile Phone
+Gujarat,Bike,Grey,2018,Maharashtra,28,Male,Heavy Vehicle,0,Foggy,Slippery,Expired,4,Yes,Yes,Yellow,50,28,0.28,Positive,No,3,4,16,Using Mobile Phone
+Karnataka,Bus,Silver,2022,Tamil Nadu,59,Other,Commercial,6,Rainy,Dry,Expired,5,,Yes,Yellow,100,116,0.04,Not Conducted,No,0,1,4,No Seatbelt
+West Bengal,Bike,Red,1997,West Bengal,54,Other,Learner,10,Dust Storm,Dry,Suspended,2,Yes,Yes,Red,40,98,0.0,Not Conducted,Yes,0,0,7,Overloading
+Karnataka,Bike,White,2002,Delhi,75,Male,Heavy Vehicle,6,Clear,Slippery,Expired,5,,No,Red,50,40,0.44,Not Conducted,No,0,0,3,Drunk Driving
+Punjab,Bus,Yellow,2011,Maharashtra,35,Female,Learner,8,Foggy,Under Construction,Valid,5,No,No,Green,30,45,0.08,Negative,Yes,5,2,16,Signal Jumping
+Tamil Nadu,Car,Silver,2006,Maharashtra,69,Female,Two-Wheeler,8,Foggy,Potholes,Suspended,4,No,No,Red,60,31,0.43,Positive,No,0,1,9,Drunk Driving
+Maharashtra,Car,Silver,2011,Punjab,19,Other,Four-Wheeler,8,Rainy,Slippery,Valid,5,Yes,,Green,50,50,0.45,Negative,Yes,1,6,4,Using Mobile Phone
+Uttar Pradesh,Auto Rickshaw,Red,1997,Tamil Nadu,32,Other,Learner,6,Clear,Dry,Expired,4,Yes,No,Green,80,20,0.45,Positive,No,5,2,2,No Seatbelt
+Tamil Nadu,Auto Rickshaw,White,2021,Maharashtra,58,Female,Heavy Vehicle,10,Foggy,Slippery,Suspended,1,No,No,Green,30,22,0.39,Not Conducted,Yes,4,6,4,Over-speeding
+Gujarat,Scooter,Green,2000,Maharashtra,56,Other,Four-Wheeler,3,Clear,Potholes,Suspended,4,Yes,,Green,80,85,0.12,Negative,Yes,3,2,15,Overloading
+Punjab,Car,Silver,1998,Gujarat,55,Female,Learner,8,Foggy,Slippery,Valid,5,Yes,No,Yellow,50,22,0.46,Negative,Yes,4,0,23,Signal Jumping
+West Bengal,Scooter,Silver,2018,Delhi,42,Other,Learner,0,Dust Storm,Dry,Valid,2,,,Green,30,24,0.5,Not Conducted,Yes,1,5,2,Wrong Parking
+Karnataka,Bus,Red,2002,Karnataka,46,Male,Four-Wheeler,7,Foggy,Slippery,Suspended,4,Yes,Yes,Yellow,60,61,0.0,Not Conducted,No,4,6,9,Driving Without License
+West Bengal,Car,White,2004,Tamil Nadu,65,Other,Commercial,5,Cloudy,Dry,Valid,4,,No,Yellow,80,60,0.16,Negative,Yes,3,4,10,Driving Without License
+Delhi,Scooter,Yellow,2010,Punjab,43,Male,Commercial,8,Cloudy,Potholes,Expired,4,Yes,No,Yellow,50,49,0.01,Not Conducted,No,0,3,0,Wrong Parking
+Maharashtra,Car,Black,2003,West Bengal,29,Other,Two-Wheeler,6,Clear,Slippery,Expired,2,Yes,,Red,40,26,0.47,Not Conducted,No,2,6,11,Driving Without License
+Gujarat,Scooter,Green,1997,Karnataka,20,Female,Four-Wheeler,9,Foggy,Wet,Expired,4,Yes,Yes,Red,30,35,0.31,Not Conducted,Yes,1,3,19,Driving Without License
+Punjab,Bus,Red,2011,West Bengal,56,Male,Commercial,7,Clear,Under Construction,Suspended,5,,No,Green,30,92,0.4,Positive,Yes,1,2,19,Driving Without License
+Karnataka,Truck,Green,1997,Delhi,58,Other,Commercial,9,Clear,Under Construction,Valid,1,No,,Yellow,60,64,0.49,Negative,Yes,4,3,19,Driving Without License
+Karnataka,Car,Red,2003,Karnataka,57,Male,Two-Wheeler,8,Rainy,Potholes,Suspended,3,Yes,Yes,Red,40,119,0.07,Not Conducted,Yes,3,6,5,Signal Jumping
+Uttar Pradesh,Scooter,Green,2020,Gujarat,61,Other,Commercial,4,Foggy,Dry,Suspended,5,No,Yes,Yellow,80,35,0.17,Negative,No,3,4,13,No Helmet
+Delhi,Auto Rickshaw,Yellow,2012,Maharashtra,42,Other,Heavy Vehicle,6,Cloudy,Dry,Expired,1,No,No,Green,50,41,0.48,Negative,Yes,4,6,4,Over-speeding
+Karnataka,Bus,Green,2014,Karnataka,52,Other,Learner,0,Foggy,Under Construction,Suspended,1,,No,Red,40,104,0.49,Positive,Yes,0,4,22,Over-speeding
+Maharashtra,Bus,Yellow,1999,Punjab,60,Male,Commercial,7,Cloudy,Slippery,Expired,5,,No,Green,50,42,0.42,Negative,Yes,3,4,22,Using Mobile Phone
+Gujarat,Bike,Black,2006,Karnataka,69,Other,Two-Wheeler,8,Dust Storm,Wet,Suspended,5,Yes,,Green,40,93,0.32,Positive,No,0,5,3,Drunk Driving
+Punjab,Car,Yellow,1995,West Bengal,58,Other,Heavy Vehicle,0,Foggy,Wet,Expired,1,No,No,Red,30,90,0.24,Positive,No,3,1,10,Over-speeding
+Gujarat,Scooter,White,2010,Gujarat,23,Male,Commercial,3,Foggy,Wet,Expired,2,No,No,Yellow,40,52,0.17,Not Conducted,No,3,1,19,No Seatbelt
+Maharashtra,Car,Red,2002,Delhi,32,Other,Commercial,10,Dust Storm,Wet,Suspended,5,,,Green,40,36,0.02,Negative,No,0,3,8,Overloading
+Delhi,Bus,Black,2009,Karnataka,18,Male,Heavy Vehicle,3,Rainy,Wet,Expired,4,,Yes,Yellow,60,68,0.45,Negative,No,5,4,17,Over-speeding
+Punjab,Auto Rickshaw,Black,2011,Uttar Pradesh,69,Male,Learner,1,Rainy,Under Construction,Suspended,5,,,Yellow,100,71,0.29,Positive,No,5,1,16,Over-speeding
+Tamil Nadu,Scooter,Blue,2011,Delhi,49,Other,Two-Wheeler,4,Cloudy,Slippery,Suspended,5,,,Red,80,76,0.28,Positive,No,1,5,7,No Helmet
+Tamil Nadu,Truck,Blue,2009,West Bengal,40,Female,Four-Wheeler,1,Rainy,Potholes,Valid,3,Yes,,Yellow,100,35,0.34,Positive,Yes,5,3,4,No Seatbelt
+Punjab,Truck,White,2003,Punjab,50,Female,Four-Wheeler,8,Cloudy,Under Construction,Valid,3,,No,Yellow,40,38,0.22,Negative,No,5,4,10,Driving Without License
+Delhi,Bus,Yellow,2010,Uttar Pradesh,68,Other,Two-Wheeler,1,Dust Storm,Slippery,Suspended,4,No,Yes,Yellow,60,21,0.13,Not Conducted,Yes,5,6,11,Driving Without License
+Delhi,Auto Rickshaw,Green,2008,Tamil Nadu,35,Female,Learner,8,Foggy,Wet,Expired,4,Yes,,Green,60,74,0.42,Negative,Yes,0,0,14,No Seatbelt
+Karnataka,Scooter,Blue,2022,Uttar Pradesh,69,Other,Learner,0,Clear,Slippery,Valid,2,,Yes,Red,60,69,0.11,Not Conducted,Yes,4,6,13,Using Mobile Phone
+Delhi,Auto Rickshaw,Silver,1995,Tamil Nadu,32,Male,Learner,1,Cloudy,Slippery,Expired,1,,Yes,Green,30,40,0.26,Negative,Yes,2,3,3,Signal Jumping
+Uttar Pradesh,Auto Rickshaw,Green,2010,Delhi,74,Other,Commercial,1,Clear,Under Construction,Suspended,4,Yes,No,Yellow,60,83,0.26,Not Conducted,No,0,2,4,Overloading
+Punjab,Auto Rickshaw,Black,2011,West Bengal,58,Female,Heavy Vehicle,8,Cloudy,Potholes,Expired,2,,Yes,Green,60,98,0.36,Positive,Yes,0,3,18,Signal Jumping
+Tamil Nadu,Bus,Blue,2003,Punjab,35,Female,Four-Wheeler,8,Cloudy,Dry,Suspended,4,No,No,Red,30,24,0.0,Not Conducted,No,2,3,3,Drunk Driving
+West Bengal,Bike,White,2020,Uttar Pradesh,64,Male,Heavy Vehicle,5,Clear,Dry,Expired,3,No,No,Yellow,50,33,0.46,Positive,No,5,2,16,Over-speeding
+Gujarat,Bike,Grey,1995,Maharashtra,61,Female,Learner,0,Rainy,Potholes,Valid,2,,Yes,Red,50,32,0.25,Not Conducted,Yes,3,1,5,Driving Without License
+Tamil Nadu,Auto Rickshaw,White,2015,Karnataka,62,Other,Learner,1,Rainy,Dry,Suspended,5,,,Red,100,78,0.19,Negative,No,2,5,1,No Seatbelt
+Punjab,Truck,White,2008,Maharashtra,43,Male,Two-Wheeler,4,Dust Storm,Under Construction,Valid,5,Yes,Yes,Yellow,80,118,0.18,Positive,No,0,2,13,No Seatbelt
+Punjab,Scooter,Grey,2001,Tamil Nadu,61,Male,Two-Wheeler,2,Cloudy,Wet,Suspended,1,No,,Yellow,50,87,0.48,Not Conducted,Yes,4,6,21,Driving Without License
+West Bengal,Bike,Green,2015,Maharashtra,27,Female,Heavy Vehicle,9,Dust Storm,Potholes,Valid,4,No,,Green,80,54,0.05,Not Conducted,No,3,2,6,Overloading
+West Bengal,Car,Green,2004,Gujarat,41,Female,Heavy Vehicle,3,Cloudy,Potholes,Suspended,2,Yes,No,Yellow,40,106,0.01,Negative,Yes,3,4,11,Wrong Parking
+Maharashtra,Auto Rickshaw,White,1999,Punjab,54,Other,Two-Wheeler,7,Rainy,Dry,Valid,3,Yes,Yes,Yellow,100,99,0.12,Negative,Yes,0,0,21,Driving Without License
+Maharashtra,Bus,White,2015,West Bengal,37,Male,Commercial,1,Clear,Wet,Suspended,4,,,Green,100,51,0.16,Negative,No,5,4,16,No Helmet
+Uttar Pradesh,Bus,Blue,2019,Uttar Pradesh,62,Other,Learner,7,Cloudy,Slippery,Expired,4,No,,Green,100,65,0.08,Not Conducted,No,4,3,22,Over-speeding
+Karnataka,Car,Yellow,2020,Gujarat,54,Female,Two-Wheeler,2,Dust Storm,Slippery,Expired,4,,No,Yellow,30,94,0.4,Positive,Yes,5,1,14,Driving Without License
+Maharashtra,Truck,Green,2009,Maharashtra,28,Other,Two-Wheeler,4,Cloudy,Wet,Valid,2,No,,Red,50,90,0.23,Not Conducted,Yes,1,4,20,Over-speeding
+Gujarat,Scooter,Grey,2016,Punjab,41,Male,Four-Wheeler,9,Clear,Potholes,Valid,3,,No,Green,60,120,0.19,Positive,No,5,0,13,Over-speeding
+Gujarat,Bus,Green,2006,Tamil Nadu,72,Male,Learner,0,Cloudy,Dry,Suspended,4,No,No,Yellow,80,53,0.29,Not Conducted,No,3,3,4,No Seatbelt
+West Bengal,Scooter,Black,2004,Delhi,74,Other,Commercial,7,Cloudy,Potholes,Valid,1,No,,Green,40,98,0.41,Negative,Yes,5,4,23,Driving Without License
+Maharashtra,Auto Rickshaw,Green,2021,Punjab,55,Female,Commercial,0,Cloudy,Potholes,Valid,2,No,,Green,50,85,0.33,Negative,No,3,2,20,Drunk Driving
+Maharashtra,Bike,Green,2002,Karnataka,55,Female,Two-Wheeler,0,Dust Storm,Slippery,Valid,5,,,Yellow,80,92,0.27,Negative,No,5,6,20,Drunk Driving
+Delhi,Car,Blue,2004,Karnataka,65,Male,Four-Wheeler,2,Foggy,Potholes,Valid,2,,,Yellow,50,27,0.33,Positive,Yes,5,5,6,Overloading
+Maharashtra,Auto Rickshaw,Green,2008,Delhi,59,Other,Commercial,7,Foggy,Under Construction,Expired,3,Yes,No,Red,60,120,0.14,Negative,No,4,1,4,Using Mobile Phone
+Karnataka,Scooter,Black,2019,Gujarat,58,Other,Heavy Vehicle,9,Rainy,Slippery,Expired,2,No,Yes,Red,60,88,0.27,Positive,Yes,5,4,12,Drunk Driving
+West Bengal,Auto Rickshaw,Grey,2018,West Bengal,60,Male,Learner,9,Foggy,Potholes,Suspended,5,Yes,Yes,Green,60,117,0.3,Not Conducted,No,4,0,10,No Helmet
+Gujarat,Auto Rickshaw,Grey,1995,West Bengal,39,Female,Two-Wheeler,6,Foggy,Dry,Expired,1,No,No,Yellow,30,58,0.4,Positive,Yes,5,2,17,Driving Without License
+Delhi,Bus,Red,2001,West Bengal,66,Male,Heavy Vehicle,1,Dust Storm,Under Construction,Expired,2,Yes,,Green,80,70,0.22,Not Conducted,Yes,1,1,9,No Helmet
+Tamil Nadu,Truck,Green,1997,Punjab,75,Female,Heavy Vehicle,6,Clear,Wet,Valid,2,No,,Green,80,99,0.31,Positive,Yes,1,3,0,Using Mobile Phone
+Karnataka,Bike,Silver,2021,Karnataka,53,Other,Two-Wheeler,8,Foggy,Under Construction,Suspended,1,No,Yes,Yellow,60,115,0.18,Not Conducted,Yes,2,4,5,Over-speeding
+Maharashtra,Bus,White,1996,Tamil Nadu,22,Male,Learner,3,Dust Storm,Under Construction,Expired,4,,,Red,40,24,0.13,Not Conducted,No,5,6,10,Driving Without License
+Gujarat,Auto Rickshaw,Grey,2022,Maharashtra,27,Male,Four-Wheeler,0,Rainy,Slippery,Suspended,3,,Yes,Yellow,80,86,0.35,Not Conducted,No,4,5,15,Using Mobile Phone
+Tamil Nadu,Car,Yellow,2021,Uttar Pradesh,33,Female,Two-Wheeler,4,Foggy,Dry,Suspended,5,Yes,No,Yellow,80,95,0.36,Negative,Yes,2,1,2,Overloading
+Uttar Pradesh,Auto Rickshaw,Grey,2012,Gujarat,61,Male,Heavy Vehicle,2,Cloudy,Potholes,Valid,5,Yes,Yes,Yellow,80,74,0.04,Positive,No,2,5,7,No Seatbelt
+Uttar Pradesh,Truck,Red,2002,West Bengal,60,Male,Four-Wheeler,8,Rainy,Slippery,Suspended,2,No,No,Yellow,50,26,0.16,Positive,Yes,0,2,8,Signal Jumping
+Gujarat,Bus,Yellow,2017,Delhi,51,Other,Two-Wheeler,5,Rainy,Slippery,Expired,5,,Yes,Yellow,40,82,0.27,Negative,No,2,5,20,Using Mobile Phone
+Punjab,Truck,Green,2013,West Bengal,48,Other,Learner,1,Dust Storm,Wet,Valid,5,Yes,No,Green,60,51,0.37,Negative,Yes,3,6,7,Overloading
+Tamil Nadu,Auto Rickshaw,Green,2003,Gujarat,20,Female,Two-Wheeler,3,Rainy,Under Construction,Expired,3,,No,Red,80,112,0.04,Negative,Yes,3,2,0,Wrong Parking
+Karnataka,Truck,Red,2021,Delhi,60,Other,Four-Wheeler,7,Rainy,Dry,Valid,1,Yes,Yes,Green,50,74,0.46,Not Conducted,No,4,5,4,Drunk Driving
+West Bengal,Truck,Silver,2005,Gujarat,30,Male,Commercial,10,Clear,Dry,Expired,3,,No,Yellow,60,58,0.14,Positive,Yes,2,5,20,Over-speeding
+Punjab,Car,Grey,2008,Punjab,62,Other,Learner,1,Foggy,Slippery,Expired,4,No,Yes,Yellow,100,85,0.09,Not Conducted,No,0,6,9,No Helmet
+West Bengal,Truck,Blue,2018,Maharashtra,23,Other,Commercial,9,Dust Storm,Slippery,Suspended,5,No,No,Red,60,109,0.27,Negative,Yes,1,6,12,Using Mobile Phone
+Punjab,Scooter,Green,2003,Gujarat,44,Female,Learner,10,Cloudy,Wet,Valid,1,,,Red,80,107,0.33,Negative,No,3,1,22,Over-speeding
+West Bengal,Auto Rickshaw,Black,2016,Punjab,44,Male,Four-Wheeler,8,Clear,Under Construction,Expired,2,Yes,No,Green,30,86,0.16,Not Conducted,Yes,4,0,17,Overloading
+Gujarat,Scooter,Black,2001,Tamil Nadu,27,Male,Learner,10,Rainy,Dry,Valid,5,,,Yellow,100,85,0.46,Negative,No,5,3,6,Overloading
+Maharashtra,Auto Rickshaw,Red,1998,Maharashtra,31,Other,Four-Wheeler,0,Foggy,Potholes,Suspended,4,Yes,Yes,Green,100,87,0.17,Not Conducted,No,3,6,23,Over-speeding
+Karnataka,Auto Rickshaw,Silver,2021,Gujarat,61,Male,Commercial,0,Dust Storm,Wet,Suspended,4,Yes,No,Yellow,50,42,0.11,Positive,No,2,6,1,Signal Jumping
+Punjab,Auto Rickshaw,Silver,2008,Maharashtra,25,Male,Two-Wheeler,8,Foggy,Dry,Expired,3,,Yes,Yellow,100,41,0.4,Not Conducted,No,3,4,0,Overloading
+West Bengal,Bike,Silver,2000,Uttar Pradesh,52,Male,Four-Wheeler,4,Foggy,Under Construction,Expired,4,,,Green,80,58,0.35,Not Conducted,No,3,1,2,Wrong Parking
+Maharashtra,Bike,Green,2002,Maharashtra,22,Male,Two-Wheeler,10,Rainy,Wet,Expired,1,No,No,Yellow,100,53,0.18,Negative,No,2,5,19,Using Mobile Phone
+Uttar Pradesh,Car,Green,2009,Gujarat,39,Other,Two-Wheeler,9,Cloudy,Under Construction,Valid,5,Yes,Yes,Red,30,25,0.21,Negative,No,0,0,15,Driving Without License
+Gujarat,Scooter,Green,2005,Tamil Nadu,38,Other,Heavy Vehicle,6,Foggy,Wet,Valid,1,Yes,,Green,60,71,0.12,Positive,No,2,3,2,Overloading
+Tamil Nadu,Bike,Yellow,2009,Tamil Nadu,32,Other,Four-Wheeler,2,Foggy,Dry,Valid,1,No,,Red,50,75,0.49,Negative,Yes,4,4,23,Over-speeding
+Tamil Nadu,Auto Rickshaw,Red,2002,Gujarat,21,Female,Heavy Vehicle,4,Dust Storm,Dry,Expired,5,,Yes,Green,50,52,0.31,Positive,No,1,5,4,Using Mobile Phone
+Punjab,Bus,Blue,2001,Gujarat,59,Male,Learner,1,Clear,Dry,Suspended,4,No,No,Green,50,89,0.09,Not Conducted,Yes,3,2,16,Wrong Parking
+Karnataka,Car,Grey,2000,Uttar Pradesh,56,Male,Two-Wheeler,3,Clear,Potholes,Suspended,1,Yes,Yes,Green,100,87,0.29,Negative,No,0,1,0,Signal Jumping
+Gujarat,Car,White,2019,West Bengal,49,Other,Heavy Vehicle,9,Clear,Potholes,Expired,4,,,Red,60,83,0.37,Negative,Yes,3,4,21,Driving Without License
+Gujarat,Auto Rickshaw,Black,2010,Punjab,62,Other,Commercial,10,Clear,Potholes,Expired,5,Yes,Yes,Red,100,109,0.29,Negative,Yes,1,3,11,Signal Jumping
+West Bengal,Scooter,Black,2005,Gujarat,54,Female,Two-Wheeler,1,Clear,Wet,Expired,3,,No,Red,100,78,0.06,Not Conducted,No,4,2,12,Drunk Driving
+Punjab,Auto Rickshaw,Silver,2013,Karnataka,50,Other,Learner,1,Rainy,Dry,Suspended,2,Yes,,Yellow,100,72,0.17,Negative,Yes,1,2,15,No Seatbelt
+Maharashtra,Bike,Green,2022,Punjab,28,Female,Heavy Vehicle,3,Clear,Potholes,Expired,2,Yes,,Green,60,41,0.08,Not Conducted,No,1,6,21,No Helmet
+West Bengal,Bike,Black,2013,West Bengal,20,Male,Heavy Vehicle,2,Cloudy,Under Construction,Expired,2,No,No,Green,100,103,0.42,Not Conducted,Yes,0,0,13,Over-speeding
+Maharashtra,Bike,Grey,2003,West Bengal,46,Other,Two-Wheeler,0,Foggy,Wet,Expired,3,Yes,,Yellow,100,120,0.29,Not Conducted,No,1,4,7,No Helmet
+Karnataka,Car,Black,2014,Punjab,32,Female,Two-Wheeler,1,Foggy,Dry,Valid,4,,Yes,Yellow,100,63,0.31,Negative,Yes,5,0,7,Wrong Parking
+West Bengal,Truck,Red,2008,Tamil Nadu,48,Other,Heavy Vehicle,5,Dust Storm,Slippery,Expired,1,Yes,Yes,Green,30,42,0.39,Not Conducted,No,0,4,16,Overloading
+Delhi,Scooter,Black,2010,Punjab,25,Male,Four-Wheeler,4,Foggy,Under Construction,Expired,2,Yes,,Green,40,50,0.02,Not Conducted,No,5,5,17,Signal Jumping
+Tamil Nadu,Truck,Blue,2015,Uttar Pradesh,73,Other,Four-Wheeler,0,Dust Storm,Under Construction,Expired,5,Yes,No,Green,60,32,0.06,Positive,No,4,5,5,No Helmet
+West Bengal,Bike,Grey,1999,Uttar Pradesh,71,Male,Four-Wheeler,7,Dust Storm,Potholes,Expired,4,Yes,,Red,40,55,0.21,Positive,Yes,1,2,13,No Helmet

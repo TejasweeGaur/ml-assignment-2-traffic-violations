@@ -222,7 +222,3 @@ __pycache__/
 *.pyo
 *.pyd
 __pycache__/
-*pkl
-
-# Training and Testing CSV
-*.csv
