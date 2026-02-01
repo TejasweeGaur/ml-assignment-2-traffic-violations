@@ -170,8 +170,16 @@ with tab_evaluate:
     st.subheader("Model Evaluation")
 
     with st.spinner("Running model predictions..."):
-        y_pred = model_pipeline.predict(X_test)
-        y_prob = model_pipeline.predict_proba(X_test)
+        try:
+            y_pred = model_pipeline.predict(X_test)
+            y_prob = model_pipeline.predict_proba(X_test)
+        except Exception as e:
+            st.error(
+                "An error occurred while generating predictions. "
+                "Please verify that the uploaded data matches the model's expected format."
+            )
+            st.error(f"Details: {e}")
+            st.stop()
 
     st.success("Predictions completed.")
     st.write("Predicted classes and probabilities:")
