@@ -41,6 +41,15 @@ st.markdown(
     """
 )
 
+st.warning(
+    """
+    ⚠️ **Security Notice**: This application loads pre-trained machine learning models 
+    using pickle deserialization. Only model files from trusted sources (currently limited 
+    to those committed in this repository) should be loaded. Never load model files from 
+    untrusted or unknown sources, as they may execute arbitrary code during deserialization.
+    """
+)
+
 ARTIFACTS_DIR = Path("models/artifacts")
 DATASETS_DIR = Path("datasets")
 METRIC_EXPLANATIONS = {
@@ -59,6 +68,9 @@ with tab_evaluate:
 
     @st.cache_resource
     def load_label_encoder():
+        # SECURITY WARNING: joblib.load() uses pickle deserialization which can
+        # execute arbitrary code. Only load pickle files from trusted sources.
+        # This application only loads model files committed to the repository.
         return joblib.load(ARTIFACTS_DIR / "label_encoder.pkl")
 
     @st.cache_data
@@ -84,6 +96,9 @@ with tab_evaluate:
 
     @st.cache_resource
     def load_model(model_name: str):
+        # SECURITY WARNING: joblib.load() uses pickle deserialization which can
+        # execute arbitrary code. Only load pickle files from trusted sources.
+        # This application only loads model files committed to the repository.
         model_path = ARTIFACTS_DIR / f"{model_name}.pkl"
         return joblib.load(model_path)
 
