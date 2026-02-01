@@ -1,2 +1,4 @@
 [server]
-runOnSave = true
+# runOnSave = true is disabled by default for better production behavior
+# Developers can enable it locally by uncommenting the line below
+# runOnSave = true
