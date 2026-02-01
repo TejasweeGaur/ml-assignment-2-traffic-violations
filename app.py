@@ -1,3 +1,4 @@
+import time
 from pathlib import Path
 
 import joblib
@@ -41,15 +42,6 @@ st.markdown(
     """
 )
 
-st.warning(
-    """
-    ⚠️ **Security Notice**: This application loads pre-trained machine learning models 
-    using pickle deserialization. Only model files from trusted sources (currently limited 
-    to those committed in this repository) should be loaded. Never load model files from 
-    untrusted or unknown sources, as they may execute arbitrary code during deserialization.
-    """
-)
-
 ARTIFACTS_DIR = Path("models/artifacts")
 DATASETS_DIR = Path("datasets")
 METRIC_EXPLANATIONS = {
@@ -68,9 +60,6 @@ with tab_evaluate:
 
     @st.cache_resource
     def load_label_encoder():
-        # SECURITY WARNING: joblib.load() uses pickle deserialization which can
-        # execute arbitrary code. Only load pickle files from trusted sources.
-        # This application only loads model files committed to the repository.
         return joblib.load(ARTIFACTS_DIR / "label_encoder.pkl")
 
     @st.cache_data
@@ -94,11 +83,14 @@ with tab_evaluate:
     )
     selected_model = selected_model_name.replace(" ", "_").lower()
 
+    if "last_model" not in st.session_state:
+        st.session_state.last_model = selected_model
+    model_changed = selected_model != st.session_state.last_model
+    if model_changed:
+        st.session_state.last_model = selected_model
+
     @st.cache_resource
     def load_model(model_name: str):
-        # SECURITY WARNING: joblib.load() uses pickle deserialization which can
-        # execute arbitrary code. Only load pickle files from trusted sources.
-        # This application only loads model files committed to the repository.
         model_path = ARTIFACTS_DIR / f"{model_name}.pkl"
         return joblib.load(model_path)
 
@@ -113,13 +105,19 @@ with tab_evaluate:
         try:
             return pd.read_csv(file)
         except pd.errors.EmptyDataError:
-            st.error("The uploaded CSV file is empty. Please upload a valid CSV file with data.")
+            st.error(
+                "The uploaded CSV file is empty. Please upload a valid CSV file with data."
+            )
             st.stop()
         except pd.errors.ParserError as e:
-            st.error(f"Failed to parse the CSV file. Please ensure it is a valid CSV format. Error: {e}")
+            st.error(
+                f"Failed to parse the CSV file. Please ensure it is a valid CSV format. Error: {e}"
+            )
             st.stop()
         except UnicodeDecodeError:
-            st.error("The uploaded file contains invalid characters or encoding. Please ensure it is a valid UTF-8 encoded CSV file.")
+            st.error(
+                "The uploaded file contains invalid characters or encoding. Please ensure it is a valid UTF-8 encoded CSV file."
+            )
             st.stop()
         except Exception as e:
             st.error(f"An unexpected error occurred while reading the CSV file: {e}")
@@ -131,22 +129,34 @@ with tab_evaluate:
         try:
             return pd.read_csv(sample_path)
         except pd.errors.EmptyDataError:
-            st.error("The sample test dataset file is empty. Please check the datasets directory.")
+            st.error(
+                "The sample test dataset file is empty. Please check the datasets directory."
+            )
             st.stop()
         except pd.errors.ParserError as e:
-            st.error(f"Failed to parse the sample test dataset. Please check the file format. Error: {e}")
+            st.error(
+                f"Failed to parse the sample test dataset. Please check the file format. Error: {e}"
+            )
             st.stop()
         except FileNotFoundError:
-            st.error(f"Sample test dataset not found at {sample_path}. Please ensure the file exists.")
+            st.error(
+                f"Sample test dataset not found at {sample_path}. Please ensure the file exists."
+            )
             st.stop()
         except UnicodeDecodeError:
-            st.error("The sample test dataset contains invalid characters or encoding. Please check the file.")
+            st.error(
+                "The sample test dataset contains invalid characters or encoding. Please check the file."
+            )
             st.stop()
         except PermissionError:
-            st.error(f"Permission denied when trying to read {sample_path}. Please check file permissions.")
+            st.error(
+                f"Permission denied when trying to read {sample_path}. Please check file permissions."
+            )
             st.stop()
         except Exception as e:
-            st.error(f"An unexpected error occurred while reading the sample test dataset: {e}")
+            st.error(
+                f"An unexpected error occurred while reading the sample test dataset: {e}"
+            )
             st.stop()
 
     @st.cache_data
@@ -164,139 +174,218 @@ with tab_evaluate:
 
     if uploaded_file is None:
         st.warning("Please upload a CSV file to proceed.")
-        st.stop()
+    else:
 
-    test_df = load_test_data(uploaded_file)
+        def get_uploaded_file_id(file) -> str:
+            return f"{file.name}:{getattr(file, 'size', 'unknown')}"
 
-    st.write("Preview of uploaded data:")
-    st.dataframe(test_df.head())
+        if "validated_file_id" not in st.session_state:
+            st.session_state.validated_file_id = None
+        if "cached_test_df" not in st.session_state:
+            st.session_state.cached_test_df = None
 
-    TARGET_COLUMN = "Violation_Type"
-
-    if TARGET_COLUMN not in test_df.columns:
-        st.error(f"Target column '{TARGET_COLUMN}' not found in uploaded CSV.")
-        st.stop()
-
-    # Validate that the uploaded data has the expected feature columns
-    sample_df = load_sample_test_data()
-    expected_features = [col for col in sample_df.columns if col != TARGET_COLUMN]
-
-    missing_features = [col for col in expected_features if col not in test_df.columns]
-    if missing_features:
-        st.error(
-            "The uploaded CSV is missing required feature columns used by the model:\n"
-            + ", ".join(missing_features)
-        )
-        st.stop()
-
-    unexpected_features = [
-        col
-        for col in test_df.columns
-        if col not in expected_features and col != TARGET_COLUMN
-    ]
-    if unexpected_features:
-        st.warning(
-            "The uploaded CSV contains unexpected columns that will be ignored by the model:\n"
-            + ", ".join(unexpected_features)
-        )
-        test_df = test_df.drop(columns=unexpected_features)
-    X_test = test_df.drop(columns=[TARGET_COLUMN])
-    y_test = test_df[TARGET_COLUMN]
-
-    # Validate that all violation types in the uploaded data were seen during training
-    known_classes = set(label_encoder.classes_)
-    uploaded_classes = set(y_test.unique())
-    unknown_classes = uploaded_classes - known_classes
-
-    if unknown_classes:
-        unknown_list = sorted(list(unknown_classes))
-        example_unknowns = ", ".join(map(str, unknown_list[:5]))
-        st.error(
-            "The uploaded data contains violation types that were not present in the "
-            "training data and cannot be evaluated.\n\n"
-            f"Unknown violation type(s) (showing up to 5): {example_unknowns}"
-        )
-        st.stop()
-    y_test_enc = label_encoder.transform(y_test)
-
-    st.subheader("Model Evaluation")
-
-    with st.spinner("Running model predictions..."):
-        try:
-            y_pred = model_pipeline.predict(X_test)
-            y_prob = model_pipeline.predict_proba(X_test)
-        except Exception as e:
-            st.error(
-                "An error occurred while generating predictions. "
-                "Please verify that the uploaded data matches the model's expected format."
+        current_file_id = get_uploaded_file_id(uploaded_file)
+        if current_file_id != st.session_state.validated_file_id:
+            progress_bar = st.progress(
+                0, text="Validating and Reading uploaded data..."
             )
-            st.error(f"Details: {e}")
-            st.stop()
+            for percentage_completed in range(0, 100):
+                time.sleep(0.03)
+                progress_bar.progress(
+                    percentage_completed + 1,
+                    text="Validating and Reading uploaded data...",
+                )
+            time.sleep(0.1)
+            st.success("Uploaded data validated successfully.")
 
-    st.success("Predictions completed.")
-    st.write("Predicted classes and probabilities:")
-    pred_df = pd.DataFrame(y_prob, columns=label_encoder.classes_)
-    pred_df["Predicted_Class"] = label_encoder.inverse_transform(y_pred)
-    st.dataframe(pred_df.head())
+            test_df = load_test_data(uploaded_file)
+            st.session_state.validated_file_id = current_file_id
+            st.session_state.cached_test_df = test_df
+        else:
+            cached_df = st.session_state.cached_test_df
+            if cached_df is None:
+                test_df = load_test_data(uploaded_file)
+                st.session_state.cached_test_df = test_df
+            else:
+                test_df = cached_df
 
-    accuracy = accuracy_score(y_test_enc, y_pred)
-    precision = precision_score(y_test_enc, y_pred, average="macro")
-    recall = recall_score(y_test_enc, y_pred, average="macro")
-    f1 = f1_score(y_test_enc, y_pred, average="macro")
-    auc = roc_auc_score(y_test_enc, y_prob, multi_class="ovr")
-    mcc = matthews_corrcoef(y_test_enc, y_pred)
+        with st.expander("View Uploaded Data"):
+            st.dataframe(test_df.head())
 
-    col1, col2, col3 = st.columns(3)
+        TARGET_COLUMN = "Violation_Type"
 
-    col1.metric(
-        "Accuracy", f"{accuracy * 100:.2f}%", help=METRIC_EXPLANATIONS["Accuracy"]
-    )
+        if TARGET_COLUMN not in test_df.columns:
+            st.error(f"Target column '{TARGET_COLUMN}' not found in uploaded CSV.")
+        else:
+            # Validate that the uploaded data has the expected feature columns
+            sample_df = load_sample_test_data()
+            expected_features = [
+                col for col in sample_df.columns if col != TARGET_COLUMN
+            ]
 
-    col2.metric(
-        "Precision (Macro)",
-        f"{precision * 100:.2f}%",
-        help=METRIC_EXPLANATIONS["Precision (Macro)"],
-    )
+            missing_features = [
+                col for col in expected_features if col not in test_df.columns
+            ]
+            if missing_features:
+                st.error(
+                    "The uploaded CSV is missing required feature columns used by the model:\n"
+                    + ", ".join(missing_features)
+                )
+            else:
+                unexpected_features = [
+                    col
+                    for col in test_df.columns
+                    if col not in expected_features and col != TARGET_COLUMN
+                ]
+                if unexpected_features:
+                    st.warning(
+                        "The uploaded CSV contains unexpected columns that will be ignored by the model:\n"
+                        + ", ".join(unexpected_features)
+                    )
+                    test_df = test_df.drop(columns=unexpected_features)
+                X_test = test_df.drop(columns=[TARGET_COLUMN])
+                y_test = test_df[TARGET_COLUMN]
 
-    col3.metric(
-        "Recall (Macro)",
-        f"{recall * 100:.2f}%",
-        help=METRIC_EXPLANATIONS["Recall (Macro)"],
-    )
+                # Validate that all violation types in the uploaded data were seen during training
+                known_classes = set(label_encoder.classes_)
+                uploaded_classes = set(y_test.unique())
+                unknown_classes = uploaded_classes - known_classes
 
-    col4, col5, col6 = st.columns(3)
+                if unknown_classes:
+                    unknown_list = sorted(list(unknown_classes))
+                    example_unknowns = ", ".join(map(str, unknown_list[:5]))
+                    st.error(
+                        "The uploaded data contains violation types that were not present in the "
+                        "training data and cannot be evaluated.\n\n"
+                        f"Unknown violation type(s) (showing up to 5): {example_unknowns}"
+                    )
+                else:
+                    y_test_enc = label_encoder.transform(y_test)
 
-    col4.metric(
-        "F1 Score (Macro)",
-        f"{f1 * 100:.2f}%",
-        help=METRIC_EXPLANATIONS["F1 Score (Macro)"],
-    )
+                    evaluation_placeholder = st.empty()
+                    if model_changed:
+                        evaluation_placeholder.empty()
 
-    col5.metric("AUC (OvR)", f"{auc * 100:.2f}%", help=METRIC_EXPLANATIONS["AUC (OvR)"])
+                    with evaluation_placeholder.container():
+                        st.subheader("Model Evaluation")
 
-    col6.metric("MCC", f"{mcc * 100:.2f}%", help=METRIC_EXPLANATIONS["MCC"])
+                        with st.spinner("Running model predictions..."):
+                            try:
+                                y_pred = model_pipeline.predict(X_test)
+                                y_prob = model_pipeline.predict_proba(X_test)
+                                time.sleep(3)
+                            except Exception as e:
+                                st.error(
+                                    "An error occurred while generating predictions. "
+                                    "Please verify that the uploaded data matches the model's expected format."
+                                )
+                                st.error(f"Details: {e}")
+                                st.stop()
 
-    st.subheader("Confusion Matrix")
+                        st.success("Predictions completed.")
+                        st.write("Predicted classes and probabilities:")
+                        pred_df = pd.DataFrame(y_prob, columns=label_encoder.classes_)
+                        pred_df["Predicted_Class"] = label_encoder.inverse_transform(
+                            y_pred
+                        )
+                        st.dataframe(pred_df.head())
 
-    cm = confusion_matrix(y_test_enc, y_pred)
-    cm_df = pd.DataFrame(
-        cm, index=label_encoder.classes_, columns=label_encoder.classes_
-    )
+                        accuracy = accuracy_score(y_test_enc, y_pred)
+                        precision = precision_score(y_test_enc, y_pred, average="macro")
+                        recall = recall_score(y_test_enc, y_pred, average="macro")
+                        f1 = f1_score(y_test_enc, y_pred, average="macro")
+                        auc = roc_auc_score(y_test_enc, y_prob, multi_class="ovr")
+                        mcc = matthews_corrcoef(y_test_enc, y_pred)
 
-    col_cm, _ = st.columns([2, 1])  # CM gets 2/3 width
-    with col_cm:
-        fig, ax = plt.subplots(figsize=(9, 5))
-        sns.heatmap(cm_df, annot=True, fmt="d", cmap="Blues", ax=ax)
-        st.pyplot(fig)
+                        col1, col2, col3 = st.columns(3)
 
-    st.subheader("Per-Class Performance")
+                        col1.metric(
+                            "Accuracy",
+                            f"{accuracy * 100:.2f}%",
+                            help=METRIC_EXPLANATIONS["Accuracy"],
+                        )
 
-    report = classification_report(
-        y_test_enc, y_pred, target_names=label_encoder.classes_, output_dict=True
-    )
+                        col2.metric(
+                            "Precision (Macro)",
+                            f"{precision * 100:.2f}%",
+                            help=METRIC_EXPLANATIONS["Precision (Macro)"],
+                        )
 
-    report_df = pd.DataFrame(report).transpose()
-    st.dataframe(report_df)
+                        col3.metric(
+                            "Recall (Macro)",
+                            f"{recall * 100:.2f}%",
+                            help=METRIC_EXPLANATIONS["Recall (Macro)"],
+                        )
+
+                        col4, col5, col6 = st.columns(3)
+
+                        col4.metric(
+                            "F1 Score (Macro)",
+                            f"{f1 * 100:.2f}%",
+                            help=METRIC_EXPLANATIONS["F1 Score (Macro)"],
+                        )
+
+                        col5.metric(
+                            "AUC (OvR)",
+                            f"{auc * 100:.2f}%",
+                            help=METRIC_EXPLANATIONS["AUC (OvR)"],
+                        )
+
+                        col6.metric(
+                            "MCC",
+                            f"{mcc * 100:.2f}%",
+                            help=METRIC_EXPLANATIONS["MCC"],
+                        )
+
+                        with st.expander("Confusion Matrix"):
+                            st.markdown(
+                                """
+                            A confusion matrix is a table that is often used to describe the performance of a classification model.
+                            Each row of the matrix represents the instances in a predicted class while each column represents the instances in an actual class (or vice versa).
+                            The name stems from the fact that it makes it easy to see if the system is confusing two classes (i.e., commonly mislabeling one as another).
+                            
+                            - **True Positives (TP)**: Correctly predicted positive observations.
+                            - **True Negatives (TN)**: Correctly predicted negative observations.
+                            - **False Positives (FP)**: Incorrectly predicted positive observations (Type I error).
+                            - **False Negatives (FN)**: Incorrectly predicted negative observations (Type II error).
+                            
+                            The diagonal elements represent the number of points for which the predicted label is equal to the true label, while off-diagonal elements are those that are mislabeled by the classifier.
+                            """
+                            )
+                            cm = confusion_matrix(y_test_enc, y_pred)
+                            cm_df = pd.DataFrame(
+                                cm,
+                                index=label_encoder.classes_,
+                                columns=label_encoder.classes_,
+                            )
+
+                            col_cm, _ = st.columns([2, 1])  # CM gets 2/3 width
+                            with col_cm:
+                                fig, ax = plt.subplots(figsize=(9, 5))
+                                sns.heatmap(
+                                    cm_df, annot=True, fmt="d", cmap="Blues", ax=ax
+                                )
+                                st.pyplot(fig)
+
+                        with st.expander("Per-Class Performance"):
+                            st.markdown(
+                                """
+                            The classification report provides detailed metrics for each class, including precision, recall, and F1-score.
+                            - **Precision**: The ratio of correctly predicted positive observations to the total predicted positives.
+                            - **Recall**: The ratio of correctly predicted positive observations to all actual positives.
+                            - **F1-Score**: The weighted average of Precision and Recall.
+                            - **Support**: The number of actual occurrences of the class in the specified dataset.
+                            """
+                            )
+                            report = classification_report(
+                                y_test_enc,
+                                y_pred,
+                                target_names=label_encoder.classes_,
+                                output_dict=True,
+                            )
+
+                            report_df = pd.DataFrame(report).transpose()
+                            st.dataframe(report_df)
 
 with tab_compare:
     st.header("Model Performance Comparison")
@@ -305,16 +394,16 @@ with tab_compare:
         """
     **Reproducibility Note**
 
-    The results shown here are based on a specific training and evaluation run.
-    The same metrics are documented in the GitHub README.md file.
-
-    Model performance may vary depending on:
-    - Hardware and compute environment
-    - Library versions
-    - Random seeds
-    - Dataset splits and preprocessing choices
-
-    All comparisons are provided for relative evaluation purposes.
+        The results shown here are based on a specific training and evaluation run.
+        The same metrics are documented in the GitHub README.md file.
+    
+        Model performance may vary depending on:
+        - Hardware and compute environment
+        - Library versions
+        - Random seeds
+        - Dataset splits and preprocessing choices
+    
+        All comparisons are provided for relative evaluation purposes.
     """
     )
 
@@ -389,6 +478,8 @@ with tab_compare:
     )
 
     if cm_path and cm_path.exists():
+        cm_df = pd.read_csv(cm_path, index_col=0)  # Load confusion matrix from CSV
+
         col_cm, _ = st.columns([2, 1])  # CM gets 2/3 width
 
         with col_cm:

@@ -36,6 +36,8 @@ The dataset contains records of traffic violations along with driver, vehicle, l
 - Using Mobile Phone  
 - Wrong Parking  
 
+### [Click here to view detailed Feature Analysis](datasets/README.md)
+
 ---
 
 ## Models Used
@@ -48,6 +50,8 @@ The following classification models were implemented and evaluated using the sam
 - Naive Bayes Classifier  
 - Random Forest Classifier (Ensemble)  
 - XGBoost Classifier (Ensemble)  
+
+### [Click here to view detailed Model Analysis and Processing Workflow](models/README.md)
 
 ---
 
@@ -101,6 +105,24 @@ Additionally, the **training time** and **evaluation (prediction) time** were re
 | Naive Bayes | Achieved the best overall performance (highest macro F1-score and MCC), indicating that probabilistic modeling is effective for this dataset. |
 | Random Forest | Underperformed despite higher computational cost, likely due to noisy one-hot encoded categorical features. |
 | XGBoost | Did not significantly outperform simpler models, suggesting limited predictive signal in the dataset despite its advanced ensemble structure. |
+
+---
+
+## Key Insights
+
+- Predicting exact traffic violation types is inherently challenging due to weak feature–target correlation.
+- Simpler probabilistic models (Naive Bayes) performed competitively against complex ensemble models.
+- Model complexity does not guarantee better performance in noisy, multi-class datasets.
+- Class-wise evaluation and balanced metrics are essential for fair assessment.
+
+---
+
+## Reproducibility and Assumptions
+
+- All models were trained using the same preprocessing pipeline and data split.
+- Random seeds were fixed where applicable.
+- Performance metrics may vary depending on environment, hardware, and library versions.
+- Results are intended for comparative analysis rather than absolute performance benchmarks.
 
 ---
 
@@ -159,15 +181,154 @@ For more information on pickle security, see: [Python Pickle Documentation](http
 
 ---
 
+## Project Structure
+
+``` markdown
+ml-assignment-2-traffic-violations/
+│
+├── datasets/
+│   ├── __init__.py
+│   ├── setup_dataset.py
+│   ├── dataset.csv
+│   ├── train.csv
+│   └── test.csv
+│
+├── models/
+│   ├── data_analysis.py
+│   ├── data_preparation.py
+│   ├── data_preprocessing.py
+│   ├── train_models.py
+│   ├── artifacts/
+│   │   ├── *.pkl
+│   │   ├── label_encoder.pkl
+│   │   ├── model_comparison.csv
+│   │   ├── confusion_matrices/
+│   │   └── classification_reports/
+│
+├── app.py
+│
+├── requirements.txt
+├── README.md
+├── .gitignore
+└── other files
+
+```
+
+---
+
+## How to run the Project
+
+Follow the steps below to run the project locally and explore the trained machine learning models through the Streamlit application.
+
+---
+
+### 1. Prerequisites
+
+Ensure that you have the following installed:
+
+- Python **3.9 or higher**
+- `pip` (Python package manager)
+- Git
+
+### 2. Clone the Repository
+
+```bash
+git clone https://github.com/TejasweeGaur/ml-assignment-2-traffic-violations.git -b main
+cd ml-assignment-2-traffic-violations
+```
+
+### 3. Create and Activate a Virtual Environment (Recommended)
+
+#### Windows
+``` bash
+python -m venv .venv
+.venv\Scripts\activate
+```
+
+#### macOS / Linux
+``` bash
+python3 -m venv .venv
+source .venv/bin/activate
+```
+
+### 4. Install Dependencies
+
+Install all required Python libraries using:
+
+``` python
+pip install -r requirements.txt
+```
+
+### 5. Prepare the Dataset
+
+Download and set up the dataset from Kaggle:
+
+``` python
+python -m datasets.setup_dataset
+```
+This step downloads the dataset and stores it as: ***datasets/dataset.csv***
+
+### 6. Run Data Preparation (Train/Test Split)
+
+Generate the training and testing datasets:
+``` python
+python -m models.data_preparation
+```
+
+This creates:
+ * datasets/train.csv
+ * datasets/test.csv
+
+### 7. Train All Models and Generate Artifacts
+Train all classification models, compute evaluation metrics, and save artifacts:
+``` python
+python -m models.train_models
+```
+This step generates:
+ * Trained model pipelines (.pkl files)
+ * Label encoder
+ * Model comparison metrics
+ * Confusion matrices
+ * Per-class classification reports
+
+All artifacts are saved under: ***models/artifacts/***
+
+### 8. Launch the Streamlit Application
+Start the Streamlit web interface:
+ ``` bash
+streamlit run streamlit_app/app.py
+``` 
+Once started, open the URL shown in the terminal (usually http://localhost:8501) in your browser.
+
+### 9. Using the Streamlit App
+Within the application, you can:
+
+* Download a sample test CSV
+* Upload a CSV file for evaluation
+* Select a trained model dynamically
+* View overall evaluation metrics
+* Analyze confusion matrices (raw or normalized)
+* Inspect per-class performance metrics
+* Compare all models using tables and bar charts
+
+> **Notes**
+  Results may vary slightly depending on the system environment, library versions, and random seeds.
+  The metrics shown in the Streamlit app correspond to the same training run documented in the project README.
+  No model retraining occurs inside the Streamlit application; all models are loaded from saved artifacts.
+
+---
+
 ## Technologies / Libraries Used
 
-- Python  
-- scikit-learn  
-- XGBoost  
-- Pandas  
-- NumPy  
-- Streamlit  
-- Matplotlib / Seaborn  
+* [Python](https://www.python.org/)  
+* [scikit-learn](https://scikit-learn.org/)  
+* [XGBoost](https://xgboost.readthedocs.io/)  
+* [Pandas](https://pandas.pydata.org/)  
+* [NumPy](https://numpy.org/)  
+* [Streamlit](https://streamlit.io/)  
+* [Matplotlib](https://matplotlib.org/) / [Seaborn](https://seaborn.pydata.org/)  
+* [Joblib](https://joblib.readthedocs.io/)  
+* [Kaggle](https://www.kaggle.com/)  
 
 ---
 
