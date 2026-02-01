@@ -102,9 +102,14 @@ with tab_evaluate:
         sample_path = DATASETS_DIR / "test.csv"
         return pd.read_csv(sample_path)
 
+    @st.cache_data
+    def get_sample_test_csv() -> str:
+        """Cache the CSV string conversion to avoid regenerating on every page render."""
+        return load_sample_test_data().to_csv(index=False)
+
     st.download_button(
         "Download Sample Test Dataset (CSV)",
-        data=load_sample_test_data().to_csv(index=False),
+        data=get_sample_test_csv(),
         file_name="sample_test_data.csv",
         mime="text/csv",
         help="Downloads the 20% sample of the original test dataset used during model training.",
