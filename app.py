@@ -103,6 +103,9 @@ with tab_evaluate:
         except pd.errors.ParserError as e:
             st.error(f"Failed to parse the CSV file. Please ensure it is a valid CSV format.\n\nError: {e}")
             st.stop()
+        except UnicodeDecodeError:
+            st.error("The uploaded file contains invalid characters or encoding. Please ensure it is a valid UTF-8 encoded CSV file.")
+            st.stop()
         except Exception as e:
             st.error(f"An unexpected error occurred while reading the CSV file: {e}")
             st.stop()
@@ -120,6 +123,12 @@ with tab_evaluate:
             st.stop()
         except FileNotFoundError:
             st.error(f"Sample test dataset not found at {sample_path}. Please ensure the file exists.")
+            st.stop()
+        except UnicodeDecodeError:
+            st.error("The sample test dataset contains invalid characters or encoding. Please check the file.")
+            st.stop()
+        except PermissionError:
+            st.error(f"Permission denied when trying to read {sample_path}. Please check file permissions.")
             st.stop()
         except Exception as e:
             st.error(f"An unexpected error occurred while reading the sample test dataset: {e}")
