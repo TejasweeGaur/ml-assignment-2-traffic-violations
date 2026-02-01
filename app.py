@@ -125,6 +125,29 @@ with tab_evaluate:
         st.error(f"Target column '{TARGET_COLUMN}' not found in uploaded CSV.")
         st.stop()
 
+    # Validate that the uploaded data has the expected feature columns
+    sample_df = load_sample_test_data()
+    expected_features = [col for col in sample_df.columns if col != TARGET_COLUMN]
+
+    missing_features = [col for col in expected_features if col not in test_df.columns]
+    if missing_features:
+        st.error(
+            "The uploaded CSV is missing required feature columns used by the model:\n"
+            + ", ".join(missing_features)
+        )
+        st.stop()
+
+    unexpected_features = [
+        col
+        for col in test_df.columns
+        if col not in expected_features and col != TARGET_COLUMN
+    ]
+    if unexpected_features:
+        st.warning(
+            "The uploaded CSV contains unexpected columns that will be ignored by the model:\n"
+            + ", ".join(unexpected_features)
+        )
+        test_df = test_df.drop(columns=unexpected_features)
     X_test = test_df.drop(columns=[TARGET_COLUMN])
     y_test = test_df[TARGET_COLUMN]
 
